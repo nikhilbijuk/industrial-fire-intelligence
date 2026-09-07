@@ -31,11 +31,14 @@
       "max_frp_mw": 26.3
     },
     "context": {
-      "nearest_facility_name": "ONGC Hazira Gas Processing Plant",
-      "nearest_facility_type": "gas_processing",
-      "operator": "Oil and Natural Gas Corporation",
-      "distance_to_facility_meters": 315,
-      "inside_facility_buffer": true
+      "nearest_facility_name": "ArcelorMittal Nippon Steel India",
+      "nearest_facility_type": "steel_mill",
+      "operator": "ArcelorMittal Nippon Steel India",
+      "geodesic_distance_meters": 986,
+      "facility_coordinates": [
+        21.1098624,
+        72.6437334
+      ]
     },
     "classification": {
       "domain": "INDUSTRIAL",
@@ -47,17 +50,17 @@
       "supporting_evidence": [
         {
           "factor": "Industrial Infrastructure Proximity",
-          "description": "Event centroid is 315m from ONGC Hazira Gas Processing Plant (Oil and Natural Gas Corporation)",
+          "description": "Event centroid is 986m from real OSM facility: ArcelorMittal Nippon Steel India (steel_mill)",
           "weight": 0.35
         },
         {
           "factor": "Multi-Day Temporal Persistence",
-          "description": "Recurrent thermal emissions recorded across 7 distinct days (143.8h duration)",
+          "description": "Recurrent thermal detections observed across 7 separate calendar days (143.8h duration)",
           "weight": 0.25
         },
         {
-          "factor": "Continuous 24/7 Thermal Emission",
-          "description": "65% of satellite passes occurred at night, characteristic of continuous industrial operations",
+          "factor": "Continuous 24/7 Combustion",
+          "description": "65% of detections occurred during night overpasses, consistent with continuous industrial operations",
           "weight": 0.15
         }
       ],
@@ -66,7 +69,8 @@
     "uncertainty": {
       "level": "MODERATE",
       "caveats": [
-        "At VIIRS 375m-800m pixel footprint, detection represents high-probability facility association rather than sub-meter stack attribution."
+        "FIRMS detects a thermal anomaly; proximity does not constitute proof of facility-level attribution.",
+        "At VIIRS 375m-800m pixel footprint, detection represents high-probability spatial association."
       ]
     },
     "priority": "CRITICAL",
@@ -92,6 +96,14 @@
         "satellite": "N21",
         "frp_mw": 6.75,
         "brightness_ti4_k": 328.52,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-08-31T20:59:00Z",
+        "satellite": "N20",
+        "frp_mw": 1.67,
+        "brightness_ti4_k": 312.17,
         "daynight": "N",
         "confidence": "nominal"
       },
@@ -168,6 +180,14 @@
         "confidence": "nominal"
       },
       {
+        "timestamp": "2026-09-02T20:21:00Z",
+        "satellite": "N20",
+        "frp_mw": 5.46,
+        "brightness_ti4_k": 307.52,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
         "timestamp": "2026-09-02T21:08:00Z",
         "satellite": "N21",
         "frp_mw": 3.17,
@@ -189,6 +209,14 @@
         "frp_mw": 11.47,
         "brightness_ti4_k": 331.44,
         "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T07:33:00Z",
+        "satellite": "N20",
+        "frp_mw": 9.08,
+        "brightness_ti4_k": 334.62,
+        "daynight": "D",
         "confidence": "nominal"
       },
       {
@@ -244,6 +272,14 @@
         "satellite": "N21",
         "frp_mw": 2.86,
         "brightness_ti4_k": 308.49,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T20:46:00Z",
+        "satellite": "N21",
+        "frp_mw": 5.98,
+        "brightness_ti4_k": 318.53,
         "daynight": "N",
         "confidence": "nominal"
       },
@@ -433,11 +469,14 @@
       "max_frp_mw": 1.49
     },
     "context": {
-      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
-      "nearest_facility_type": "oil_refinery",
-      "operator": "Indian Oil Corporation Limited",
-      "distance_to_facility_meters": 308524,
-      "inside_facility_buffer": false
+      "nearest_facility_name": "refinery unit",
+      "nearest_facility_type": "refinery",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 306235,
+      "facility_coordinates": [
+        29.5106526,
+        76.8651289
+      ]
     },
     "classification": {
       "domain": "OTHER",
@@ -449,8 +488,8 @@
       "supporting_evidence": [],
       "counter_evidence": [
         {
-          "factor": "Facility Absence",
-          "description": "No industrial facility detected within 2km (nearest is 308524m away)",
+          "factor": "Industrial Facility Absence",
+          "description": "No industrial facility recorded within 2km (nearest is 306235m away)",
           "weight": -0.2
         }
       ]
@@ -458,7 +497,8 @@
     "uncertainty": {
       "level": "HIGH",
       "caveats": [
-        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread.",
+        "FIRMS detects a thermal anomaly; proximity alone does not constitute proof of facility-level attribution."
       ]
     },
     "priority": "LOW",
@@ -505,11 +545,14 @@
       "max_frp_mw": 1.01
     },
     "context": {
-      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
-      "nearest_facility_type": "oil_refinery",
-      "operator": "Indian Oil Corporation Limited",
-      "distance_to_facility_meters": 206386,
-      "inside_facility_buffer": false
+      "nearest_facility_name": "refinery unit",
+      "nearest_facility_type": "refinery",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 205360,
+      "facility_coordinates": [
+        29.5106526,
+        76.8651289
+      ]
     },
     "classification": {
       "domain": "OTHER",
@@ -521,8 +564,8 @@
       "supporting_evidence": [],
       "counter_evidence": [
         {
-          "factor": "Facility Absence",
-          "description": "No industrial facility detected within 2km (nearest is 206386m away)",
+          "factor": "Industrial Facility Absence",
+          "description": "No industrial facility recorded within 2km (nearest is 205360m away)",
           "weight": -0.2
         }
       ]
@@ -530,7 +573,8 @@
     "uncertainty": {
       "level": "HIGH",
       "caveats": [
-        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread.",
+        "FIRMS detects a thermal anomaly; proximity alone does not constitute proof of facility-level attribution."
       ]
     },
     "priority": "LOW",
@@ -577,35 +621,39 @@
       "max_frp_mw": 3.12
     },
     "context": {
-      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
-      "nearest_facility_type": "oil_refinery",
-      "operator": "Indian Oil Corporation Limited",
-      "distance_to_facility_meters": 3394,
-      "inside_facility_buffer": false
+      "nearest_facility_name": "refinery unit",
+      "nearest_facility_type": "refinery",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 681,
+      "facility_coordinates": [
+        29.4635733,
+        76.8956161
+      ]
     },
     "classification": {
-      "domain": "OTHER",
+      "domain": "INDUSTRIAL",
       "subclass": "SINGLE_PASS_ANOMALY",
       "confidence_label": "LOW",
       "confidence_score": 0.4
     },
     "evidence_breakdown": {
-      "supporting_evidence": [],
-      "counter_evidence": [
+      "supporting_evidence": [
         {
-          "factor": "Facility Absence",
-          "description": "No industrial facility detected within 2km (nearest is 3394m away)",
-          "weight": -0.2
+          "factor": "Industrial Facility Proximity",
+          "description": "Located 681m from real OSM facility: refinery unit (refinery)",
+          "weight": 0.3
         }
-      ]
+      ],
+      "counter_evidence": []
     },
     "uncertainty": {
       "level": "HIGH",
       "caveats": [
-        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread.",
+        "FIRMS detects a thermal anomaly; proximity alone does not constitute proof of facility-level attribution."
       ]
     },
-    "priority": "LOW",
+    "priority": "MEDIUM",
     "observation_timeline": [
       {
         "timestamp": "2026-08-31T20:57:00Z",
@@ -649,11 +697,14 @@
       "max_frp_mw": 4.7
     },
     "context": {
-      "nearest_facility_name": "ArcelorMittal Nippon Steel (AM/NS) Hazira",
-      "nearest_facility_type": "steel_mill",
-      "operator": "AM/NS India",
-      "distance_to_facility_meters": 364115,
-      "inside_facility_buffer": false
+      "nearest_facility_name": "industrial area unit",
+      "nearest_facility_type": "industrial_area",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 362083,
+      "facility_coordinates": [
+        21.1686624,
+        72.6504367
+      ]
     },
     "classification": {
       "domain": "AGRICULTURAL",
@@ -665,14 +716,14 @@
       "supporting_evidence": [
         {
           "factor": "Agricultural Plain Context",
-          "description": "Event situated in open agricultural cropland belt outside industrial zones",
+          "description": "Thermal event situated in rural agricultural belt outside mapped industrial infrastructure",
           "weight": 0.35
         }
       ],
       "counter_evidence": [
         {
           "factor": "Facility Absence",
-          "description": "No industrial infrastructure within 364km buffer",
+          "description": "No industrial infrastructure detected within 362km",
           "weight": -0.2
         }
       ]
@@ -680,7 +731,7 @@
     "uncertainty": {
       "level": "MODERATE",
       "caveats": [
-        "High smoke opacity can cause nearby false detections on adjacent optical channels."
+        "Smoke plumes can cause adjacent optical channel artifacts."
       ]
     },
     "priority": "LOW",
@@ -722,6 +773,14 @@
         "satellite": "N21",
         "frp_mw": 1.42,
         "brightness_ti4_k": 310.89,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-02T21:08:00Z",
+        "satellite": "N21",
+        "frp_mw": 1.56,
+        "brightness_ti4_k": 305.43,
         "daynight": "N",
         "confidence": "nominal"
       },
@@ -839,11 +898,14 @@
       "max_frp_mw": 3.11
     },
     "context": {
-      "nearest_facility_name": "ArcelorMittal Nippon Steel (AM/NS) Hazira",
-      "nearest_facility_type": "steel_mill",
-      "operator": "AM/NS India",
-      "distance_to_facility_meters": 363790,
-      "inside_facility_buffer": false
+      "nearest_facility_name": "industrial area unit",
+      "nearest_facility_type": "industrial_area",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 361759,
+      "facility_coordinates": [
+        21.1686624,
+        72.6504367
+      ]
     },
     "classification": {
       "domain": "AGRICULTURAL",
@@ -855,14 +917,14 @@
       "supporting_evidence": [
         {
           "factor": "Agricultural Plain Context",
-          "description": "Event situated in open agricultural cropland belt outside industrial zones",
+          "description": "Thermal event situated in rural agricultural belt outside mapped industrial infrastructure",
           "weight": 0.35
         }
       ],
       "counter_evidence": [
         {
           "factor": "Facility Absence",
-          "description": "No industrial infrastructure within 364km buffer",
+          "description": "No industrial infrastructure detected within 362km",
           "weight": -0.2
         }
       ]
@@ -870,7 +932,7 @@
     "uncertainty": {
       "level": "MODERATE",
       "caveats": [
-        "High smoke opacity can cause nearby false detections on adjacent optical channels."
+        "Smoke plumes can cause adjacent optical channel artifacts."
       ]
     },
     "priority": "LOW",
@@ -1029,11 +1091,14 @@
       "max_frp_mw": 26.51
     },
     "context": {
-      "nearest_facility_name": "Reliance Hazira Manufacturing Complex",
-      "nearest_facility_type": "petrochemical_complex",
-      "operator": "Reliance Industries Limited",
-      "distance_to_facility_meters": 184,
-      "inside_facility_buffer": true
+      "nearest_facility_name": "ArcelorMittal Nippon Steel India",
+      "nearest_facility_type": "steel_mill",
+      "operator": "ArcelorMittal Nippon Steel India",
+      "geodesic_distance_meters": 563,
+      "facility_coordinates": [
+        21.1098624,
+        72.6437334
+      ]
     },
     "classification": {
       "domain": "INDUSTRIAL",
@@ -1045,22 +1110,22 @@
       "supporting_evidence": [
         {
           "factor": "Industrial Infrastructure Proximity",
-          "description": "Event centroid is 184m from Reliance Hazira Manufacturing Complex (Reliance Industries Limited)",
+          "description": "Event centroid is 563m from real OSM facility: ArcelorMittal Nippon Steel India (steel_mill)",
           "weight": 0.35
         },
         {
           "factor": "Multi-Day Temporal Persistence",
-          "description": "Recurrent thermal emissions recorded across 7 distinct days (144.5h duration)",
+          "description": "Recurrent thermal detections observed across 7 separate calendar days (144.5h duration)",
           "weight": 0.25
         },
         {
-          "factor": "Stationary Point Source (Flare Stack)",
-          "description": "Normalized optical drift ratio is 0.85 (<= 1.0); coordinate shifts are fully accounted for by satellite pixel footprint elongation",
+          "factor": "Stationary Footprint Consistency",
+          "description": "Normalized optical drift ratio is 0.85 (<= 1.0); observed coordinate displacement is within the estimated sensor pixel footprint, consistent with a stationary source",
           "weight": 0.25
         },
         {
-          "factor": "Continuous 24/7 Thermal Emission",
-          "description": "71% of satellite passes occurred at night, characteristic of continuous industrial operations",
+          "factor": "Continuous 24/7 Combustion",
+          "description": "71% of detections occurred during night overpasses, consistent with continuous industrial operations",
           "weight": 0.15
         }
       ],
@@ -1069,7 +1134,8 @@
     "uncertainty": {
       "level": "MODERATE",
       "caveats": [
-        "At VIIRS 375m-800m pixel footprint, detection represents high-probability facility association rather than sub-meter stack attribution."
+        "FIRMS detects a thermal anomaly; proximity does not constitute proof of facility-level attribution.",
+        "At VIIRS 375m-800m pixel footprint, detection represents high-probability spatial association."
       ]
     },
     "priority": "MEDIUM",
@@ -1111,6 +1177,14 @@
         "satellite": "N20",
         "frp_mw": 5.93,
         "brightness_ti4_k": 339.47,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-01T20:42:00Z",
+        "satellite": "N20",
+        "frp_mw": 2.98,
+        "brightness_ti4_k": 312.71,
         "daynight": "N",
         "confidence": "nominal"
       },
@@ -1227,6 +1301,14 @@
         "confidence": "nominal"
       },
       {
+        "timestamp": "2026-09-03T20:46:00Z",
+        "satellite": "N21",
+        "frp_mw": 2.86,
+        "brightness_ti4_k": 333.77,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
         "timestamp": "2026-09-03T21:44:00Z",
         "satellite": "N20",
         "frp_mw": 1.64,
@@ -1263,6 +1345,14 @@
         "satellite": "N21",
         "frp_mw": 26.51,
         "brightness_ti4_k": 344.27,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T08:01:00Z",
+        "satellite": "N21",
+        "frp_mw": 26.3,
+        "brightness_ti4_k": 342.12,
         "daynight": "D",
         "confidence": "nominal"
       },
@@ -1305,6 +1395,14 @@
         "brightness_ti4_k": 311.77,
         "daynight": "N",
         "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T08:18:00Z",
+        "satellite": "N20",
+        "frp_mw": 5.59,
+        "brightness_ti4_k": 335.5,
+        "daynight": "D",
+        "confidence": "low"
       },
       {
         "timestamp": "2026-09-06T08:18:00Z",
@@ -1388,11 +1486,14 @@
       "max_frp_mw": 4.01
     },
     "context": {
-      "nearest_facility_name": "ArcelorMittal Nippon Steel (AM/NS) Hazira",
-      "nearest_facility_type": "steel_mill",
-      "operator": "AM/NS India",
-      "distance_to_facility_meters": 143397,
-      "inside_facility_buffer": false
+      "nearest_facility_name": "industrial area unit",
+      "nearest_facility_type": "industrial_complex",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 139251,
+      "facility_coordinates": [
+        21.186234,
+        72.7357853
+      ]
     },
     "classification": {
       "domain": "AGRICULTURAL",
@@ -1404,19 +1505,19 @@
       "supporting_evidence": [
         {
           "factor": "Agricultural Plain Context",
-          "description": "Event situated in open agricultural cropland belt outside industrial zones",
+          "description": "Thermal event situated in rural agricultural belt outside mapped industrial infrastructure",
           "weight": 0.35
         },
         {
-          "factor": "Short Lived Ephemeral Burn",
-          "description": "Total duration limited to 0h; dissipates rapidly once crop residue clears",
+          "factor": "Short-Lived Ephemeral Burn",
+          "description": "Duration limited to 0h; dissipates rapidly once residue is cleared",
           "weight": 0.2
         }
       ],
       "counter_evidence": [
         {
           "factor": "Facility Absence",
-          "description": "No industrial infrastructure within 143km buffer",
+          "description": "No industrial infrastructure detected within 139km",
           "weight": -0.2
         }
       ]
@@ -1424,7 +1525,7 @@
     "uncertainty": {
       "level": "MODERATE",
       "caveats": [
-        "High smoke opacity can cause nearby false detections on adjacent optical channels."
+        "Smoke plumes can cause adjacent optical channel artifacts."
       ]
     },
     "priority": "LOW",
@@ -1479,11 +1580,14 @@
       "max_frp_mw": 13.13
     },
     "context": {
-      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
-      "nearest_facility_type": "oil_refinery",
-      "operator": "Indian Oil Corporation Limited",
-      "distance_to_facility_meters": 277183,
-      "inside_facility_buffer": false
+      "nearest_facility_name": "refinery unit",
+      "nearest_facility_type": "refinery",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 275071,
+      "facility_coordinates": [
+        29.5106526,
+        76.8651289
+      ]
     },
     "classification": {
       "domain": "AGRICULTURAL",
@@ -1495,24 +1599,24 @@
       "supporting_evidence": [
         {
           "factor": "Agricultural Plain Context",
-          "description": "Event situated in open agricultural cropland belt outside industrial zones",
+          "description": "Thermal event situated in rural agricultural belt outside mapped industrial infrastructure",
           "weight": 0.35
         },
         {
-          "factor": "Diurnal Harvest Restriction",
-          "description": "100% of detections occurred during daylight overpasses, characteristic of field clearing practices",
+          "factor": "Diurnal Daylight Restriction",
+          "description": "100% of observations occurred during daylight overpasses, characteristic of crop residue clearing",
           "weight": 0.25
         },
         {
-          "factor": "Short Lived Ephemeral Burn",
-          "description": "Total duration limited to 0h; dissipates rapidly once crop residue clears",
+          "factor": "Short-Lived Ephemeral Burn",
+          "description": "Duration limited to 0h; dissipates rapidly once residue is cleared",
           "weight": 0.2
         }
       ],
       "counter_evidence": [
         {
           "factor": "Facility Absence",
-          "description": "No industrial infrastructure within 277km buffer",
+          "description": "No industrial infrastructure detected within 275km",
           "weight": -0.2
         }
       ]
@@ -1520,7 +1624,7 @@
     "uncertainty": {
       "level": "MODERATE",
       "caveats": [
-        "High smoke opacity can cause nearby false detections on adjacent optical channels."
+        "Smoke plumes can cause adjacent optical channel artifacts."
       ]
     },
     "priority": "LOW",
@@ -1575,11 +1679,14 @@
       "max_frp_mw": 3.62
     },
     "context": {
-      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
-      "nearest_facility_type": "oil_refinery",
-      "operator": "Indian Oil Corporation Limited",
-      "distance_to_facility_meters": 141811,
-      "inside_facility_buffer": false
+      "nearest_facility_name": "refinery unit",
+      "nearest_facility_type": "refinery",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 138388,
+      "facility_coordinates": [
+        29.5106526,
+        76.8651289
+      ]
     },
     "classification": {
       "domain": "OTHER",
@@ -1591,8 +1698,8 @@
       "supporting_evidence": [],
       "counter_evidence": [
         {
-          "factor": "Facility Absence",
-          "description": "No industrial facility detected within 2km (nearest is 141811m away)",
+          "factor": "Industrial Facility Absence",
+          "description": "No industrial facility recorded within 2km (nearest is 138388m away)",
           "weight": -0.2
         }
       ]
@@ -1600,7 +1707,8 @@
     "uncertainty": {
       "level": "HIGH",
       "caveats": [
-        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread.",
+        "FIRMS detects a thermal anomaly; proximity alone does not constitute proof of facility-level attribution."
       ]
     },
     "priority": "LOW",
@@ -1647,11 +1755,14 @@
       "max_frp_mw": 6.71
     },
     "context": {
-      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
-      "nearest_facility_type": "oil_refinery",
-      "operator": "Indian Oil Corporation Limited",
-      "distance_to_facility_meters": 262601,
-      "inside_facility_buffer": false
+      "nearest_facility_name": "refinery unit",
+      "nearest_facility_type": "refinery",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 260294,
+      "facility_coordinates": [
+        29.5106526,
+        76.8651289
+      ]
     },
     "classification": {
       "domain": "OTHER",
@@ -1663,8 +1774,8 @@
       "supporting_evidence": [],
       "counter_evidence": [
         {
-          "factor": "Facility Absence",
-          "description": "No industrial facility detected within 2km (nearest is 262601m away)",
+          "factor": "Industrial Facility Absence",
+          "description": "No industrial facility recorded within 2km (nearest is 260294m away)",
           "weight": -0.2
         }
       ]
@@ -1672,7 +1783,8 @@
     "uncertainty": {
       "level": "HIGH",
       "caveats": [
-        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread.",
+        "FIRMS detects a thermal anomaly; proximity alone does not constitute proof of facility-level attribution."
       ]
     },
     "priority": "LOW",
@@ -1719,11 +1831,14 @@
       "max_frp_mw": 8
     },
     "context": {
-      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
-      "nearest_facility_type": "oil_refinery",
-      "operator": "Indian Oil Corporation Limited",
-      "distance_to_facility_meters": 282450,
-      "inside_facility_buffer": false
+      "nearest_facility_name": "refinery unit",
+      "nearest_facility_type": "refinery",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 280385,
+      "facility_coordinates": [
+        29.5106526,
+        76.8651289
+      ]
     },
     "classification": {
       "domain": "OTHER",
@@ -1735,8 +1850,8 @@
       "supporting_evidence": [],
       "counter_evidence": [
         {
-          "factor": "Facility Absence",
-          "description": "No industrial facility detected within 2km (nearest is 282450m away)",
+          "factor": "Industrial Facility Absence",
+          "description": "No industrial facility recorded within 2km (nearest is 280385m away)",
           "weight": -0.2
         }
       ]
@@ -1744,7 +1859,8 @@
     "uncertainty": {
       "level": "HIGH",
       "caveats": [
-        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread.",
+        "FIRMS detects a thermal anomaly; proximity alone does not constitute proof of facility-level attribution."
       ]
     },
     "priority": "LOW",
@@ -1791,11 +1907,14 @@
       "max_frp_mw": 0.88
     },
     "context": {
-      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
-      "nearest_facility_type": "oil_refinery",
-      "operator": "Indian Oil Corporation Limited",
-      "distance_to_facility_meters": 111836,
-      "inside_facility_buffer": false
+      "nearest_facility_name": "refinery unit",
+      "nearest_facility_type": "refinery",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 108156,
+      "facility_coordinates": [
+        29.4116923,
+        76.8421962
+      ]
     },
     "classification": {
       "domain": "OTHER",
@@ -1807,8 +1926,8 @@
       "supporting_evidence": [],
       "counter_evidence": [
         {
-          "factor": "Facility Absence",
-          "description": "No industrial facility detected within 2km (nearest is 111836m away)",
+          "factor": "Industrial Facility Absence",
+          "description": "No industrial facility recorded within 2km (nearest is 108156m away)",
           "weight": -0.2
         }
       ]
@@ -1816,7 +1935,8 @@
     "uncertainty": {
       "level": "HIGH",
       "caveats": [
-        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread.",
+        "FIRMS detects a thermal anomaly; proximity alone does not constitute proof of facility-level attribution."
       ]
     },
     "priority": "LOW",
@@ -1863,11 +1983,14 @@
       "max_frp_mw": 4.61
     },
     "context": {
-      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
-      "nearest_facility_type": "oil_refinery",
-      "operator": "Indian Oil Corporation Limited",
-      "distance_to_facility_meters": 275168,
-      "inside_facility_buffer": false
+      "nearest_facility_name": "refinery unit",
+      "nearest_facility_type": "refinery",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 273088,
+      "facility_coordinates": [
+        29.5106526,
+        76.8651289
+      ]
     },
     "classification": {
       "domain": "OTHER",
@@ -1879,8 +2002,8 @@
       "supporting_evidence": [],
       "counter_evidence": [
         {
-          "factor": "Facility Absence",
-          "description": "No industrial facility detected within 2km (nearest is 275168m away)",
+          "factor": "Industrial Facility Absence",
+          "description": "No industrial facility recorded within 2km (nearest is 273088m away)",
           "weight": -0.2
         }
       ]
@@ -1888,7 +2011,8 @@
     "uncertainty": {
       "level": "HIGH",
       "caveats": [
-        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread.",
+        "FIRMS detects a thermal anomaly; proximity alone does not constitute proof of facility-level attribution."
       ]
     },
     "priority": "LOW",
@@ -1935,11 +2059,14 @@
       "max_frp_mw": 7.4
     },
     "context": {
-      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
-      "nearest_facility_type": "oil_refinery",
-      "operator": "Indian Oil Corporation Limited",
-      "distance_to_facility_meters": 280399,
-      "inside_facility_buffer": false
+      "nearest_facility_name": "refinery unit",
+      "nearest_facility_type": "refinery",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 278307,
+      "facility_coordinates": [
+        29.5106526,
+        76.8651289
+      ]
     },
     "classification": {
       "domain": "OTHER",
@@ -1951,8 +2078,8 @@
       "supporting_evidence": [],
       "counter_evidence": [
         {
-          "factor": "Facility Absence",
-          "description": "No industrial facility detected within 2km (nearest is 280399m away)",
+          "factor": "Industrial Facility Absence",
+          "description": "No industrial facility recorded within 2km (nearest is 278307m away)",
           "weight": -0.2
         }
       ]
@@ -1960,7 +2087,8 @@
     "uncertainty": {
       "level": "HIGH",
       "caveats": [
-        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread.",
+        "FIRMS detects a thermal anomaly; proximity alone does not constitute proof of facility-level attribution."
       ]
     },
     "priority": "LOW",
@@ -2007,51 +2135,54 @@
       "max_frp_mw": 4.17
     },
     "context": {
-      "nearest_facility_name": "Simlipal Tiger Reserve & National Park Core",
-      "nearest_facility_type": "protected_forest",
-      "operator": "Ministry of Environment, Forest and Climate Change",
-      "distance_to_facility_meters": 2782,
-      "inside_facility_buffer": true
+      "nearest_facility_name": "protected forest unit",
+      "nearest_facility_type": "industrial_complex",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 346,
+      "facility_coordinates": [
+        20.8890769,
+        84.9840344
+      ]
     },
     "classification": {
-      "domain": "WILDFIRE",
-      "subclass": "FOREST_CANOPY_FIRE",
+      "domain": "INDUSTRIAL",
+      "subclass": "PERSISTENT_OPERATIONAL_SOURCE",
       "confidence_label": "HIGH",
-      "confidence_score": 0.89
+      "confidence_score": 0.91
     },
     "evidence_breakdown": {
       "supporting_evidence": [
         {
-          "factor": "Protected Forest Landcover",
-          "description": "Thermal event located in Simlipal Tiger Reserve & National Park Core",
+          "factor": "Industrial Infrastructure Proximity",
+          "description": "Event centroid is 346m from real OSM facility: protected forest unit (industrial_complex)",
           "weight": 0.35
         },
         {
-          "factor": "Expanding Fire Front",
-          "description": "Spatial drift of 766.2m exceeds stationary footprint; indicates active perimeter spread along terrain",
-          "weight": 0.3
+          "factor": "Multi-Day Temporal Persistence",
+          "description": "Recurrent thermal detections observed across 5 separate calendar days (108.6h duration)",
+          "weight": 0.25
         },
         {
-          "factor": "Overnight Fire Persistence",
-          "description": "Thermal energy detected during nighttime overpass, indicating sustained heavy fuel combustion",
-          "weight": 0.2
+          "factor": "Stationary Footprint Consistency",
+          "description": "Normalized optical drift ratio is 0.76 (<= 1.0); observed coordinate displacement is within the estimated sensor pixel footprint, consistent with a stationary source",
+          "weight": 0.25
+        },
+        {
+          "factor": "Continuous 24/7 Combustion",
+          "description": "87% of detections occurred during night overpasses, consistent with continuous industrial operations",
+          "weight": 0.15
         }
       ],
-      "counter_evidence": [
-        {
-          "factor": "Zero Industrial Infrastructure",
-          "description": "Located 3km from any recorded industrial facility",
-          "weight": -0.15
-        }
-      ]
+      "counter_evidence": []
     },
     "uncertainty": {
       "level": "MODERATE",
       "caveats": [
-        "Cloud cover and canopy density can partially attenuate thermal radiative power."
+        "FIRMS detects a thermal anomaly; proximity does not constitute proof of facility-level attribution.",
+        "At VIIRS 375m-800m pixel footprint, detection represents high-probability spatial association."
       ]
     },
-    "priority": "HIGH",
+    "priority": "MEDIUM",
     "observation_timeline": [
       {
         "timestamp": "2026-09-02T19:25:00Z",
@@ -2207,51 +2338,54 @@
       "max_frp_mw": 9.04
     },
     "context": {
-      "nearest_facility_name": "Simlipal Tiger Reserve & National Park Core",
-      "nearest_facility_type": "protected_forest",
-      "operator": "Ministry of Environment, Forest and Climate Change",
-      "distance_to_facility_meters": 190,
-      "inside_facility_buffer": true
+      "nearest_facility_name": "Angul Steel Plant",
+      "nearest_facility_type": "steel_mill",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 1267,
+      "facility_coordinates": [
+        20.8753652,
+        84.9872383
+      ]
     },
     "classification": {
-      "domain": "WILDFIRE",
-      "subclass": "FOREST_CANOPY_FIRE",
+      "domain": "INDUSTRIAL",
+      "subclass": "PERSISTENT_OPERATIONAL_SOURCE",
       "confidence_label": "HIGH",
-      "confidence_score": 0.89
+      "confidence_score": 0.91
     },
     "evidence_breakdown": {
       "supporting_evidence": [
         {
-          "factor": "Protected Forest Landcover",
-          "description": "Thermal event located in Simlipal Tiger Reserve & National Park Core",
+          "factor": "Industrial Infrastructure Proximity",
+          "description": "Event centroid is 1267m from real OSM facility: Angul Steel Plant (steel_mill)",
           "weight": 0.35
         },
         {
-          "factor": "Expanding Fire Front",
-          "description": "Spatial drift of 658.5m exceeds stationary footprint; indicates active perimeter spread along terrain",
-          "weight": 0.3
+          "factor": "Multi-Day Temporal Persistence",
+          "description": "Recurrent thermal detections observed across 5 separate calendar days (108.6h duration)",
+          "weight": 0.25
         },
         {
-          "factor": "Overnight Fire Persistence",
-          "description": "Thermal energy detected during nighttime overpass, indicating sustained heavy fuel combustion",
-          "weight": 0.2
+          "factor": "Stationary Footprint Consistency",
+          "description": "Normalized optical drift ratio is 0.99 (<= 1.0); observed coordinate displacement is within the estimated sensor pixel footprint, consistent with a stationary source",
+          "weight": 0.25
+        },
+        {
+          "factor": "Continuous 24/7 Combustion",
+          "description": "74% of detections occurred during night overpasses, consistent with continuous industrial operations",
+          "weight": 0.15
         }
       ],
-      "counter_evidence": [
-        {
-          "factor": "Zero Industrial Infrastructure",
-          "description": "Located 0km from any recorded industrial facility",
-          "weight": -0.15
-        }
-      ]
+      "counter_evidence": []
     },
     "uncertainty": {
       "level": "MODERATE",
       "caveats": [
-        "Cloud cover and canopy density can partially attenuate thermal radiative power."
+        "FIRMS detects a thermal anomaly; proximity does not constitute proof of facility-level attribution.",
+        "At VIIRS 375m-800m pixel footprint, detection represents high-probability spatial association."
       ]
     },
-    "priority": "HIGH",
+    "priority": "MEDIUM",
     "observation_timeline": [
       {
         "timestamp": "2026-09-02T19:25:00Z",
@@ -2266,6 +2400,14 @@
         "satellite": "N21",
         "frp_mw": 3.42,
         "brightness_ti4_k": 307.49,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T19:45:00Z",
+        "satellite": "N20",
+        "frp_mw": 1.46,
+        "brightness_ti4_k": 305.34,
         "daynight": "N",
         "confidence": "nominal"
       },
@@ -2404,6 +2546,14 @@
         "brightness_ti4_k": 340.33,
         "daynight": "D",
         "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-07T08:01:00Z",
+        "satellite": "N20",
+        "frp_mw": 4.38,
+        "brightness_ti4_k": 341.45,
+        "daynight": "D",
+        "confidence": "nominal"
       }
     ]
   },
@@ -2439,11 +2589,14 @@
       "max_frp_mw": 1.37
     },
     "context": {
-      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
-      "nearest_facility_type": "oil_refinery",
-      "operator": "Indian Oil Corporation Limited",
-      "distance_to_facility_meters": 83015,
-      "inside_facility_buffer": false
+      "nearest_facility_name": "refinery unit",
+      "nearest_facility_type": "refinery",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 79159,
+      "facility_coordinates": [
+        29.5106526,
+        76.8651289
+      ]
     },
     "classification": {
       "domain": "OTHER",
@@ -2455,8 +2608,8 @@
       "supporting_evidence": [],
       "counter_evidence": [
         {
-          "factor": "Facility Absence",
-          "description": "No industrial facility detected within 2km (nearest is 83015m away)",
+          "factor": "Industrial Facility Absence",
+          "description": "No industrial facility recorded within 2km (nearest is 79159m away)",
           "weight": -0.2
         }
       ]
@@ -2464,7 +2617,8 @@
     "uncertainty": {
       "level": "HIGH",
       "caveats": [
-        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread.",
+        "FIRMS detects a thermal anomaly; proximity alone does not constitute proof of facility-level attribution."
       ]
     },
     "priority": "LOW",
@@ -2511,11 +2665,14 @@
       "max_frp_mw": 2.91
     },
     "context": {
-      "nearest_facility_name": "ArcelorMittal Nippon Steel (AM/NS) Hazira",
-      "nearest_facility_type": "steel_mill",
-      "operator": "AM/NS India",
-      "distance_to_facility_meters": 352780,
-      "inside_facility_buffer": false
+      "nearest_facility_name": "industrial area unit",
+      "nearest_facility_type": "industrial_area",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 350766,
+      "facility_coordinates": [
+        21.1686624,
+        72.6504367
+      ]
     },
     "classification": {
       "domain": "AGRICULTURAL",
@@ -2527,19 +2684,19 @@
       "supporting_evidence": [
         {
           "factor": "Agricultural Plain Context",
-          "description": "Event situated in open agricultural cropland belt outside industrial zones",
+          "description": "Thermal event situated in rural agricultural belt outside mapped industrial infrastructure",
           "weight": 0.35
         },
         {
-          "factor": "Short Lived Ephemeral Burn",
-          "description": "Total duration limited to 23.6h; dissipates rapidly once crop residue clears",
+          "factor": "Short-Lived Ephemeral Burn",
+          "description": "Duration limited to 23.6h; dissipates rapidly once residue is cleared",
           "weight": 0.2
         }
       ],
       "counter_evidence": [
         {
           "factor": "Facility Absence",
-          "description": "No industrial infrastructure within 353km buffer",
+          "description": "No industrial infrastructure detected within 351km",
           "weight": -0.2
         }
       ]
@@ -2547,7 +2704,7 @@
     "uncertainty": {
       "level": "MODERATE",
       "caveats": [
-        "High smoke opacity can cause nearby false detections on adjacent optical channels."
+        "Smoke plumes can cause adjacent optical channel artifacts."
       ]
     },
     "priority": "LOW",
@@ -2602,11 +2759,14 @@
       "max_frp_mw": 4.3
     },
     "context": {
-      "nearest_facility_name": "ONGC Hazira Gas Processing Plant",
-      "nearest_facility_type": "gas_processing",
-      "operator": "Oil and Natural Gas Corporation",
-      "distance_to_facility_meters": 318219,
-      "inside_facility_buffer": false
+      "nearest_facility_name": "industrial area unit",
+      "nearest_facility_type": "industrial_area",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 316495,
+      "facility_coordinates": [
+        21.1588961,
+        72.6444977
+      ]
     },
     "classification": {
       "domain": "AGRICULTURAL",
@@ -2618,19 +2778,19 @@
       "supporting_evidence": [
         {
           "factor": "Agricultural Plain Context",
-          "description": "Event situated in open agricultural cropland belt outside industrial zones",
+          "description": "Thermal event situated in rural agricultural belt outside mapped industrial infrastructure",
           "weight": 0.35
         },
         {
-          "factor": "Short Lived Ephemeral Burn",
-          "description": "Total duration limited to 23.6h; dissipates rapidly once crop residue clears",
+          "factor": "Short-Lived Ephemeral Burn",
+          "description": "Duration limited to 23.6h; dissipates rapidly once residue is cleared",
           "weight": 0.2
         }
       ],
       "counter_evidence": [
         {
           "factor": "Facility Absence",
-          "description": "No industrial infrastructure within 318km buffer",
+          "description": "No industrial infrastructure detected within 316km",
           "weight": -0.2
         }
       ]
@@ -2638,7 +2798,7 @@
     "uncertainty": {
       "level": "MODERATE",
       "caveats": [
-        "High smoke opacity can cause nearby false detections on adjacent optical channels."
+        "Smoke plumes can cause adjacent optical channel artifacts."
       ]
     },
     "priority": "LOW",
@@ -2693,11 +2853,14 @@
       "max_frp_mw": 3.38
     },
     "context": {
-      "nearest_facility_name": "ONGC Hazira Gas Processing Plant",
-      "nearest_facility_type": "gas_processing",
-      "operator": "Oil and Natural Gas Corporation",
-      "distance_to_facility_meters": 316890,
-      "inside_facility_buffer": false
+      "nearest_facility_name": "industrial area unit",
+      "nearest_facility_type": "industrial_area",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 315166,
+      "facility_coordinates": [
+        21.1588961,
+        72.6444977
+      ]
     },
     "classification": {
       "domain": "OTHER",
@@ -2709,8 +2872,8 @@
       "supporting_evidence": [],
       "counter_evidence": [
         {
-          "factor": "Facility Absence",
-          "description": "No industrial facility detected within 2km (nearest is 316890m away)",
+          "factor": "Industrial Facility Absence",
+          "description": "No industrial facility recorded within 2km (nearest is 315166m away)",
           "weight": -0.2
         }
       ]
@@ -2718,7 +2881,8 @@
     "uncertainty": {
       "level": "HIGH",
       "caveats": [
-        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread.",
+        "FIRMS detects a thermal anomaly; proximity alone does not constitute proof of facility-level attribution."
       ]
     },
     "priority": "LOW",
@@ -2765,11 +2929,14 @@
       "max_frp_mw": 6.29
     },
     "context": {
-      "nearest_facility_name": "ArcelorMittal Nippon Steel (AM/NS) Hazira",
-      "nearest_facility_type": "steel_mill",
-      "operator": "AM/NS India",
-      "distance_to_facility_meters": 131,
-      "inside_facility_buffer": true
+      "nearest_facility_name": "Reliance",
+      "nearest_facility_type": "industrial_complex",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 495,
+      "facility_coordinates": [
+        21.1689145,
+        72.6738225
+      ]
     },
     "classification": {
       "domain": "INDUSTRIAL",
@@ -2781,17 +2948,17 @@
       "supporting_evidence": [
         {
           "factor": "Industrial Infrastructure Proximity",
-          "description": "Event centroid is 131m from ArcelorMittal Nippon Steel (AM/NS) Hazira (AM/NS India)",
+          "description": "Event centroid is 495m from real OSM facility: Reliance (industrial_complex)",
           "weight": 0.35
         },
         {
-          "factor": "Stationary Point Source (Flare Stack)",
-          "description": "Normalized optical drift ratio is 0.6 (<= 1.0); coordinate shifts are fully accounted for by satellite pixel footprint elongation",
+          "factor": "Stationary Footprint Consistency",
+          "description": "Normalized optical drift ratio is 0.6 (<= 1.0); observed coordinate displacement is within the estimated sensor pixel footprint, consistent with a stationary source",
           "weight": 0.25
         },
         {
-          "factor": "Continuous 24/7 Thermal Emission",
-          "description": "57% of satellite passes occurred at night, characteristic of continuous industrial operations",
+          "factor": "Continuous 24/7 Combustion",
+          "description": "57% of detections occurred during night overpasses, consistent with continuous industrial operations",
           "weight": 0.15
         }
       ],
@@ -2800,7 +2967,8 @@
     "uncertainty": {
       "level": "MODERATE",
       "caveats": [
-        "At VIIRS 375m-800m pixel footprint, detection represents high-probability facility association rather than sub-meter stack attribution."
+        "FIRMS detects a thermal anomaly; proximity does not constitute proof of facility-level attribution.",
+        "At VIIRS 375m-800m pixel footprint, detection represents high-probability spatial association."
       ]
     },
     "priority": "MEDIUM",
@@ -2895,11 +3063,14 @@
       "max_frp_mw": 8.52
     },
     "context": {
-      "nearest_facility_name": "ArcelorMittal Nippon Steel (AM/NS) Hazira",
-      "nearest_facility_type": "steel_mill",
-      "operator": "AM/NS India",
-      "distance_to_facility_meters": 329089,
-      "inside_facility_buffer": false
+      "nearest_facility_name": "industrial area unit",
+      "nearest_facility_type": "industrial_area",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 327128,
+      "facility_coordinates": [
+        21.1686624,
+        72.6504367
+      ]
     },
     "classification": {
       "domain": "AGRICULTURAL",
@@ -2911,19 +3082,19 @@
       "supporting_evidence": [
         {
           "factor": "Agricultural Plain Context",
-          "description": "Event situated in open agricultural cropland belt outside industrial zones",
+          "description": "Thermal event situated in rural agricultural belt outside mapped industrial infrastructure",
           "weight": 0.35
         },
         {
-          "factor": "Short Lived Ephemeral Burn",
-          "description": "Total duration limited to 37.1h; dissipates rapidly once crop residue clears",
+          "factor": "Short-Lived Ephemeral Burn",
+          "description": "Duration limited to 37.1h; dissipates rapidly once residue is cleared",
           "weight": 0.2
         }
       ],
       "counter_evidence": [
         {
           "factor": "Facility Absence",
-          "description": "No industrial infrastructure within 329km buffer",
+          "description": "No industrial infrastructure detected within 327km",
           "weight": -0.2
         }
       ]
@@ -2931,7 +3102,7 @@
     "uncertainty": {
       "level": "MODERATE",
       "caveats": [
-        "High smoke opacity can cause nearby false detections on adjacent optical channels."
+        "Smoke plumes can cause adjacent optical channel artifacts."
       ]
     },
     "priority": "LOW",
@@ -3002,11 +3173,14 @@
       "max_frp_mw": 4.87
     },
     "context": {
-      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
-      "nearest_facility_type": "oil_refinery",
-      "operator": "Indian Oil Corporation Limited",
-      "distance_to_facility_meters": 256651,
-      "inside_facility_buffer": false
+      "nearest_facility_name": "refinery unit",
+      "nearest_facility_type": "refinery",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 254202,
+      "facility_coordinates": [
+        29.5106526,
+        76.8651289
+      ]
     },
     "classification": {
       "domain": "OTHER",
@@ -3018,8 +3192,8 @@
       "supporting_evidence": [],
       "counter_evidence": [
         {
-          "factor": "Facility Absence",
-          "description": "No industrial facility detected within 2km (nearest is 256651m away)",
+          "factor": "Industrial Facility Absence",
+          "description": "No industrial facility recorded within 2km (nearest is 254202m away)",
           "weight": -0.2
         }
       ]
@@ -3027,7 +3201,8 @@
     "uncertainty": {
       "level": "HIGH",
       "caveats": [
-        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread.",
+        "FIRMS detects a thermal anomaly; proximity alone does not constitute proof of facility-level attribution."
       ]
     },
     "priority": "LOW",
@@ -3074,11 +3249,14 @@
       "max_frp_mw": 4.63
     },
     "context": {
-      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
-      "nearest_facility_type": "oil_refinery",
-      "operator": "Indian Oil Corporation Limited",
-      "distance_to_facility_meters": 308591,
-      "inside_facility_buffer": false
+      "nearest_facility_name": "refinery unit",
+      "nearest_facility_type": "refinery",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 306213,
+      "facility_coordinates": [
+        29.5106526,
+        76.8651289
+      ]
     },
     "classification": {
       "domain": "OTHER",
@@ -3090,8 +3268,8 @@
       "supporting_evidence": [],
       "counter_evidence": [
         {
-          "factor": "Facility Absence",
-          "description": "No industrial facility detected within 2km (nearest is 308591m away)",
+          "factor": "Industrial Facility Absence",
+          "description": "No industrial facility recorded within 2km (nearest is 306213m away)",
           "weight": -0.2
         }
       ]
@@ -3099,7 +3277,8 @@
     "uncertainty": {
       "level": "HIGH",
       "caveats": [
-        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread.",
+        "FIRMS detects a thermal anomaly; proximity alone does not constitute proof of facility-level attribution."
       ]
     },
     "priority": "LOW",
@@ -3146,11 +3325,14 @@
       "max_frp_mw": 3.63
     },
     "context": {
-      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
-      "nearest_facility_type": "oil_refinery",
-      "operator": "Indian Oil Corporation Limited",
-      "distance_to_facility_meters": 190775,
-      "inside_facility_buffer": false
+      "nearest_facility_name": "refinery unit",
+      "nearest_facility_type": "refinery",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 190448,
+      "facility_coordinates": [
+        29.5106526,
+        76.8651289
+      ]
     },
     "classification": {
       "domain": "AGRICULTURAL",
@@ -3162,19 +3344,19 @@
       "supporting_evidence": [
         {
           "factor": "Agricultural Plain Context",
-          "description": "Event situated in open agricultural cropland belt outside industrial zones",
+          "description": "Thermal event situated in rural agricultural belt outside mapped industrial infrastructure",
           "weight": 0.35
         },
         {
-          "factor": "Short Lived Ephemeral Burn",
-          "description": "Total duration limited to 12.9h; dissipates rapidly once crop residue clears",
+          "factor": "Short-Lived Ephemeral Burn",
+          "description": "Duration limited to 12.9h; dissipates rapidly once residue is cleared",
           "weight": 0.2
         }
       ],
       "counter_evidence": [
         {
           "factor": "Facility Absence",
-          "description": "No industrial infrastructure within 191km buffer",
+          "description": "No industrial infrastructure detected within 190km",
           "weight": -0.2
         }
       ]
@@ -3182,7 +3364,7 @@
     "uncertainty": {
       "level": "MODERATE",
       "caveats": [
-        "High smoke opacity can cause nearby false detections on adjacent optical channels."
+        "Smoke plumes can cause adjacent optical channel artifacts."
       ]
     },
     "priority": "LOW",
@@ -3253,11 +3435,14 @@
       "max_frp_mw": 9.46
     },
     "context": {
-      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
-      "nearest_facility_type": "oil_refinery",
-      "operator": "Indian Oil Corporation Limited",
-      "distance_to_facility_meters": 200,
-      "inside_facility_buffer": true
+      "nearest_facility_name": "refinery unit",
+      "nearest_facility_type": "refinery",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 1107,
+      "facility_coordinates": [
+        29.466769,
+        76.8613481
+      ]
     },
     "classification": {
       "domain": "INDUSTRIAL",
@@ -3269,22 +3454,22 @@
       "supporting_evidence": [
         {
           "factor": "Industrial Infrastructure Proximity",
-          "description": "Event centroid is 200m from IOCL Panipat Refinery & Petrochemical Complex (Indian Oil Corporation Limited)",
+          "description": "Event centroid is 1107m from real OSM facility: refinery unit (refinery)",
           "weight": 0.35
         },
         {
           "factor": "Multi-Day Temporal Persistence",
-          "description": "Recurrent thermal emissions recorded across 3 distinct days (73.5h duration)",
+          "description": "Recurrent thermal detections observed across 3 separate calendar days (73.5h duration)",
           "weight": 0.25
         },
         {
-          "factor": "Stationary Point Source (Flare Stack)",
-          "description": "Normalized optical drift ratio is 0.78 (<= 1.0); coordinate shifts are fully accounted for by satellite pixel footprint elongation",
+          "factor": "Stationary Footprint Consistency",
+          "description": "Normalized optical drift ratio is 0.78 (<= 1.0); observed coordinate displacement is within the estimated sensor pixel footprint, consistent with a stationary source",
           "weight": 0.25
         },
         {
-          "factor": "Continuous 24/7 Thermal Emission",
-          "description": "100% of satellite passes occurred at night, characteristic of continuous industrial operations",
+          "factor": "Continuous 24/7 Combustion",
+          "description": "100% of detections occurred during night overpasses, consistent with continuous industrial operations",
           "weight": 0.15
         }
       ],
@@ -3293,7 +3478,8 @@
     "uncertainty": {
       "level": "MODERATE",
       "caveats": [
-        "At VIIRS 375m-800m pixel footprint, detection represents high-probability facility association rather than sub-meter stack attribution."
+        "FIRMS detects a thermal anomaly; proximity does not constitute proof of facility-level attribution.",
+        "At VIIRS 375m-800m pixel footprint, detection represents high-probability spatial association."
       ]
     },
     "priority": "MEDIUM",
@@ -3468,11 +3654,14 @@
       "max_frp_mw": 0.4
     },
     "context": {
-      "nearest_facility_name": "ArcelorMittal Nippon Steel (AM/NS) Hazira",
-      "nearest_facility_type": "steel_mill",
-      "operator": "AM/NS India",
-      "distance_to_facility_meters": 200756,
-      "inside_facility_buffer": false
+      "nearest_facility_name": "industrial area unit",
+      "nearest_facility_type": "industrial_complex",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 198840,
+      "facility_coordinates": [
+        21.1863503,
+        72.7178836
+      ]
     },
     "classification": {
       "domain": "OTHER",
@@ -3484,8 +3673,8 @@
       "supporting_evidence": [],
       "counter_evidence": [
         {
-          "factor": "Facility Absence",
-          "description": "No industrial facility detected within 2km (nearest is 200756m away)",
+          "factor": "Industrial Facility Absence",
+          "description": "No industrial facility recorded within 2km (nearest is 198840m away)",
           "weight": -0.2
         }
       ]
@@ -3493,7 +3682,8 @@
     "uncertainty": {
       "level": "HIGH",
       "caveats": [
-        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread.",
+        "FIRMS detects a thermal anomaly; proximity alone does not constitute proof of facility-level attribution."
       ]
     },
     "priority": "LOW",
@@ -3540,11 +3730,14 @@
       "max_frp_mw": 3.19
     },
     "context": {
-      "nearest_facility_name": "ONGC Hazira Gas Processing Plant",
-      "nearest_facility_type": "gas_processing",
-      "operator": "Oil and Natural Gas Corporation",
-      "distance_to_facility_meters": 398928,
-      "inside_facility_buffer": false
+      "nearest_facility_name": "industrial area unit",
+      "nearest_facility_type": "industrial_area",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 397621,
+      "facility_coordinates": [
+        21.1588961,
+        72.6444977
+      ]
     },
     "classification": {
       "domain": "AGRICULTURAL",
@@ -3556,14 +3749,14 @@
       "supporting_evidence": [
         {
           "factor": "Agricultural Plain Context",
-          "description": "Event situated in open agricultural cropland belt outside industrial zones",
+          "description": "Thermal event situated in rural agricultural belt outside mapped industrial infrastructure",
           "weight": 0.35
         }
       ],
       "counter_evidence": [
         {
           "factor": "Facility Absence",
-          "description": "No industrial infrastructure within 399km buffer",
+          "description": "No industrial infrastructure detected within 398km",
           "weight": -0.2
         }
       ]
@@ -3571,7 +3764,7 @@
     "uncertainty": {
       "level": "MODERATE",
       "caveats": [
-        "High smoke opacity can cause nearby false detections on adjacent optical channels."
+        "Smoke plumes can cause adjacent optical channel artifacts."
       ]
     },
     "priority": "LOW",
@@ -3642,11 +3835,14 @@
       "max_frp_mw": 3.18
     },
     "context": {
-      "nearest_facility_name": "ONGC Hazira Gas Processing Plant",
-      "nearest_facility_type": "gas_processing",
-      "operator": "Oil and Natural Gas Corporation",
-      "distance_to_facility_meters": 400329,
-      "inside_facility_buffer": false
+      "nearest_facility_name": "industrial area unit",
+      "nearest_facility_type": "industrial_area",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 399061,
+      "facility_coordinates": [
+        21.1588961,
+        72.6444977
+      ]
     },
     "classification": {
       "domain": "OTHER",
@@ -3658,8 +3854,8 @@
       "supporting_evidence": [],
       "counter_evidence": [
         {
-          "factor": "Facility Absence",
-          "description": "No industrial facility detected within 2km (nearest is 400329m away)",
+          "factor": "Industrial Facility Absence",
+          "description": "No industrial facility recorded within 2km (nearest is 399061m away)",
           "weight": -0.2
         }
       ]
@@ -3667,7 +3863,8 @@
     "uncertainty": {
       "level": "HIGH",
       "caveats": [
-        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread.",
+        "FIRMS detects a thermal anomaly; proximity alone does not constitute proof of facility-level attribution."
       ]
     },
     "priority": "LOW",
@@ -3714,11 +3911,14 @@
       "max_frp_mw": 0.25
     },
     "context": {
-      "nearest_facility_name": "ArcelorMittal Nippon Steel (AM/NS) Hazira",
-      "nearest_facility_type": "steel_mill",
-      "operator": "AM/NS India",
-      "distance_to_facility_meters": 57189,
-      "inside_facility_buffer": false
+      "nearest_facility_name": "industrial area unit",
+      "nearest_facility_type": "industrial_complex",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 52539,
+      "facility_coordinates": [
+        21.186234,
+        72.7357853
+      ]
     },
     "classification": {
       "domain": "OTHER",
@@ -3730,8 +3930,8 @@
       "supporting_evidence": [],
       "counter_evidence": [
         {
-          "factor": "Facility Absence",
-          "description": "No industrial facility detected within 2km (nearest is 57189m away)",
+          "factor": "Industrial Facility Absence",
+          "description": "No industrial facility recorded within 2km (nearest is 52539m away)",
           "weight": -0.2
         }
       ]
@@ -3739,7 +3939,8 @@
     "uncertainty": {
       "level": "HIGH",
       "caveats": [
-        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread.",
+        "FIRMS detects a thermal anomaly; proximity alone does not constitute proof of facility-level attribution."
       ]
     },
     "priority": "LOW",
@@ -3786,46 +3987,49 @@
       "max_frp_mw": 4.38
     },
     "context": {
-      "nearest_facility_name": "Simlipal Tiger Reserve & National Park Core",
-      "nearest_facility_type": "protected_forest",
-      "operator": "Ministry of Environment, Forest and Climate Change",
-      "distance_to_facility_meters": 861,
-      "inside_facility_buffer": true
+      "nearest_facility_name": "Angul Steel Plant",
+      "nearest_facility_type": "steel_mill",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 1031,
+      "facility_coordinates": [
+        20.8753652,
+        84.9872383
+      ]
     },
     "classification": {
-      "domain": "WILDFIRE",
-      "subclass": "FOREST_CANOPY_FIRE",
+      "domain": "INDUSTRIAL",
+      "subclass": "PERSISTENT_OPERATIONAL_SOURCE",
       "confidence_label": "HIGH",
-      "confidence_score": 0.89
+      "confidence_score": 0.91
     },
     "evidence_breakdown": {
       "supporting_evidence": [
         {
-          "factor": "Protected Forest Landcover",
-          "description": "Thermal event located in Simlipal Tiger Reserve & National Park Core",
+          "factor": "Industrial Infrastructure Proximity",
+          "description": "Event centroid is 1031m from real OSM facility: Angul Steel Plant (steel_mill)",
           "weight": 0.35
         },
         {
-          "factor": "Overnight Fire Persistence",
-          "description": "Thermal energy detected during nighttime overpass, indicating sustained heavy fuel combustion",
-          "weight": 0.2
+          "factor": "Stationary Footprint Consistency",
+          "description": "Normalized optical drift ratio is 0.24 (<= 1.0); observed coordinate displacement is within the estimated sensor pixel footprint, consistent with a stationary source",
+          "weight": 0.25
+        },
+        {
+          "factor": "Continuous 24/7 Combustion",
+          "description": "50% of detections occurred during night overpasses, consistent with continuous industrial operations",
+          "weight": 0.15
         }
       ],
-      "counter_evidence": [
-        {
-          "factor": "Zero Industrial Infrastructure",
-          "description": "Located 1km from any recorded industrial facility",
-          "weight": -0.15
-        }
-      ]
+      "counter_evidence": []
     },
     "uncertainty": {
       "level": "MODERATE",
       "caveats": [
-        "Cloud cover and canopy density can partially attenuate thermal radiative power."
+        "FIRMS detects a thermal anomaly; proximity does not constitute proof of facility-level attribution.",
+        "At VIIRS 375m-800m pixel footprint, detection represents high-probability spatial association."
       ]
     },
-    "priority": "HIGH",
+    "priority": "MEDIUM",
     "observation_timeline": [
       {
         "timestamp": "2026-09-04T19:45:00Z",
@@ -3877,11 +4081,14 @@
       "max_frp_mw": 4.49
     },
     "context": {
-      "nearest_facility_name": "Simlipal Tiger Reserve & National Park Core",
-      "nearest_facility_type": "protected_forest",
-      "operator": "Ministry of Environment, Forest and Climate Change",
-      "distance_to_facility_meters": 354481,
-      "inside_facility_buffer": false
+      "nearest_facility_name": "Angul Steel Plant",
+      "nearest_facility_type": "steel_mill",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 354698,
+      "facility_coordinates": [
+        20.8753652,
+        84.9872383
+      ]
     },
     "classification": {
       "domain": "WILDFIRE",
@@ -3892,33 +4099,33 @@
     "evidence_breakdown": {
       "supporting_evidence": [
         {
-          "factor": "Protected Forest Landcover",
-          "description": "Thermal event located in Simlipal Tiger Reserve & National Park Core",
+          "factor": "Forest Reserve Biome Context",
+          "description": "Thermal event situated in forested mountain corridor (Angul Steel Plant)",
           "weight": 0.35
         },
         {
-          "factor": "Expanding Fire Front",
-          "description": "Spatial drift of 553.6m exceeds stationary footprint; indicates active perimeter spread along terrain",
+          "factor": "Propagating Fire Perimeter",
+          "description": "Spatial drift of 553.6m exceeds stationary footprint; indicates spreading fire front along terrain",
           "weight": 0.3
         },
         {
           "factor": "Overnight Fire Persistence",
-          "description": "Thermal energy detected during nighttime overpass, indicating sustained heavy fuel combustion",
+          "description": "Thermal activity recorded during nighttime passes, indicating sustained heavy fuel combustion",
           "weight": 0.2
         }
       ],
       "counter_evidence": [
         {
           "factor": "Zero Industrial Infrastructure",
-          "description": "Located 354km from any recorded industrial facility",
-          "weight": -0.15
+          "description": "Nearest industrial facility is 355km away",
+          "weight": -0.2
         }
       ]
     },
     "uncertainty": {
       "level": "MODERATE",
       "caveats": [
-        "Cloud cover and canopy density can partially attenuate thermal radiative power."
+        "Dense canopy and cloud cover can attenuate thermal radiation."
       ]
     },
     "priority": "HIGH",
@@ -4101,11 +4308,14 @@
       "max_frp_mw": 4.83
     },
     "context": {
-      "nearest_facility_name": "Simlipal Tiger Reserve & National Park Core",
-      "nearest_facility_type": "protected_forest",
-      "operator": "Ministry of Environment, Forest and Climate Change",
-      "distance_to_facility_meters": 354591,
-      "inside_facility_buffer": false
+      "nearest_facility_name": "Angul Steel Plant",
+      "nearest_facility_type": "steel_mill",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 354813,
+      "facility_coordinates": [
+        20.8753652,
+        84.9872383
+      ]
     },
     "classification": {
       "domain": "WILDFIRE",
@@ -4116,28 +4326,28 @@
     "evidence_breakdown": {
       "supporting_evidence": [
         {
-          "factor": "Protected Forest Landcover",
-          "description": "Thermal event located in Simlipal Tiger Reserve & National Park Core",
+          "factor": "Forest Reserve Biome Context",
+          "description": "Thermal event situated in forested mountain corridor (Angul Steel Plant)",
           "weight": 0.35
         },
         {
           "factor": "Overnight Fire Persistence",
-          "description": "Thermal energy detected during nighttime overpass, indicating sustained heavy fuel combustion",
+          "description": "Thermal activity recorded during nighttime passes, indicating sustained heavy fuel combustion",
           "weight": 0.2
         }
       ],
       "counter_evidence": [
         {
           "factor": "Zero Industrial Infrastructure",
-          "description": "Located 355km from any recorded industrial facility",
-          "weight": -0.15
+          "description": "Nearest industrial facility is 355km away",
+          "weight": -0.2
         }
       ]
     },
     "uncertainty": {
       "level": "MODERATE",
       "caveats": [
-        "Cloud cover and canopy density can partially attenuate thermal radiative power."
+        "Dense canopy and cloud cover can attenuate thermal radiation."
       ]
     },
     "priority": "HIGH",
@@ -4164,6 +4374,14 @@
         "frp_mw": 4.83,
         "brightness_ti4_k": 333.96,
         "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T19:51:00Z",
+        "satellite": "N21",
+        "frp_mw": 2.64,
+        "brightness_ti4_k": 318.95,
+        "daynight": "N",
         "confidence": "nominal"
       }
     ]
@@ -4200,11 +4418,14 @@
       "max_frp_mw": 2.19
     },
     "context": {
-      "nearest_facility_name": "ArcelorMittal Nippon Steel (AM/NS) Hazira",
-      "nearest_facility_type": "steel_mill",
-      "operator": "AM/NS India",
-      "distance_to_facility_meters": 43275,
-      "inside_facility_buffer": false
+      "nearest_facility_name": "industrial area unit",
+      "nearest_facility_type": "industrial_complex",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 37035,
+      "facility_coordinates": [
+        21.186234,
+        72.7357853
+      ]
     },
     "classification": {
       "domain": "AGRICULTURAL",
@@ -4216,14 +4437,14 @@
       "supporting_evidence": [
         {
           "factor": "Agricultural Plain Context",
-          "description": "Event situated in open agricultural cropland belt outside industrial zones",
+          "description": "Thermal event situated in rural agricultural belt outside mapped industrial infrastructure",
           "weight": 0.35
         }
       ],
       "counter_evidence": [
         {
           "factor": "Facility Absence",
-          "description": "No industrial infrastructure within 43km buffer",
+          "description": "No industrial infrastructure detected within 37km",
           "weight": -0.2
         }
       ]
@@ -4231,7 +4452,7 @@
     "uncertainty": {
       "level": "MODERATE",
       "caveats": [
-        "High smoke opacity can cause nearby false detections on adjacent optical channels."
+        "Smoke plumes can cause adjacent optical channel artifacts."
       ]
     },
     "priority": "LOW",
@@ -4286,11 +4507,14 @@
       "max_frp_mw": 1
     },
     "context": {
-      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
-      "nearest_facility_type": "oil_refinery",
-      "operator": "Indian Oil Corporation Limited",
-      "distance_to_facility_meters": 198456,
-      "inside_facility_buffer": false
+      "nearest_facility_name": "refinery unit",
+      "nearest_facility_type": "refinery",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 194472,
+      "facility_coordinates": [
+        29.5106526,
+        76.8651289
+      ]
     },
     "classification": {
       "domain": "AGRICULTURAL",
@@ -4302,19 +4526,19 @@
       "supporting_evidence": [
         {
           "factor": "Agricultural Plain Context",
-          "description": "Event situated in open agricultural cropland belt outside industrial zones",
+          "description": "Thermal event situated in rural agricultural belt outside mapped industrial infrastructure",
           "weight": 0.35
         },
         {
-          "factor": "Short Lived Ephemeral Burn",
-          "description": "Total duration limited to 23.7h; dissipates rapidly once crop residue clears",
+          "factor": "Short-Lived Ephemeral Burn",
+          "description": "Duration limited to 23.7h; dissipates rapidly once residue is cleared",
           "weight": 0.2
         }
       ],
       "counter_evidence": [
         {
           "factor": "Facility Absence",
-          "description": "No industrial infrastructure within 198km buffer",
+          "description": "No industrial infrastructure detected within 194km",
           "weight": -0.2
         }
       ]
@@ -4322,7 +4546,7 @@
     "uncertainty": {
       "level": "MODERATE",
       "caveats": [
-        "High smoke opacity can cause nearby false detections on adjacent optical channels."
+        "Smoke plumes can cause adjacent optical channel artifacts."
       ]
     },
     "priority": "LOW",
@@ -4385,11 +4609,14 @@
       "max_frp_mw": 3.97
     },
     "context": {
-      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
-      "nearest_facility_type": "oil_refinery",
-      "operator": "Indian Oil Corporation Limited",
-      "distance_to_facility_meters": 305242,
-      "inside_facility_buffer": false
+      "nearest_facility_name": "refinery unit",
+      "nearest_facility_type": "refinery",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 302975,
+      "facility_coordinates": [
+        29.5106526,
+        76.8651289
+      ]
     },
     "classification": {
       "domain": "OTHER",
@@ -4401,8 +4628,8 @@
       "supporting_evidence": [],
       "counter_evidence": [
         {
-          "factor": "Facility Absence",
-          "description": "No industrial facility detected within 2km (nearest is 305242m away)",
+          "factor": "Industrial Facility Absence",
+          "description": "No industrial facility recorded within 2km (nearest is 302975m away)",
           "weight": -0.2
         }
       ]
@@ -4410,7 +4637,8 @@
     "uncertainty": {
       "level": "HIGH",
       "caveats": [
-        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread.",
+        "FIRMS detects a thermal anomaly; proximity alone does not constitute proof of facility-level attribution."
       ]
     },
     "priority": "LOW",
@@ -4457,11 +4685,14 @@
       "max_frp_mw": 5.93
     },
     "context": {
-      "nearest_facility_name": "ArcelorMittal Nippon Steel (AM/NS) Hazira",
-      "nearest_facility_type": "steel_mill",
-      "operator": "AM/NS India",
-      "distance_to_facility_meters": 376839,
-      "inside_facility_buffer": false
+      "nearest_facility_name": "industrial area unit",
+      "nearest_facility_type": "industrial_area",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 374735,
+      "facility_coordinates": [
+        21.1588961,
+        72.6444977
+      ]
     },
     "classification": {
       "domain": "OTHER",
@@ -4473,8 +4704,8 @@
       "supporting_evidence": [],
       "counter_evidence": [
         {
-          "factor": "Facility Absence",
-          "description": "No industrial facility detected within 2km (nearest is 376839m away)",
+          "factor": "Industrial Facility Absence",
+          "description": "No industrial facility recorded within 2km (nearest is 374735m away)",
           "weight": -0.2
         }
       ]
@@ -4482,7 +4713,8 @@
     "uncertainty": {
       "level": "HIGH",
       "caveats": [
-        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread.",
+        "FIRMS detects a thermal anomaly; proximity alone does not constitute proof of facility-level attribution."
       ]
     },
     "priority": "LOW",
@@ -4529,11 +4761,14 @@
       "max_frp_mw": 5.59
     },
     "context": {
-      "nearest_facility_name": "Reliance Hazira Manufacturing Complex",
-      "nearest_facility_type": "petrochemical_complex",
-      "operator": "Reliance Industries Limited",
-      "distance_to_facility_meters": 931,
-      "inside_facility_buffer": true
+      "nearest_facility_name": "Hazira Power Plant",
+      "nearest_facility_type": "power_plant",
+      "operator": "Essar Energy",
+      "geodesic_distance_meters": 980,
+      "facility_coordinates": [
+        21.1100577,
+        72.6558735
+      ]
     },
     "classification": {
       "domain": "INDUSTRIAL",
@@ -4544,8 +4779,8 @@
     "evidence_breakdown": {
       "supporting_evidence": [
         {
-          "factor": "Facility Perimeter Proximity",
-          "description": "Detected within 931m of Reliance Hazira Manufacturing Complex (Reliance Industries Limited)",
+          "factor": "Industrial Facility Proximity",
+          "description": "Located 980m from real OSM facility: Hazira Power Plant (power_plant)",
           "weight": 0.3
         }
       ],
@@ -4554,7 +4789,8 @@
     "uncertainty": {
       "level": "HIGH",
       "caveats": [
-        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread.",
+        "FIRMS detects a thermal anomaly; proximity alone does not constitute proof of facility-level attribution."
       ]
     },
     "priority": "MEDIUM",
@@ -4601,11 +4837,14 @@
       "max_frp_mw": 7.52
     },
     "context": {
-      "nearest_facility_name": "ArcelorMittal Nippon Steel (AM/NS) Hazira",
-      "nearest_facility_type": "steel_mill",
-      "operator": "AM/NS India",
-      "distance_to_facility_meters": 310721,
-      "inside_facility_buffer": false
+      "nearest_facility_name": "industrial area unit",
+      "nearest_facility_type": "industrial_area",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 308612,
+      "facility_coordinates": [
+        21.1588961,
+        72.6444977
+      ]
     },
     "classification": {
       "domain": "AGRICULTURAL",
@@ -4617,24 +4856,24 @@
       "supporting_evidence": [
         {
           "factor": "Agricultural Plain Context",
-          "description": "Event situated in open agricultural cropland belt outside industrial zones",
+          "description": "Thermal event situated in rural agricultural belt outside mapped industrial infrastructure",
           "weight": 0.35
         },
         {
-          "factor": "Diurnal Harvest Restriction",
-          "description": "100% of detections occurred during daylight overpasses, characteristic of field clearing practices",
+          "factor": "Diurnal Daylight Restriction",
+          "description": "100% of observations occurred during daylight overpasses, characteristic of crop residue clearing",
           "weight": 0.25
         },
         {
-          "factor": "Short Lived Ephemeral Burn",
-          "description": "Total duration limited to 0.8h; dissipates rapidly once crop residue clears",
+          "factor": "Short-Lived Ephemeral Burn",
+          "description": "Duration limited to 0.8h; dissipates rapidly once residue is cleared",
           "weight": 0.2
         }
       ],
       "counter_evidence": [
         {
           "factor": "Facility Absence",
-          "description": "No industrial infrastructure within 311km buffer",
+          "description": "No industrial infrastructure detected within 309km",
           "weight": -0.2
         }
       ]
@@ -4642,7 +4881,7 @@
     "uncertainty": {
       "level": "MODERATE",
       "caveats": [
-        "High smoke opacity can cause nearby false detections on adjacent optical channels."
+        "Smoke plumes can cause adjacent optical channel artifacts."
       ]
     },
     "priority": "LOW",
@@ -4697,11 +4936,14 @@
       "max_frp_mw": 4.08
     },
     "context": {
-      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
-      "nearest_facility_type": "oil_refinery",
-      "operator": "Indian Oil Corporation Limited",
-      "distance_to_facility_meters": 283936,
-      "inside_facility_buffer": false
+      "nearest_facility_name": "refinery unit",
+      "nearest_facility_type": "refinery",
+      "operator": "Unknown",
+      "geodesic_distance_meters": 281877,
+      "facility_coordinates": [
+        29.5106526,
+        76.8651289
+      ]
     },
     "classification": {
       "domain": "OTHER",
@@ -4713,8 +4955,8 @@
       "supporting_evidence": [],
       "counter_evidence": [
         {
-          "factor": "Facility Absence",
-          "description": "No industrial facility detected within 2km (nearest is 283936m away)",
+          "factor": "Industrial Facility Absence",
+          "description": "No industrial facility recorded within 2km (nearest is 281877m away)",
           "weight": -0.2
         }
       ]
@@ -4722,7 +4964,8 @@
     "uncertainty": {
       "level": "HIGH",
       "caveats": [
-        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread.",
+        "FIRMS detects a thermal anomaly; proximity alone does not constitute proof of facility-level attribution."
       ]
     },
     "priority": "LOW",

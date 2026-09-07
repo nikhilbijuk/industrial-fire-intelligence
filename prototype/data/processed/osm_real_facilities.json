@@ -1,0 +1,1248 @@
+[
+  {
+    "facility_id": "OSM-WAY-104647201",
+    "name": "industrial area unit",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.1583023,
+    "longitude": 72.6676834,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-104647203",
+    "name": "ArcelorMittal Nippon Steel India",
+    "facility_type": "steel_mill",
+    "operator": "ArcelorMittal Nippon Steel India",
+    "region": "gujarat_industrial",
+    "latitude": 21.1098624,
+    "longitude": 72.6437334,
+    "tags": [
+      "addr:city",
+      "landuse",
+      "man_made",
+      "operator",
+      "website"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-104647204",
+    "name": "industrial area unit",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.1655699,
+    "longitude": 72.7053226,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-104647206",
+    "name": "OIl & Natural Gas Corporation",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.1598137,
+    "longitude": 72.7317118,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-104647207",
+    "name": "L&T",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.160087,
+    "longitude": 72.6559164,
+    "tags": [
+      "landuse",
+      "man_made"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-121765355",
+    "name": "Shell Energy India Private Limited",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.0972812,
+    "longitude": 72.6214717,
+    "tags": [
+      "industrial",
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-146235176",
+    "name": "Kawas Thermal Power Station",
+    "facility_type": "power_plant",
+    "operator": "NTPC",
+    "region": "gujarat_industrial",
+    "latitude": 21.1705989,
+    "longitude": 72.6867824,
+    "tags": [
+      "landuse",
+      "operator",
+      "plant:method",
+      "plant:output:electricity",
+      "plant:source",
+      "plant:type",
+      "power",
+      "wikidata"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-554553685",
+    "name": "industrial area unit",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.11882,
+    "longitude": 72.7072563,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-623399637",
+    "name": "industrial area unit",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.1710233,
+    "longitude": 72.7384249,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-623399638",
+    "name": "industrial area unit",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.1678488,
+    "longitude": 72.7389173,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-623400488",
+    "name": "industrial area unit",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.1613984,
+    "longitude": 72.7401555,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-623400489",
+    "name": "industrial area unit",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.15705,
+    "longitude": 72.7419998,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-637909310",
+    "name": "industrial area unit",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.0877296,
+    "longitude": 72.6416284,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-661885043",
+    "name": "Hazira Reliance Power Plant",
+    "facility_type": "power_plant",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.1592426,
+    "longitude": 72.6874604,
+    "tags": [
+      "landuse",
+      "power",
+      "wikipedia"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-661885044",
+    "name": "GSEG Combined Cycle Power plant",
+    "facility_type": "power_plant",
+    "operator": "Gujarat State Energy Generation",
+    "region": "gujarat_industrial",
+    "latitude": 21.165881,
+    "longitude": 72.661985,
+    "tags": [
+      "landuse",
+      "operator",
+      "plant:method",
+      "plant:output:electricity",
+      "plant:source",
+      "plant:type",
+      "power",
+      "wikidata"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-661885045",
+    "name": "industrial area unit",
+    "facility_type": "industrial_area",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.1686624,
+    "longitude": 72.6504367,
+    "tags": [
+      "man_made"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-661885046",
+    "name": "industrial area unit",
+    "facility_type": "industrial_area",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.1596682,
+    "longitude": 72.6527313,
+    "tags": [
+      "man_made"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-661885047",
+    "name": "Reliance",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.1689145,
+    "longitude": 72.6738225,
+    "tags": [
+      "landuse",
+      "man_made"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-755704111",
+    "name": "industrial area unit",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.1863503,
+    "longitude": 72.7178836,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-755704112",
+    "name": "industrial area unit",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.1782318,
+    "longitude": 72.722168,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-755704113",
+    "name": "industrial area unit",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.186234,
+    "longitude": 72.7357853,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-755704114",
+    "name": "industrial area unit",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.1831754,
+    "longitude": 72.7208808,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-799237878",
+    "name": "industrial area unit",
+    "facility_type": "power_plant",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.1659431,
+    "longitude": 72.6787866,
+    "tags": [
+      "power"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-799237879",
+    "name": "industrial area unit",
+    "facility_type": "industrial_area",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.1492365,
+    "longitude": 72.6489582,
+    "tags": [
+      "man_made"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-799237881",
+    "name": "industrial area unit",
+    "facility_type": "industrial_area",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.1603238,
+    "longitude": 72.650434,
+    "tags": [
+      "man_made"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-799237882",
+    "name": "industrial area unit",
+    "facility_type": "industrial_area",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.1636002,
+    "longitude": 72.6512105,
+    "tags": [
+      "man_made"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-799237883",
+    "name": "industrial area unit",
+    "facility_type": "industrial_area",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.1531483,
+    "longitude": 72.6590243,
+    "tags": [
+      "man_made"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-799237884",
+    "name": "industrial area unit",
+    "facility_type": "industrial_area",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.1591127,
+    "longitude": 72.6589256,
+    "tags": [
+      "man_made"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-799237885",
+    "name": "industrial area unit",
+    "facility_type": "industrial_area",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.1588961,
+    "longitude": 72.6444977,
+    "tags": [
+      "man_made"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-799237886",
+    "name": "industrial area unit",
+    "facility_type": "industrial_area",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.1613586,
+    "longitude": 72.6488868,
+    "tags": [
+      "man_made"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-799237888",
+    "name": "industrial area unit",
+    "facility_type": "industrial_area",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.1645879,
+    "longitude": 72.6589769,
+    "tags": [
+      "man_made"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-799237889",
+    "name": "industrial area unit",
+    "facility_type": "industrial_area",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.1487919,
+    "longitude": 72.6567717,
+    "tags": [
+      "man_made"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-823272713",
+    "name": "Hazira Power Plant",
+    "facility_type": "power_plant",
+    "operator": "Essar Energy",
+    "region": "gujarat_industrial",
+    "latitude": 21.1100577,
+    "longitude": 72.6558735,
+    "tags": [
+      "landuse",
+      "operator",
+      "plant:method",
+      "plant:output:electricity",
+      "plant:source",
+      "plant:type",
+      "power",
+      "wikidata"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-916863896",
+    "name": "Hazira II (Essar) Power Plant",
+    "facility_type": "power_plant",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.1195066,
+    "longitude": 72.6401427,
+    "tags": [
+      "landuse",
+      "plant:method",
+      "plant:output:electricity",
+      "plant:source",
+      "power"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-1002418492",
+    "name": "industrial area unit",
+    "facility_type": "power_plant",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.1670046,
+    "longitude": 72.7194522,
+    "tags": [
+      "description",
+      "landuse",
+      "plant:method",
+      "plant:output:electricity",
+      "plant:source",
+      "plant:type",
+      "power"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-1145455077",
+    "name": "KRIBHCO Hazira Power Station",
+    "facility_type": "power_plant",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.1663207,
+    "longitude": 72.7050975,
+    "tags": [
+      "landuse",
+      "operator:wikipedia",
+      "power"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-1157017752",
+    "name": "Bhander Power Plant",
+    "facility_type": "power_plant",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.1146167,
+    "longitude": 72.6561244,
+    "tags": [
+      "landuse",
+      "plant:method",
+      "plant:output:electricity",
+      "plant:source",
+      "power"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-1187716203",
+    "name": "industrial area unit",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.0764782,
+    "longitude": 72.6416311,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-1261842169",
+    "name": "Kawas solar farm",
+    "facility_type": "power_plant",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.168996,
+    "longitude": 72.6843657,
+    "tags": [
+      "description",
+      "landuse",
+      "plant:method",
+      "plant:output:electricity",
+      "plant:source",
+      "plant:type",
+      "power"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-1499319632",
+    "name": "industrial area unit",
+    "facility_type": "power_plant",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.1655645,
+    "longitude": 72.6889663,
+    "tags": [
+      "floating",
+      "plant:method",
+      "plant:output:electricity",
+      "plant:source",
+      "power"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-1499738586",
+    "name": "industrial area unit",
+    "facility_type": "power_plant",
+    "operator": "Unknown",
+    "region": "gujarat_industrial",
+    "latitude": 21.1725609,
+    "longitude": 72.6886284,
+    "tags": [
+      "floating",
+      "plant:method",
+      "plant:output:electricity",
+      "plant:source",
+      "power"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-258977345",
+    "name": "Industrial Area",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "punjab_agriculture",
+    "latitude": 29.4023047,
+    "longitude": 76.9512635,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-259231233",
+    "name": "Industrial area",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "punjab_agriculture",
+    "latitude": 29.4012322,
+    "longitude": 76.9468087,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-259231235",
+    "name": "refinery unit",
+    "facility_type": "refinery",
+    "operator": "Unknown",
+    "region": "punjab_agriculture",
+    "latitude": 29.402555,
+    "longitude": 76.9475706,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-259587456",
+    "name": "Panipat Thermal Power Station",
+    "facility_type": "power_plant",
+    "operator": "Haryana Power Generation Corporation Limited",
+    "region": "punjab_agriculture",
+    "latitude": 29.3968857,
+    "longitude": 76.8798411,
+    "tags": [
+      "barrier",
+      "landuse",
+      "operator",
+      "plant:method",
+      "plant:output:electricity",
+      "plant:source",
+      "power",
+      "ref",
+      "start_date",
+      "wikidata"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-259618943",
+    "name": "Panipat Refinery",
+    "facility_type": "refinery",
+    "operator": "Unknown",
+    "region": "punjab_agriculture",
+    "latitude": 29.4524818,
+    "longitude": 76.8688877,
+    "tags": [
+      "industrial",
+      "landuse",
+      "wikidata"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-259635547",
+    "name": "refinery unit",
+    "facility_type": "refinery",
+    "operator": "Unknown",
+    "region": "punjab_agriculture",
+    "latitude": 29.4399847,
+    "longitude": 76.877023,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-259635548",
+    "name": "refinery unit",
+    "facility_type": "refinery",
+    "operator": "Unknown",
+    "region": "punjab_agriculture",
+    "latitude": 29.466769,
+    "longitude": 76.8613481,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-259651714",
+    "name": "refinery unit",
+    "facility_type": "refinery",
+    "operator": "Unknown",
+    "region": "punjab_agriculture",
+    "latitude": 29.4772809,
+    "longitude": 76.8851528,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-259651720",
+    "name": "refinery unit",
+    "facility_type": "refinery",
+    "operator": "Unknown",
+    "region": "punjab_agriculture",
+    "latitude": 29.4733669,
+    "longitude": 76.8854831,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-259651725",
+    "name": "Panipat Refinery",
+    "facility_type": "refinery",
+    "operator": "Unknown",
+    "region": "punjab_agriculture",
+    "latitude": 29.4749155,
+    "longitude": 76.8908588,
+    "tags": [
+      "industrial",
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-259660137",
+    "name": "refinery unit",
+    "facility_type": "refinery",
+    "operator": "Unknown",
+    "region": "punjab_agriculture",
+    "latitude": 29.4635733,
+    "longitude": 76.8956161,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-259662844",
+    "name": "Panipat Refinery",
+    "facility_type": "refinery",
+    "operator": "Unknown",
+    "region": "punjab_agriculture",
+    "latitude": 29.4706236,
+    "longitude": 76.878157,
+    "tags": [
+      "industrial",
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-259754620",
+    "name": "refinery unit",
+    "facility_type": "refinery",
+    "operator": "Unknown",
+    "region": "punjab_agriculture",
+    "latitude": 29.4862635,
+    "longitude": 76.8892104,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-259754621",
+    "name": "refinery unit",
+    "facility_type": "refinery",
+    "operator": "Unknown",
+    "region": "punjab_agriculture",
+    "latitude": 29.4833039,
+    "longitude": 76.8899146,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-259759814",
+    "name": "Indian Oil Karnal Bottling Plant",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "punjab_agriculture",
+    "latitude": 29.4949095,
+    "longitude": 76.9305657,
+    "tags": [
+      "landuse",
+      "layer"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-919855534",
+    "name": "refinery unit",
+    "facility_type": "refinery",
+    "operator": "Unknown",
+    "region": "punjab_agriculture",
+    "latitude": 29.4214795,
+    "longitude": 76.9339182,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-926407390",
+    "name": "Panipat Naphtha Cracker Power Plant",
+    "facility_type": "power_plant",
+    "operator": "Unknown",
+    "region": "punjab_agriculture",
+    "latitude": 29.4557652,
+    "longitude": 76.8597266,
+    "tags": [
+      "landuse",
+      "plant:method",
+      "plant:output:electricity",
+      "plant:source",
+      "power",
+      "wikipedia"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-969637161",
+    "name": "IOCL Panipat Captive Power Plant",
+    "facility_type": "power_plant",
+    "operator": "Unknown",
+    "region": "punjab_agriculture",
+    "latitude": 29.4675506,
+    "longitude": 76.8755935,
+    "tags": [
+      "landuse",
+      "power",
+      "wikipedia"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-989819096",
+    "name": "refinery unit",
+    "facility_type": "refinery",
+    "operator": "Unknown",
+    "region": "punjab_agriculture",
+    "latitude": 29.5106526,
+    "longitude": 76.8651289,
+    "tags": [
+      "power"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-989819100",
+    "name": "refinery unit",
+    "facility_type": "refinery",
+    "operator": "Unknown",
+    "region": "punjab_agriculture",
+    "latitude": 29.4177811,
+    "longitude": 76.8554137,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-989819103",
+    "name": "refinery unit",
+    "facility_type": "refinery",
+    "operator": "Unknown",
+    "region": "punjab_agriculture",
+    "latitude": 29.4116923,
+    "longitude": 76.8421962,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-989819104",
+    "name": "refinery unit",
+    "facility_type": "refinery",
+    "operator": "Unknown",
+    "region": "punjab_agriculture",
+    "latitude": 29.4128482,
+    "longitude": 76.8512154,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-989819105",
+    "name": "refinery unit",
+    "facility_type": "refinery",
+    "operator": "Unknown",
+    "region": "punjab_agriculture",
+    "latitude": 29.4129488,
+    "longitude": 76.8524136,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-989819106",
+    "name": "refinery unit",
+    "facility_type": "refinery",
+    "operator": "Unknown",
+    "region": "punjab_agriculture",
+    "latitude": 29.4164325,
+    "longitude": 76.8584955,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-989819107",
+    "name": "refinery unit",
+    "facility_type": "refinery",
+    "operator": "Unknown",
+    "region": "punjab_agriculture",
+    "latitude": 29.4173892,
+    "longitude": 76.8675966,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-989819108",
+    "name": "refinery unit",
+    "facility_type": "refinery",
+    "operator": "Unknown",
+    "region": "punjab_agriculture",
+    "latitude": 29.4173319,
+    "longitude": 76.8654095,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-989819109",
+    "name": "refinery unit",
+    "facility_type": "refinery",
+    "operator": "Unknown",
+    "region": "punjab_agriculture",
+    "latitude": 29.4172852,
+    "longitude": 76.8664718,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-989819111",
+    "name": "refinery unit",
+    "facility_type": "refinery",
+    "operator": "Unknown",
+    "region": "punjab_agriculture",
+    "latitude": 29.4496099,
+    "longitude": 76.8578365,
+    "tags": [
+      "man_made"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-1540728798",
+    "name": "refinery unit",
+    "facility_type": "refinery",
+    "operator": "Unknown",
+    "region": "punjab_agriculture",
+    "latitude": 29.4944732,
+    "longitude": 76.9264144,
+    "tags": [
+      "plant:source",
+      "power"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-1540728799",
+    "name": "refinery unit",
+    "facility_type": "refinery",
+    "operator": "Unknown",
+    "region": "punjab_agriculture",
+    "latitude": 29.4952846,
+    "longitude": 76.92635,
+    "tags": [
+      "plant:source",
+      "power"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-90989955",
+    "name": "protected forest unit",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "eastern_ghats_forest",
+    "latitude": 20.9173843,
+    "longitude": 85.1626471,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-90989995",
+    "name": "NALCO",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "eastern_ghats_forest",
+    "latitude": 20.8286502,
+    "longitude": 85.1578666,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-90989998",
+    "name": "Angul Smelter power station",
+    "facility_type": "power_plant",
+    "operator": "National Aluminum Co Ltd",
+    "region": "eastern_ghats_forest",
+    "latitude": 20.8531792,
+    "longitude": 85.1937858,
+    "tags": [
+      "landuse",
+      "operator",
+      "plant:method",
+      "plant:output:electricity",
+      "plant:source",
+      "power",
+      "ref",
+      "start_date"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-230335221",
+    "name": "Angul Monnet Power Company Limited",
+    "facility_type": "power_plant",
+    "operator": "Unknown",
+    "region": "eastern_ghats_forest",
+    "latitude": 20.9250541,
+    "longitude": 84.989668,
+    "tags": [
+      "construction:power",
+      "landuse",
+      "plant:method",
+      "plant:output:electricity",
+      "plant:source",
+      "wikidata",
+      "wikipedia"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-660307102",
+    "name": "protected forest unit",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "eastern_ghats_forest",
+    "latitude": 20.8965253,
+    "longitude": 84.9791898,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-660307106",
+    "name": "Angul Steel Plant",
+    "facility_type": "steel_mill",
+    "operator": "Unknown",
+    "region": "eastern_ghats_forest",
+    "latitude": 20.8753652,
+    "longitude": 84.9872383,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-910915087",
+    "name": "protected forest unit",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "eastern_ghats_forest",
+    "latitude": 20.8592257,
+    "longitude": 85.1877511,
+    "tags": [
+      "building",
+      "industrial"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-910915088",
+    "name": "protected forest unit",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "eastern_ghats_forest",
+    "latitude": 20.8585307,
+    "longitude": 85.1884625,
+    "tags": [
+      "building",
+      "industrial"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-910915089",
+    "name": "protected forest unit",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "eastern_ghats_forest",
+    "latitude": 20.859224,
+    "longitude": 85.1892249,
+    "tags": [
+      "building",
+      "industrial"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-910915090",
+    "name": "protected forest unit",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "eastern_ghats_forest",
+    "latitude": 20.8585221,
+    "longitude": 85.1899944,
+    "tags": [
+      "building",
+      "industrial"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-910915091",
+    "name": "protected forest unit",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "eastern_ghats_forest",
+    "latitude": 20.848163,
+    "longitude": 85.1873899,
+    "tags": [
+      "building",
+      "industrial"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-910915092",
+    "name": "protected forest unit",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "eastern_ghats_forest",
+    "latitude": 20.8482274,
+    "longitude": 85.1900885,
+    "tags": [
+      "building",
+      "industrial"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-910915093",
+    "name": "protected forest unit",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "eastern_ghats_forest",
+    "latitude": 20.8471055,
+    "longitude": 85.1879118,
+    "tags": [
+      "building",
+      "industrial"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-910915094",
+    "name": "protected forest unit",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "eastern_ghats_forest",
+    "latitude": 20.8471077,
+    "longitude": 85.1904302,
+    "tags": [
+      "building",
+      "industrial"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-910915095",
+    "name": "protected forest unit",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "eastern_ghats_forest",
+    "latitude": 20.8465512,
+    "longitude": 85.1893468,
+    "tags": [
+      "building",
+      "industrial"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-910915096",
+    "name": "protected forest unit",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "eastern_ghats_forest",
+    "latitude": 20.8460952,
+    "longitude": 85.188339,
+    "tags": [
+      "building",
+      "industrial"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-913621159",
+    "name": "protected forest unit",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "eastern_ghats_forest",
+    "latitude": 20.8890769,
+    "longitude": 84.9840344,
+    "tags": [
+      "building",
+      "industrial"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-913621160",
+    "name": "protected forest unit",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "eastern_ghats_forest",
+    "latitude": 20.896771,
+    "longitude": 84.9833182,
+    "tags": [
+      "building",
+      "industrial"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-928075503",
+    "name": "protected forest unit",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "eastern_ghats_forest",
+    "latitude": 20.9135069,
+    "longitude": 85.1059556,
+    "tags": [
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-986314149",
+    "name": "Nandira",
+    "facility_type": "industrial_complex",
+    "operator": "MCL",
+    "region": "eastern_ghats_forest",
+    "latitude": 20.9274545,
+    "longitude": 85.1244897,
+    "tags": [
+      "description",
+      "industrial",
+      "landuse",
+      "operator",
+      "resource"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-1012595669",
+    "name": "Angul Steel Power Plant",
+    "facility_type": "power_plant",
+    "operator": "Unknown",
+    "region": "eastern_ghats_forest",
+    "latitude": 20.8921661,
+    "longitude": 84.9923335,
+    "tags": [
+      "landuse",
+      "plant:method",
+      "plant:output:electricity",
+      "plant:source",
+      "power"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-1021846869",
+    "name": "protected forest unit",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "eastern_ghats_forest",
+    "latitude": 20.9405288,
+    "longitude": 85.1520038,
+    "tags": [
+      "industrial",
+      "landuse"
+    ]
+  },
+  {
+    "facility_id": "OSM-WAY-1021846871",
+    "name": "protected forest unit",
+    "facility_type": "industrial_complex",
+    "operator": "Unknown",
+    "region": "eastern_ghats_forest",
+    "latitude": 20.9263896,
+    "longitude": 85.1669437,
+    "tags": [
+      "industrial",
+      "landuse"
+    ]
+  }
+]

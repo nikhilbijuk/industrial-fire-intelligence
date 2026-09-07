@@ -1,6 +1,6 @@
 /**
  * Industrial Fire Intelligence - Web Dashboard Controller
- * Connects pre-processed V2 Thermal Events and OSM Facilities with the Leaflet map
+ * Connects pre-processed V2 Thermal Events and Real OSM Facilities with Leaflet map
  * and populates the Explainable Evidence Inspector Drawer.
  * 100% Client-side, zero live external API calls.
  */
@@ -17,12 +17,11 @@ document.addEventListener('DOMContentLoaded', async () => {
   await loadDatasets();
   setupDemoButtons();
   
-  // Default to Showcase 1: Hazira
+  // Default to Showcase 1: Hazira Industrial Flare
   triggerShowcase('EVT-V2-0007', [21.1055, 72.6465], 14);
 });
 
 function initMap() {
-  // Center on India
   map = L.map('map', {
     zoomControl: false,
     attributionControl: false
@@ -41,7 +40,7 @@ async function loadDatasets() {
   try {
     const [eventsRes, facRes] = await Promise.all([
       fetch('../prototype/data/processed/final_event_intelligence.json'),
-      fetch('../prototype/data/processed/osm_demo_facilities.json')
+      fetch('../prototype/data/processed/osm_real_facilities.json')
     ]);
 
     allEvents = await eventsRes.json();
@@ -56,8 +55,8 @@ async function loadDatasets() {
 
 function renderFacilities(facilities) {
   facilities.forEach(fac => {
-    const circle = L.circle([fac.centroid.latitude, fac.centroid.longitude], {
-      radius: fac.radius_meters,
+    const circle = L.circle([fac.latitude, fac.longitude], {
+      radius: 600,
       color: '#00e5ff',
       weight: 1.5,
       dashArray: '4, 6',
@@ -65,7 +64,7 @@ function renderFacilities(facilities) {
       fillOpacity: 0.08
     }).addTo(map);
 
-    circle.bindTooltip(`<b>${fac.name}</b><br>${fac.operator}`, {
+    circle.bindTooltip(`<b>${fac.name}</b><br>Type: ${fac.facility_type}`, {
       className: 'custom-facility-tooltip',
       direction: 'top'
     });
@@ -207,7 +206,7 @@ function setupDemoButtons() {
 
   btnForest.addEventListener('click', () => {
     setActiveBtn(btnForest, btns);
-    triggerShowcase('EVT-V2-0016', [20.865, 84.992], 11);
+    triggerShowcase('EVT-V2-0033', [19.1012, 82.1661], 12);
   });
 }
 

@@ -191,8 +191,9 @@ function setupDemoButtons() {
   const btnHazira = document.getElementById('btn-demo-hazira');
   const btnPanipat = document.getElementById('btn-demo-panipat');
   const btnForest = document.getElementById('btn-demo-forest');
+  const btnAnomaly = document.getElementById('btn-demo-anomaly');
 
-  const btns = [btnHazira, btnPanipat, btnForest];
+  const btns = [btnHazira, btnPanipat, btnForest, btnAnomaly];
 
   btnHazira.addEventListener('click', () => {
     setActiveBtn(btnHazira, btns);
@@ -207,6 +208,11 @@ function setupDemoButtons() {
   btnForest.addEventListener('click', () => {
     setActiveBtn(btnForest, btns);
     triggerShowcase('EVT-V2-0033', [19.1012, 82.1661], 12);
+  });
+
+  btnAnomaly.addEventListener('click', () => {
+    setActiveBtn(btnAnomaly, btns);
+    triggerShowcase('EVT-V2-0004', [29.4611, 76.8892], 14);
   });
 }
 

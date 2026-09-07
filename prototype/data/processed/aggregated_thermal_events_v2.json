@@ -1,0 +1,1615 @@
+[
+  {
+    "event_id": "EVT-V2-0001",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 21.10412,
+        "longitude": 72.63649
+      },
+      "observation_count": 20,
+      "active_days": 7,
+      "duration_hours": 143.8,
+      "first_detected": "2026-08-31T08:33:00.000Z",
+      "last_detected": "2026-09-06T08:18:00.000Z",
+      "day_night": {
+        "day": 7,
+        "night": 13
+      },
+      "night_ratio": 0.65
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 864.9,
+      "raw_mean_drift_meters": 381.9,
+      "normalized_optical_drift_ratio": 1.29,
+      "spatial_consistency": "MODERATE_DISPERSION (Possible multi-stack cluster or local spread)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 0.87,
+      "mean_frp_mw": 6.4,
+      "max_frp_mw": 26.3
+    },
+    "sensor_composition": {
+      "N20": 8,
+      "N21": 12
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveat": "Drift metrics normalized by VIIRS scan/track footprint dimensions."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0002",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 31.41202,
+        "longitude": 74.55347
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-08-31T08:35:00.000Z",
+      "last_detected": "2026-08-31T08:35:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 0
+      },
+      "night_ratio": 0
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 1.49,
+      "mean_frp_mw": 1.49,
+      "max_frp_mw": 1.49
+    },
+    "sensor_composition": {
+      "N20": 1
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveat": "Single observation detection. Cannot evaluate temporal persistence, spatial drift, or operational stability without subsequent passes."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0003",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 30.25077,
+        "longitude": 74.9136
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-08-31T20:57:00.000Z",
+      "last_detected": "2026-08-31T20:57:00.000Z",
+      "day_night": {
+        "day": 0,
+        "night": 1
+      },
+      "night_ratio": 1
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 1.01,
+      "mean_frp_mw": 1.01,
+      "max_frp_mw": 1.01
+    },
+    "sensor_composition": {
+      "N20": 1
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveat": "Single observation detection. Cannot evaluate temporal persistence, spatial drift, or operational stability without subsequent passes."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0004",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 29.46107,
+        "longitude": 76.8892
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-08-31T20:57:00.000Z",
+      "last_detected": "2026-08-31T20:57:00.000Z",
+      "day_night": {
+        "day": 0,
+        "night": 1
+      },
+      "night_ratio": 1
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 3.12,
+      "mean_frp_mw": 3.12,
+      "max_frp_mw": 3.12
+    },
+    "sensor_composition": {
+      "N20": 1
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveat": "Single observation detection. Cannot evaluate temporal persistence, spatial drift, or operational stability without subsequent passes."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0005",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 22.93259,
+        "longitude": 69.69705
+      },
+      "observation_count": 10,
+      "active_days": 6,
+      "duration_hours": 107.6,
+      "first_detected": "2026-08-31T20:59:00.000Z",
+      "last_detected": "2026-09-05T08:37:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 9
+      },
+      "night_ratio": 0.9
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 352.3,
+      "raw_mean_drift_meters": 219,
+      "normalized_optical_drift_ratio": 0.73,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 0.57,
+      "mean_frp_mw": 2.63,
+      "max_frp_mw": 4.7
+    },
+    "sensor_composition": {
+      "N20": 2,
+      "N21": 8
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveat": "Drift metrics normalized by VIIRS scan/track footprint dimensions."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0006",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 22.93338,
+        "longitude": 69.70133
+      },
+      "observation_count": 6,
+      "active_days": 5,
+      "duration_hours": 144.5,
+      "first_detected": "2026-08-31T20:59:00.000Z",
+      "last_detected": "2026-09-06T21:31:00.000Z",
+      "day_night": {
+        "day": 0,
+        "night": 6
+      },
+      "night_ratio": 1
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 310.2,
+      "raw_mean_drift_meters": 226.9,
+      "normalized_optical_drift_ratio": 0.73,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 1.36,
+      "mean_frp_mw": 2.12,
+      "max_frp_mw": 3.11
+    },
+    "sensor_composition": {
+      "N20": 3,
+      "N21": 3
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveat": "Drift metrics normalized by VIIRS scan/track footprint dimensions."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0007",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 21.10554,
+        "longitude": 72.64656
+      },
+      "observation_count": 31,
+      "active_days": 7,
+      "duration_hours": 144.5,
+      "first_detected": "2026-08-31T20:59:00.000Z",
+      "last_detected": "2026-09-06T21:31:00.000Z",
+      "day_night": {
+        "day": 9,
+        "night": 22
+      },
+      "night_ratio": 0.71
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 685.5,
+      "raw_mean_drift_meters": 297.6,
+      "normalized_optical_drift_ratio": 0.85,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 1.48,
+      "mean_frp_mw": 5.94,
+      "max_frp_mw": 26.51
+    },
+    "sensor_composition": {
+      "N20": 12,
+      "N21": 19
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveat": "Drift metrics normalized by VIIRS scan/track footprint dimensions."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0008",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 22.38667,
+        "longitude": 73.11994
+      },
+      "observation_count": 2,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-08-31T21:44:00.000Z",
+      "last_detected": "2026-08-31T21:44:00.000Z",
+      "day_night": {
+        "day": 0,
+        "night": 2
+      },
+      "night_ratio": 1
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 389.7,
+      "raw_mean_drift_meters": 389.7,
+      "normalized_optical_drift_ratio": 0.74,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 2.43,
+      "mean_frp_mw": 3.22,
+      "max_frp_mw": 4.01
+    },
+    "sensor_composition": {
+      "N21": 2
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveat": "Drift metrics normalized by VIIRS scan/track footprint dimensions."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0009",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 31.1216,
+        "longitude": 74.69022
+      },
+      "observation_count": 2,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-01T07:20:00.000Z",
+      "last_detected": "2026-09-01T07:20:00.000Z",
+      "day_night": {
+        "day": 2,
+        "night": 0
+      },
+      "night_ratio": 0
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 26.7,
+      "raw_mean_drift_meters": 26.7,
+      "normalized_optical_drift_ratio": 0.07,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 10.48,
+      "mean_frp_mw": 11.8,
+      "max_frp_mw": 13.13
+    },
+    "sensor_composition": {
+      "N21": 2
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveat": "Drift metrics normalized by VIIRS scan/track footprint dimensions."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0010",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 30.66109,
+        "longitude": 76.31641
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-01T08:13:00.000Z",
+      "last_detected": "2026-09-01T08:13:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 0
+      },
+      "night_ratio": 0
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 3.62,
+      "mean_frp_mw": 3.62,
+      "max_frp_mw": 3.62
+    },
+    "sensor_composition": {
+      "N20": 1
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveat": "Single observation detection. Cannot evaluate temporal persistence, spatial drift, or operational stability without subsequent passes."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0011",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 31.13703,
+        "longitude": 74.91448
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-01T08:13:00.000Z",
+      "last_detected": "2026-09-01T08:13:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 0
+      },
+      "night_ratio": 0
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 6.71,
+      "mean_frp_mw": 6.71,
+      "max_frp_mw": 6.71
+    },
+    "sensor_composition": {
+      "N20": 1
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveat": "Single observation detection. Cannot evaluate temporal persistence, spatial drift, or operational stability without subsequent passes."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0012",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 31.12613,
+        "longitude": 74.62209
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-01T08:13:00.000Z",
+      "last_detected": "2026-09-01T08:13:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 0
+      },
+      "night_ratio": 0
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 8,
+      "mean_frp_mw": 8,
+      "max_frp_mw": 8
+    },
+    "sensor_composition": {
+      "N20": 1
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveat": "Single observation detection. Cannot evaluate temporal persistence, spatial drift, or operational stability without subsequent passes."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0013",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 29.12574,
+        "longitude": 75.77645
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-01T20:40:00.000Z",
+      "last_detected": "2026-09-01T20:40:00.000Z",
+      "day_night": {
+        "day": 0,
+        "night": 1
+      },
+      "night_ratio": 1
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 0.88,
+      "mean_frp_mw": 0.88,
+      "max_frp_mw": 0.88
+    },
+    "sensor_composition": {
+      "N20": 1
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveat": "Single observation detection. Cannot evaluate temporal persistence, spatial drift, or operational stability without subsequent passes."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0014",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 31.09241,
+        "longitude": 74.68892
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-02T08:39:00.000Z",
+      "last_detected": "2026-09-02T08:39:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 0
+      },
+      "night_ratio": 0
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 4.61,
+      "mean_frp_mw": 4.61,
+      "max_frp_mw": 4.61
+    },
+    "sensor_composition": {
+      "N21": 1
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveat": "Single observation detection. Cannot evaluate temporal persistence, spatial drift, or operational stability without subsequent passes."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0015",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 31.12882,
+        "longitude": 74.65296
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-02T08:39:00.000Z",
+      "last_detected": "2026-09-02T08:39:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 0
+      },
+      "night_ratio": 0
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 7.4,
+      "mean_frp_mw": 7.4,
+      "max_frp_mw": 7.4
+    },
+    "sensor_composition": {
+      "N21": 1
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveat": "Single observation detection. Cannot evaluate temporal persistence, spatial drift, or operational stability without subsequent passes."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0016",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "eastern_ghats_forest",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 20.88781,
+        "longitude": 84.98099
+      },
+      "observation_count": 15,
+      "active_days": 5,
+      "duration_hours": 108.6,
+      "first_detected": "2026-09-02T19:25:00.000Z",
+      "last_detected": "2026-09-07T08:01:00.000Z",
+      "day_night": {
+        "day": 2,
+        "night": 13
+      },
+      "night_ratio": 0.87
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 766.2,
+      "raw_mean_drift_meters": 278.2,
+      "normalized_optical_drift_ratio": 0.76,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 1.24,
+      "mean_frp_mw": 2.43,
+      "max_frp_mw": 4.17
+    },
+    "sensor_composition": {
+      "N21": 8,
+      "N20": 7
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveat": "Drift metrics normalized by VIIRS scan/track footprint dimensions."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0017",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "eastern_ghats_forest",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 20.86434,
+        "longitude": 84.99031
+      },
+      "observation_count": 19,
+      "active_days": 5,
+      "duration_hours": 108.6,
+      "first_detected": "2026-09-02T19:25:00.000Z",
+      "last_detected": "2026-09-07T08:01:00.000Z",
+      "day_night": {
+        "day": 5,
+        "night": 14
+      },
+      "night_ratio": 0.74
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 658.5,
+      "raw_mean_drift_meters": 315.9,
+      "normalized_optical_drift_ratio": 0.99,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 0.94,
+      "mean_frp_mw": 3.22,
+      "max_frp_mw": 9.04
+    },
+    "sensor_composition": {
+      "N21": 11,
+      "N20": 8
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveat": "Drift metrics normalized by VIIRS scan/track footprint dimensions."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0018",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 30.21693,
+        "longitude": 76.76219
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-02T20:19:00.000Z",
+      "last_detected": "2026-09-02T20:19:00.000Z",
+      "day_night": {
+        "day": 0,
+        "night": 1
+      },
+      "night_ratio": 1
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 1.37,
+      "mean_frp_mw": 1.37,
+      "max_frp_mw": 1.37
+    },
+    "sensor_composition": {
+      "N20": 1
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveat": "Single observation detection. Cannot evaluate temporal persistence, spatial drift, or operational stability without subsequent passes."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0019",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 22.92547,
+        "longitude": 69.82349
+      },
+      "observation_count": 2,
+      "active_days": 2,
+      "duration_hours": 23.6,
+      "first_detected": "2026-09-02T21:08:00.000Z",
+      "last_detected": "2026-09-03T20:46:00.000Z",
+      "day_night": {
+        "day": 0,
+        "night": 2
+      },
+      "night_ratio": 1
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 162.1,
+      "raw_mean_drift_meters": 162.1,
+      "normalized_optical_drift_ratio": 0.57,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 1.74,
+      "mean_frp_mw": 2.33,
+      "max_frp_mw": 2.91
+    },
+    "sensor_composition": {
+      "N21": 2
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveat": "Drift metrics normalized by VIIRS scan/track footprint dimensions."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0020",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 22.33932,
+        "longitude": 69.85589
+      },
+      "observation_count": 2,
+      "active_days": 2,
+      "duration_hours": 23.6,
+      "first_detected": "2026-09-02T21:08:00.000Z",
+      "last_detected": "2026-09-03T20:46:00.000Z",
+      "day_night": {
+        "day": 0,
+        "night": 2
+      },
+      "night_ratio": 1
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 101.3,
+      "raw_mean_drift_meters": 101.3,
+      "normalized_optical_drift_ratio": 0.36,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 2.26,
+      "mean_frp_mw": 3.28,
+      "max_frp_mw": 4.3
+    },
+    "sensor_composition": {
+      "N21": 2
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveat": "Drift metrics normalized by VIIRS scan/track footprint dimensions."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0021",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 22.33454,
+        "longitude": 69.86774
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-02T21:08:00.000Z",
+      "last_detected": "2026-09-02T21:08:00.000Z",
+      "day_night": {
+        "day": 0,
+        "night": 1
+      },
+      "night_ratio": 1
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 3.38,
+      "mean_frp_mw": 3.38,
+      "max_frp_mw": 3.38
+    },
+    "sensor_composition": {
+      "N21": 1
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveat": "Single observation detection. Cannot evaluate temporal persistence, spatial drift, or operational stability without subsequent passes."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0022",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 21.16537,
+        "longitude": 72.67093
+      },
+      "observation_count": 7,
+      "active_days": 2,
+      "duration_hours": 24.6,
+      "first_detected": "2026-09-02T21:08:00.000Z",
+      "last_detected": "2026-09-03T21:44:00.000Z",
+      "day_night": {
+        "day": 3,
+        "night": 4
+      },
+      "night_ratio": 0.57
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 540.2,
+      "raw_mean_drift_meters": 249.1,
+      "normalized_optical_drift_ratio": 0.6,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 2.07,
+      "mean_frp_mw": 4.09,
+      "max_frp_mw": 6.29
+    },
+    "sensor_composition": {
+      "N21": 3,
+      "N20": 4
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveat": "Drift metrics normalized by VIIRS scan/track footprint dimensions."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0023",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 22.92847,
+        "longitude": 70.10669
+      },
+      "observation_count": 4,
+      "active_days": 2,
+      "duration_hours": 37.1,
+      "first_detected": "2026-09-03T08:20:00.000Z",
+      "last_detected": "2026-09-04T21:25:00.000Z",
+      "day_night": {
+        "day": 3,
+        "night": 1
+      },
+      "night_ratio": 0.25
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 314.7,
+      "raw_mean_drift_meters": 174,
+      "normalized_optical_drift_ratio": 0.56,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 3.36,
+      "mean_frp_mw": 6.26,
+      "max_frp_mw": 8.52
+    },
+    "sensor_composition": {
+      "N21": 2,
+      "N20": 2
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveat": "Drift metrics normalized by VIIRS scan/track footprint dimensions."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0024",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 31.16984,
+        "longitude": 75.04272
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-03T08:22:00.000Z",
+      "last_detected": "2026-09-03T08:22:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 0
+      },
+      "night_ratio": 0
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 4.87,
+      "mean_frp_mw": 4.87,
+      "max_frp_mw": 4.87
+    },
+    "sensor_composition": {
+      "N21": 1
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveat": "Single observation detection. Cannot evaluate temporal persistence, spatial drift, or operational stability without subsequent passes."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0025",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 31.46605,
+        "longitude": 74.61465
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-03T08:22:00.000Z",
+      "last_detected": "2026-09-03T08:22:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 0
+      },
+      "night_ratio": 0
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 4.63,
+      "mean_frp_mw": 4.63,
+      "max_frp_mw": 4.63
+    },
+    "sensor_composition": {
+      "N21": 1
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveat": "Single observation detection. Cannot evaluate temporal persistence, spatial drift, or operational stability without subsequent passes."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0026",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 29.90931,
+        "longitude": 74.9473
+      },
+      "observation_count": 4,
+      "active_days": 2,
+      "duration_hours": 12.9,
+      "first_detected": "2026-09-03T20:02:00.000Z",
+      "last_detected": "2026-09-04T08:58:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 3
+      },
+      "night_ratio": 0.75
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 660.6,
+      "raw_mean_drift_meters": 467.6,
+      "normalized_optical_drift_ratio": 1.15,
+      "spatial_consistency": "MODERATE_DISPERSION (Possible multi-stack cluster or local spread)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 0.8,
+      "mean_frp_mw": 1.6,
+      "max_frp_mw": 3.63
+    },
+    "sensor_composition": {
+      "N20": 4
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveat": "Drift metrics normalized by VIIRS scan/track footprint dimensions."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0027",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 29.47559,
+        "longitude": 76.85605
+      },
+      "observation_count": 17,
+      "active_days": 3,
+      "duration_hours": 73.5,
+      "first_detected": "2026-09-03T20:02:00.000Z",
+      "last_detected": "2026-09-06T21:29:00.000Z",
+      "day_night": {
+        "day": 0,
+        "night": 17
+      },
+      "night_ratio": 1
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 631.1,
+      "raw_mean_drift_meters": 292.6,
+      "normalized_optical_drift_ratio": 0.78,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 0.57,
+      "mean_frp_mw": 4.32,
+      "max_frp_mw": 9.46
+    },
+    "sensor_composition": {
+      "N20": 10,
+      "N21": 7
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveat": "Drift metrics normalized by VIIRS scan/track footprint dimensions."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0028",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 22.96819,
+        "longitude": 72.55517
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-03T20:46:00.000Z",
+      "last_detected": "2026-09-03T20:46:00.000Z",
+      "day_night": {
+        "day": 0,
+        "night": 1
+      },
+      "night_ratio": 1
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 0.4,
+      "mean_frp_mw": 0.4,
+      "max_frp_mw": 0.4
+    },
+    "sensor_composition": {
+      "N21": 1
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveat": "Single observation detection. Cannot evaluate temporal persistence, spatial drift, or operational stability without subsequent passes."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0029",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 22.41651,
+        "longitude": 69.03934
+      },
+      "observation_count": 4,
+      "active_days": 3,
+      "duration_hours": 48.3,
+      "first_detected": "2026-09-03T20:46:00.000Z",
+      "last_detected": "2026-09-05T21:06:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 3
+      },
+      "night_ratio": 0.75
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 223.1,
+      "raw_mean_drift_meters": 133.6,
+      "normalized_optical_drift_ratio": 0.46,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 1.21,
+      "mean_frp_mw": 2.46,
+      "max_frp_mw": 3.19
+    },
+    "sensor_composition": {
+      "N21": 2,
+      "N20": 2
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveat": "Drift metrics normalized by VIIRS scan/track footprint dimensions."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0030",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 22.39963,
+        "longitude": 69.01791
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-03T20:46:00.000Z",
+      "last_detected": "2026-09-03T20:46:00.000Z",
+      "day_night": {
+        "day": 0,
+        "night": 1
+      },
+      "night_ratio": 1
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 3.18,
+      "mean_frp_mw": 3.18,
+      "max_frp_mw": 3.18
+    },
+    "sensor_composition": {
+      "N21": 1
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveat": "Single observation detection. Cannot evaluate temporal persistence, spatial drift, or operational stability without subsequent passes."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0031",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 21.62968,
+        "longitude": 72.911
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-03T20:46:00.000Z",
+      "last_detected": "2026-09-03T20:46:00.000Z",
+      "day_night": {
+        "day": 0,
+        "night": 1
+      },
+      "night_ratio": 1
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 0.25,
+      "mean_frp_mw": 0.25,
+      "max_frp_mw": 0.25
+    },
+    "sensor_composition": {
+      "N21": 1
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveat": "Single observation detection. Cannot evaluate temporal persistence, spatial drift, or operational stability without subsequent passes."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0032",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "eastern_ghats_forest",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 20.87161,
+        "longitude": 84.99631
+      },
+      "observation_count": 2,
+      "active_days": 2,
+      "duration_hours": 60.3,
+      "first_detected": "2026-09-04T19:45:00.000Z",
+      "last_detected": "2026-09-07T08:01:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 1
+      },
+      "night_ratio": 0.5
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 76.8,
+      "raw_mean_drift_meters": 76.8,
+      "normalized_optical_drift_ratio": 0.24,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 1.46,
+      "mean_frp_mw": 2.92,
+      "max_frp_mw": 4.38
+    },
+    "sensor_composition": {
+      "N20": 2
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveat": "Drift metrics normalized by VIIRS scan/track footprint dimensions."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0033",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "eastern_ghats_forest",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 19.10122,
+        "longitude": 82.16614
+      },
+      "observation_count": 18,
+      "active_days": 4,
+      "duration_hours": 60.2,
+      "first_detected": "2026-09-04T19:47:00.000Z",
+      "last_detected": "2026-09-07T07:58:00.000Z",
+      "day_night": {
+        "day": 2,
+        "night": 16
+      },
+      "night_ratio": 0.89
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 553.6,
+      "raw_mean_drift_meters": 309.4,
+      "normalized_optical_drift_ratio": 0.89,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 0.94,
+      "mean_frp_mw": 2,
+      "max_frp_mw": 4.49
+    },
+    "sensor_composition": {
+      "N20": 12,
+      "N21": 6
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveat": "Drift metrics normalized by VIIRS scan/track footprint dimensions."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0034",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "eastern_ghats_forest",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 19.09186,
+        "longitude": 82.17159
+      },
+      "observation_count": 3,
+      "active_days": 2,
+      "duration_hours": 11.9,
+      "first_detected": "2026-09-04T19:47:00.000Z",
+      "last_detected": "2026-09-05T07:39:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 2
+      },
+      "night_ratio": 0.67
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 348.9,
+      "raw_mean_drift_meters": 259.9,
+      "normalized_optical_drift_ratio": 0.83,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 1.06,
+      "mean_frp_mw": 2.48,
+      "max_frp_mw": 4.83
+    },
+    "sensor_composition": {
+      "N20": 1,
+      "N21": 2
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveat": "Drift metrics normalized by VIIRS scan/track footprint dimensions."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0035",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 21.43288,
+        "longitude": 72.97603
+      },
+      "observation_count": 2,
+      "active_days": 2,
+      "duration_hours": 48.3,
+      "first_detected": "2026-09-04T20:29:00.000Z",
+      "last_detected": "2026-09-06T20:49:00.000Z",
+      "day_night": {
+        "day": 0,
+        "night": 2
+      },
+      "night_ratio": 1
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 133.2,
+      "raw_mean_drift_meters": 133.2,
+      "normalized_optical_drift_ratio": 0.45,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 1.49,
+      "mean_frp_mw": 1.84,
+      "max_frp_mw": 2.19
+    },
+    "sensor_composition": {
+      "N21": 1,
+      "N20": 1
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveat": "Drift metrics normalized by VIIRS scan/track footprint dimensions."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0036",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 31.25884,
+        "longitude": 76.92423
+      },
+      "observation_count": 3,
+      "active_days": 2,
+      "duration_hours": 23.7,
+      "first_detected": "2026-09-04T21:23:00.000Z",
+      "last_detected": "2026-09-05T21:04:00.000Z",
+      "day_night": {
+        "day": 0,
+        "night": 3
+      },
+      "night_ratio": 1
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 207.4,
+      "raw_mean_drift_meters": 149.7,
+      "normalized_optical_drift_ratio": 0.46,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 0.4,
+      "mean_frp_mw": 0.71,
+      "max_frp_mw": 1
+    },
+    "sensor_composition": {
+      "N20": 3
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveat": "Drift metrics normalized by VIIRS scan/track footprint dimensions."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0037",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 31.37815,
+        "longitude": 74.56349
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-05T07:44:00.000Z",
+      "last_detected": "2026-09-05T07:44:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 0
+      },
+      "night_ratio": 0
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 3.97,
+      "mean_frp_mw": 3.97,
+      "max_frp_mw": 3.97
+    },
+    "sensor_composition": {
+      "N21": 1
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveat": "Single observation detection. Cannot evaluate temporal persistence, spatial drift, or operational stability without subsequent passes."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0038",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 22.7807,
+        "longitude": 69.45878
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-05T08:37:00.000Z",
+      "last_detected": "2026-09-05T08:37:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 0
+      },
+      "night_ratio": 0
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 5.93,
+      "mean_frp_mw": 5.93,
+      "max_frp_mw": 5.93
+    },
+    "sensor_composition": {
+      "N20": 1
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveat": "Single observation detection. Cannot evaluate temporal persistence, spatial drift, or operational stability without subsequent passes."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0039",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 21.10128,
+        "longitude": 72.65502
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-06T08:18:00.000Z",
+      "last_detected": "2026-09-06T08:18:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 0
+      },
+      "night_ratio": 0
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 5.59,
+      "mean_frp_mw": 5.59,
+      "max_frp_mw": 5.59
+    },
+    "sensor_composition": {
+      "N20": 1
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveat": "Single observation detection. Cannot evaluate temporal persistence, spatial drift, or operational stability without subsequent passes."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0040",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 22.49567,
+        "longitude": 70.02426
+      },
+      "observation_count": 2,
+      "active_days": 1,
+      "duration_hours": 0.8,
+      "first_detected": "2026-09-06T08:20:00.000Z",
+      "last_detected": "2026-09-06T09:05:00.000Z",
+      "day_night": {
+        "day": 2,
+        "night": 0
+      },
+      "night_ratio": 0
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 231.6,
+      "raw_mean_drift_meters": 231.6,
+      "normalized_optical_drift_ratio": 0.64,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 4.24,
+      "mean_frp_mw": 5.88,
+      "max_frp_mw": 7.52
+    },
+    "sensor_composition": {
+      "N20": 1,
+      "N21": 1
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveat": "Drift metrics normalized by VIIRS scan/track footprint dimensions."
+    }
+  },
+  {
+    "event_id": "EVT-V2-0041",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 31.13125,
+        "longitude": 74.60674
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-06T08:22:00.000Z",
+      "last_detected": "2026-09-06T08:22:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 0
+      },
+      "night_ratio": 0
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 4.08,
+      "mean_frp_mw": 4.08,
+      "max_frp_mw": 4.08
+    },
+    "sensor_composition": {
+      "N20": 1
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveat": "Single observation detection. Cannot evaluate temporal persistence, spatial drift, or operational stability without subsequent passes."
+    }
+  }
+]

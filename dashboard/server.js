@@ -47,11 +47,24 @@ const server = http.createServer((req, res) => {
   });
 });
 
-server.listen(PORT, () => {
-  console.log('===============================================================');
-  console.log('       INDUSTRIAL FIRE INTELLIGENCE - DASHBOARD ACTIVE         ');
-  console.log('===============================================================');
-  console.log(`Local URL: http://localhost:${PORT}`);
-  console.log('Press Ctrl+C to stop.');
-  console.log('===============================================================');
-});
+function startServer(port) {
+  server.listen(port, () => {
+    console.log('===============================================================');
+    console.log('       INDUSTRIAL FIRE INTELLIGENCE - DASHBOARD ACTIVE         ');
+    console.log('===============================================================');
+    console.log(`Local URL: http://localhost:${port}`);
+    console.log('Press Ctrl+C to stop.');
+    console.log('===============================================================');
+  });
+
+  server.on('error', (err) => {
+    if (err.code === 'EADDRINUSE') {
+      console.log(`Port ${port} in use, trying port ${port + 1}...`);
+      startServer(port + 1);
+    } else {
+      console.error('Server error:', err);
+    }
+  });
+}
+
+startServer(PORT);

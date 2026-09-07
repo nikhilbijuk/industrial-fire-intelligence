@@ -37,6 +37,16 @@ function initMap() {
 }
 
 async function loadDatasets() {
+  // 1. Direct standalone support: check if loaded via data_bundle.js (works on direct file:// double-click)
+  if (window.PRECOMPUTED_EVENTS && window.PRECOMPUTED_FACILITIES) {
+    allEvents = window.PRECOMPUTED_EVENTS;
+    allFacilities = window.PRECOMPUTED_FACILITIES;
+    renderFacilities(allFacilities);
+    renderEvents(allEvents);
+    return;
+  }
+
+  // 2. Fallback to fetch if running via HTTP web server
   try {
     const [eventsRes, facRes] = await Promise.all([
       fetch('../prototype/data/processed/final_event_intelligence.json'),

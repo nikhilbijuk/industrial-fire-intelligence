@@ -18,9 +18,9 @@
 
 > *"Here in the Hazira industrial belt, our engine ingested 31 real satellite passes over 7 consecutive days. Look at the evidence drawer on the right:*  
 > *1. **Infrastructure Proximity:** The centroid is 563m from ArcelorMittal Nippon Steel.*  
-> *2. **24/7 Combustion:** 71% of detections occurred during nighttime overpasses, indicating continuous industrial operations.*  
-> *3. **The Optical Footprint Metric:** Notice the Optical Drift Ratio: **0.85x**. Because it is under 1.0, the observed coordinate shift across passes is completely within the satellite's pixel footprint. This indicates a stationary point source, not a spreading flame.*  
-> *Conclusion: **Persistent Operational Source (91% confidence, Medium Priority — no emergency dispatch needed).***"
+> *2. **Persistent Multi-Day Activity:** 71% of detections occurred during nighttime overpasses, providing strong supporting evidence consistent with industrial operations.*  
+> *3. **The Optical Footprint Metric:** Notice the normalized optical drift ratio: **0.85x**. The observed displacement remains fully within the estimated sensor pixel footprint, so it is consistent with a stationary source rather than evidence of physical movement.*  
+> *Conclusion: **The evidence is consistent with a Persistent Operational Industrial Thermal Source (91% confidence score, Medium Priority — no emergency dispatch needed).***"
 
 ---
 
@@ -58,6 +58,10 @@
 ### Q1: "Where is the AI/ML? Why didn't you train a deep neural network or Random Forest?"
 **Defensible Answer:**  
 > *"In remote sensing, training an ML model without authoritative, independently verified ground truth leads to severe data leakage and circular reasoning (the model simply memorizes the heuristic). We deliberately prioritized a **transparent, physics-based evidence engine** first. Once we curate an independent ground-truth incident dataset, classical tabular models (LightGBM) can be benchmarked against this transparent baseline to prove whether ML actually earns its place."*
+
+### Q2: "How did you calculate this 91% confidence score?"
+**Defensible Answer:**  
+> *"It is a **transparent, weighted evidence score** derived from our five physical and contextual factors (proximity, active days, footprint ratio, night ratio, land-cover context), not an uncalibrated black-box probability. We explicitly communicate that this reflects the weight of available corroborating data rather than an unverified ML probability claim."*
 
 ### Q2: "Are your classifications verified ground truth?"
 **Defensible Answer:**  

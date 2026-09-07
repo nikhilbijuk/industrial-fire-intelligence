@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Industrial Fire Intelligence | SIH26162 (NTRO)</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Top Navigation & Demo Storyline Bar -->
+    <header class="top-bar">
+      <div class="brand">
+        <div class="radar-pulse"></div>
+        <div>
+          <h1>INDUSTRIAL FIRE INTELLIGENCE</h1>
+          <span class="subtext">SIH26162 • NTRO Disaster Management • Satellite Evidence Engine</span>
+        </div>
+      </div>
+
+      <!-- Quick-Select Demo Rehearsal Scenarios -->
+      <div class="demo-controller">
+        <span class="demo-label">REHEARSED SCENARIOS:</span>
+        <button id="btn-demo-hazira" class="demo-btn active">
+          <span class="icon">🏭</span> Hazira Petrochem Flare
+        </button>
+        <button id="btn-demo-panipat" class="demo-btn">
+          <span class="icon">⛽</span> Panipat Refinery
+        </button>
+        <button id="btn-demo-forest" class="demo-btn">
+          <span class="icon">🌲</span> Simlipal Wildfire
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content Area: Map + Side Investigation Drawer -->
+    <main class="main-layout">
+      <!-- Interactive Map Pane -->
+      <div class="map-wrapper">
+        <div id="map"></div>
+        <div class="map-overlay-legend">
+          <div class="legend-item"><span class="dot industrial"></span> Industrial Flare / Persistent Source</div>
+          <div class="legend-item"><span class="dot wildfire"></span> Forest Wildfire</div>
+          <div class="legend-item"><span class="dot agricultural"></span> Agricultural Crop Burn</div>
+          <div class="legend-item"><span class="dot anomaly"></span> Single-Pass Anomaly</div>
+          <div class="legend-item"><span class="box facility"></span> OSM Facility Perimeter</div>
+        </div>
+      </div>
+
+      <!-- Evidence Inspector Drawer -->
+      <aside class="inspector-drawer" id="inspector">
+        <div class="drawer-header">
+          <div class="badge-row">
+            <span class="badge domain" id="drawer-domain">INDUSTRIAL</span>
+            <span class="badge priority" id="drawer-priority">MEDIUM PRIORITY</span>
+          </div>
+          <h2 id="drawer-title">Potential Persistent Industrial Source</h2>
+          <div class="event-meta" id="drawer-event-id">EVT-V2-0007</div>
+        </div>
+
+        <div class="drawer-scrollable">
+          <!-- Summary Metric Cards -->
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <span class="metric-label">CONFIDENCE</span>
+              <span class="metric-value highlight" id="drawer-confidence">91%</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label">PERSISTENCE</span>
+              <span class="metric-value" id="drawer-persistence">7 Days</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label">OBSERVATIONS</span>
+              <span class="metric-value" id="drawer-observations">31 Passes</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label">OPTICAL DRIFT</span>
+              <span class="metric-value" id="drawer-drift-ratio">0.85x</span>
+            </div>
+          </div>
+
+          <!-- Why? Supporting Evidence -->
+          <section class="section">
+            <h3><span class="sec-icon">✓</span> WHY? (SUPPORTING EVIDENCE)</h3>
+            <ul class="evidence-list" id="drawer-supporting-list">
+              <!-- Dynamically Populated -->
+            </ul>
+          </section>
+
+          <!-- Counter Evidence -->
+          <section class="section" id="counter-section">
+            <h3><span class="sec-icon">✗</span> COUNTER-EVIDENCE & CONFLICTS</h3>
+            <ul class="evidence-list counter" id="drawer-counter-list">
+              <!-- Dynamically Populated -->
+            </ul>
+          </section>
+
+          <!-- Observation Overpass Timeline -->
+          <section class="section">
+            <h3><span class="sec-icon">🛰</span> SATELLITE PASS TIMELINE</h3>
+            <div class="timeline-table-wrapper">
+              <table class="timeline-table">
+                <thead>
+                  <tr>
+                    <th>Time (UTC)</th>
+                    <th>Sat</th>
+                    <th>Pass</th>
+                    <th>FRP (MW)</th>
+                  </tr>
+                </thead>
+                <tbody id="drawer-timeline-body">
+                  <!-- Dynamically Populated -->
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <!-- Uncertainty & Scientific Caveats -->
+          <section class="section">
+            <h3><span class="sec-icon">⚠</span> UNCERTAINTY & CAVEATS</h3>
+            <div class="caveat-box" id="drawer-caveats">
+              <!-- Dynamically Populated -->
+            </div>
+          </section>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+[
+  {
+    "facility_id": "FAC-GUJ-001",
+    "name": "Reliance Hazira Manufacturing Complex",
+    "facility_type": "petrochemical_complex",
+    "operator": "Reliance Industries Limited",
+    "centroid": { "latitude": 21.1065, "longitude": 72.6480 },
+    "radius_meters": 1200,
+    "landuse": "industrial",
+    "tags": ["flare_stack", "cracker_plant", "storage_tanks"]
+  },
+  {
+    "facility_id": "FAC-GUJ-002",
+    "name": "ONGC Hazira Gas Processing Plant",
+    "facility_type": "gas_processing",
+    "operator": "Oil and Natural Gas Corporation",
+    "centroid": { "latitude": 21.1025, "longitude": 72.6340 },
+    "radius_meters": 900,
+    "landuse": "industrial",
+    "tags": ["gas_terminal", "flare_stack", "cryogenic_units"]
+  },
+  {
+    "facility_id": "FAC-GUJ-003",
+    "name": "ArcelorMittal Nippon Steel (AM/NS) Hazira",
+    "facility_type": "steel_mill",
+    "operator": "AM/NS India",
+    "centroid": { "latitude": 21.1660, "longitude": 72.6720 },
+    "radius_meters": 1500,
+    "landuse": "industrial",
+    "tags": ["blast_furnace", "coke_oven", "heavy_industry"]
+  },
+  {
+    "facility_id": "FAC-HAR-001",
+    "name": "IOCL Panipat Refinery & Petrochemical Complex",
+    "facility_type": "oil_refinery",
+    "operator": "Indian Oil Corporation Limited",
+    "centroid": { "latitude": 29.4750, "longitude": 76.8580 },
+    "radius_meters": 1400,
+    "landuse": "industrial",
+    "tags": ["crude_distillation", "flare_stack", "catalytic_cracker"]
+  },
+  {
+    "facility_id": "FAC-ODI-001",
+    "name": "Simlipal Tiger Reserve & National Park Core",
+    "facility_type": "protected_forest",
+    "operator": "Ministry of Environment, Forest and Climate Change",
+    "centroid": { "latitude": 20.8650, "longitude": 84.9920 },
+    "radius_meters": 15000,
+    "landuse": "forest_reserve",
+    "tags": ["dense_tree_cover", "wildlife_sanctuary", "mountain_ridge"]
+  }
+]

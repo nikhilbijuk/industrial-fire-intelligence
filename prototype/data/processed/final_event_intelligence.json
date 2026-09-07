@@ -1,0 +1,4740 @@
+[
+  {
+    "event_id": "EVT-V2-0001",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 21.10412,
+        "longitude": 72.63649
+      },
+      "observation_count": 20,
+      "active_days": 7,
+      "duration_hours": 143.8,
+      "first_detected": "2026-08-31T08:33:00.000Z",
+      "last_detected": "2026-09-06T08:18:00.000Z",
+      "day_night": {
+        "day": 7,
+        "night": 13
+      },
+      "night_ratio": 0.65
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 864.9,
+      "raw_mean_drift_meters": 381.9,
+      "normalized_optical_drift_ratio": 1.29,
+      "spatial_consistency": "MODERATE_DISPERSION (Possible multi-stack cluster or local spread)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 0.87,
+      "mean_frp_mw": 6.4,
+      "max_frp_mw": 26.3
+    },
+    "context": {
+      "nearest_facility_name": "ONGC Hazira Gas Processing Plant",
+      "nearest_facility_type": "gas_processing",
+      "operator": "Oil and Natural Gas Corporation",
+      "distance_to_facility_meters": 315,
+      "inside_facility_buffer": true
+    },
+    "classification": {
+      "domain": "INDUSTRIAL",
+      "subclass": "ABNORMAL_INDUSTRIAL_EVENT",
+      "confidence_label": "HIGH",
+      "confidence_score": 0.84
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [
+        {
+          "factor": "Industrial Infrastructure Proximity",
+          "description": "Event centroid is 315m from ONGC Hazira Gas Processing Plant (Oil and Natural Gas Corporation)",
+          "weight": 0.35
+        },
+        {
+          "factor": "Multi-Day Temporal Persistence",
+          "description": "Recurrent thermal emissions recorded across 7 distinct days (143.8h duration)",
+          "weight": 0.25
+        },
+        {
+          "factor": "Continuous 24/7 Thermal Emission",
+          "description": "65% of satellite passes occurred at night, characteristic of continuous industrial operations",
+          "weight": 0.15
+        }
+      ],
+      "counter_evidence": []
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveats": [
+        "At VIIRS 375m-800m pixel footprint, detection represents high-probability facility association rather than sub-meter stack attribution."
+      ]
+    },
+    "priority": "CRITICAL",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-08-31T08:33:00Z",
+        "satellite": "N20",
+        "frp_mw": 7.44,
+        "brightness_ti4_k": 337.23,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-08-31T08:33:00Z",
+        "satellite": "N20",
+        "frp_mw": 9.17,
+        "brightness_ti4_k": 337.48,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-08-31T20:04:00Z",
+        "satellite": "N21",
+        "frp_mw": 6.75,
+        "brightness_ti4_k": 328.52,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-08-31T20:59:00Z",
+        "satellite": "N20",
+        "frp_mw": 2.63,
+        "brightness_ti4_k": 330.34,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-08-31T20:59:00Z",
+        "satellite": "N20",
+        "frp_mw": 2.63,
+        "brightness_ti4_k": 306.19,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-01T20:42:00Z",
+        "satellite": "N20",
+        "frp_mw": 5.93,
+        "brightness_ti4_k": 339.47,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-01T20:42:00Z",
+        "satellite": "N20",
+        "frp_mw": 2.98,
+        "brightness_ti4_k": 312.71,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-01T20:42:00Z",
+        "satellite": "N20",
+        "frp_mw": 4.03,
+        "brightness_ti4_k": 323.91,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-01T20:42:00Z",
+        "satellite": "N20",
+        "frp_mw": 3.51,
+        "brightness_ti4_k": 324.85,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-02T08:37:00Z",
+        "satellite": "N21",
+        "frp_mw": 5.69,
+        "brightness_ti4_k": 333.95,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-02T08:37:00Z",
+        "satellite": "N21",
+        "frp_mw": 8.63,
+        "brightness_ti4_k": 335.35,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-02T20:21:00Z",
+        "satellite": "N20",
+        "frp_mw": 5.46,
+        "brightness_ti4_k": 338.93,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-02T21:08:00Z",
+        "satellite": "N21",
+        "frp_mw": 3.17,
+        "brightness_ti4_k": 312.42,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-02T21:08:00Z",
+        "satellite": "N21",
+        "frp_mw": 13.36,
+        "brightness_ti4_k": 338.79,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-02T21:08:00Z",
+        "satellite": "N21",
+        "frp_mw": 11.47,
+        "brightness_ti4_k": 331.44,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T08:20:00Z",
+        "satellite": "N21",
+        "frp_mw": 9.19,
+        "brightness_ti4_k": 341.64,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T08:20:00Z",
+        "satellite": "N21",
+        "frp_mw": 9.64,
+        "brightness_ti4_k": 339.66,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T08:20:00Z",
+        "satellite": "N21",
+        "frp_mw": 9.19,
+        "brightness_ti4_k": 353,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T08:20:00Z",
+        "satellite": "N21",
+        "frp_mw": 6.92,
+        "brightness_ti4_k": 338.53,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T20:46:00Z",
+        "satellite": "N21",
+        "frp_mw": 2.17,
+        "brightness_ti4_k": 307.53,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T20:46:00Z",
+        "satellite": "N21",
+        "frp_mw": 5.98,
+        "brightness_ti4_k": 336.85,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T20:46:00Z",
+        "satellite": "N21",
+        "frp_mw": 2.86,
+        "brightness_ti4_k": 308.49,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T20:46:00Z",
+        "satellite": "N21",
+        "frp_mw": 2.86,
+        "brightness_ti4_k": 333.77,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T20:46:00Z",
+        "satellite": "N21",
+        "frp_mw": 6.12,
+        "brightness_ti4_k": 332.79,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T21:44:00Z",
+        "satellite": "N20",
+        "frp_mw": 1.64,
+        "brightness_ti4_k": 302.58,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T21:44:00Z",
+        "satellite": "N20",
+        "frp_mw": 1.48,
+        "brightness_ti4_k": 303.47,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T08:01:00Z",
+        "satellite": "N21",
+        "frp_mw": 26.51,
+        "brightness_ti4_k": 344.27,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T08:01:00Z",
+        "satellite": "N21",
+        "frp_mw": 26.3,
+        "brightness_ti4_k": 342.12,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T20:29:00Z",
+        "satellite": "N21",
+        "frp_mw": 8.22,
+        "brightness_ti4_k": 332.4,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T20:29:00Z",
+        "satellite": "N21",
+        "frp_mw": 5.9,
+        "brightness_ti4_k": 309.95,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-05T20:10:00Z",
+        "satellite": "N21",
+        "frp_mw": 2.29,
+        "brightness_ti4_k": 308.08,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-05T20:10:00Z",
+        "satellite": "N21",
+        "frp_mw": 3.22,
+        "brightness_ti4_k": 311.77,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-05T20:10:00Z",
+        "satellite": "N21",
+        "frp_mw": 0.87,
+        "brightness_ti4_k": 301.42,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-05T21:06:00Z",
+        "satellite": "N20",
+        "frp_mw": 2.97,
+        "brightness_ti4_k": 303,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T08:18:00Z",
+        "satellite": "N20",
+        "frp_mw": 7.78,
+        "brightness_ti4_k": 336.51,
+        "daynight": "D",
+        "confidence": "low"
+      },
+      {
+        "timestamp": "2026-09-06T08:18:00Z",
+        "satellite": "N20",
+        "frp_mw": 8.87,
+        "brightness_ti4_k": 336.9,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T08:18:00Z",
+        "satellite": "N20",
+        "frp_mw": 17.78,
+        "brightness_ti4_k": 342.58,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T09:05:00Z",
+        "satellite": "N21",
+        "frp_mw": 7.04,
+        "brightness_ti4_k": 346.09,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T09:05:00Z",
+        "satellite": "N21",
+        "frp_mw": 4.62,
+        "brightness_ti4_k": 336.07,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T21:31:00Z",
+        "satellite": "N21",
+        "frp_mw": 1.82,
+        "brightness_ti4_k": 298.83,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T21:31:00Z",
+        "satellite": "N21",
+        "frp_mw": 1.82,
+        "brightness_ti4_k": 308.43,
+        "daynight": "N",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0002",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 31.41202,
+        "longitude": 74.55347
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-08-31T08:35:00.000Z",
+      "last_detected": "2026-08-31T08:35:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 0
+      },
+      "night_ratio": 0
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 1.49,
+      "mean_frp_mw": 1.49,
+      "max_frp_mw": 1.49
+    },
+    "context": {
+      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
+      "nearest_facility_type": "oil_refinery",
+      "operator": "Indian Oil Corporation Limited",
+      "distance_to_facility_meters": 308524,
+      "inside_facility_buffer": false
+    },
+    "classification": {
+      "domain": "OTHER",
+      "subclass": "SINGLE_PASS_ANOMALY",
+      "confidence_label": "LOW",
+      "confidence_score": 0.4
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [],
+      "counter_evidence": [
+        {
+          "factor": "Facility Absence",
+          "description": "No industrial facility detected within 2km (nearest is 308524m away)",
+          "weight": -0.2
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveats": [
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+      ]
+    },
+    "priority": "LOW",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-08-31T08:35:00Z",
+        "satellite": "N20",
+        "frp_mw": 1.49,
+        "brightness_ti4_k": 330.68,
+        "daynight": "D",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0003",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 30.25077,
+        "longitude": 74.9136
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-08-31T20:57:00.000Z",
+      "last_detected": "2026-08-31T20:57:00.000Z",
+      "day_night": {
+        "day": 0,
+        "night": 1
+      },
+      "night_ratio": 1
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 1.01,
+      "mean_frp_mw": 1.01,
+      "max_frp_mw": 1.01
+    },
+    "context": {
+      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
+      "nearest_facility_type": "oil_refinery",
+      "operator": "Indian Oil Corporation Limited",
+      "distance_to_facility_meters": 206386,
+      "inside_facility_buffer": false
+    },
+    "classification": {
+      "domain": "OTHER",
+      "subclass": "SINGLE_PASS_ANOMALY",
+      "confidence_label": "LOW",
+      "confidence_score": 0.4
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [],
+      "counter_evidence": [
+        {
+          "factor": "Facility Absence",
+          "description": "No industrial facility detected within 2km (nearest is 206386m away)",
+          "weight": -0.2
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveats": [
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+      ]
+    },
+    "priority": "LOW",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-08-31T20:57:00Z",
+        "satellite": "N20",
+        "frp_mw": 1.01,
+        "brightness_ti4_k": 308.85,
+        "daynight": "N",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0004",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 29.46107,
+        "longitude": 76.8892
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-08-31T20:57:00.000Z",
+      "last_detected": "2026-08-31T20:57:00.000Z",
+      "day_night": {
+        "day": 0,
+        "night": 1
+      },
+      "night_ratio": 1
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 3.12,
+      "mean_frp_mw": 3.12,
+      "max_frp_mw": 3.12
+    },
+    "context": {
+      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
+      "nearest_facility_type": "oil_refinery",
+      "operator": "Indian Oil Corporation Limited",
+      "distance_to_facility_meters": 3394,
+      "inside_facility_buffer": false
+    },
+    "classification": {
+      "domain": "OTHER",
+      "subclass": "SINGLE_PASS_ANOMALY",
+      "confidence_label": "LOW",
+      "confidence_score": 0.4
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [],
+      "counter_evidence": [
+        {
+          "factor": "Facility Absence",
+          "description": "No industrial facility detected within 2km (nearest is 3394m away)",
+          "weight": -0.2
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveats": [
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+      ]
+    },
+    "priority": "LOW",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-08-31T20:57:00Z",
+        "satellite": "N20",
+        "frp_mw": 3.12,
+        "brightness_ti4_k": 307.39,
+        "daynight": "N",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0005",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 22.93259,
+        "longitude": 69.69705
+      },
+      "observation_count": 10,
+      "active_days": 6,
+      "duration_hours": 107.6,
+      "first_detected": "2026-08-31T20:59:00.000Z",
+      "last_detected": "2026-09-05T08:37:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 9
+      },
+      "night_ratio": 0.9
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 352.3,
+      "raw_mean_drift_meters": 219,
+      "normalized_optical_drift_ratio": 0.73,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 0.57,
+      "mean_frp_mw": 2.63,
+      "max_frp_mw": 4.7
+    },
+    "context": {
+      "nearest_facility_name": "ArcelorMittal Nippon Steel (AM/NS) Hazira",
+      "nearest_facility_type": "steel_mill",
+      "operator": "AM/NS India",
+      "distance_to_facility_meters": 364115,
+      "inside_facility_buffer": false
+    },
+    "classification": {
+      "domain": "AGRICULTURAL",
+      "subclass": "CROP_RESIDUE_BURNING",
+      "confidence_label": "HIGH",
+      "confidence_score": 0.87
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [
+        {
+          "factor": "Agricultural Plain Context",
+          "description": "Event situated in open agricultural cropland belt outside industrial zones",
+          "weight": 0.35
+        }
+      ],
+      "counter_evidence": [
+        {
+          "factor": "Facility Absence",
+          "description": "No industrial infrastructure within 364km buffer",
+          "weight": -0.2
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveats": [
+        "High smoke opacity can cause nearby false detections on adjacent optical channels."
+      ]
+    },
+    "priority": "LOW",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-08-31T20:59:00Z",
+        "satellite": "N20",
+        "frp_mw": 3.34,
+        "brightness_ti4_k": 319.81,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-08-31T20:59:00Z",
+        "satellite": "N20",
+        "frp_mw": 1.67,
+        "brightness_ti4_k": 304.41,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-01T21:25:00Z",
+        "satellite": "N21",
+        "frp_mw": 1.21,
+        "brightness_ti4_k": 303.97,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-02T21:08:00Z",
+        "satellite": "N21",
+        "frp_mw": 1.42,
+        "brightness_ti4_k": 318.9,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-02T21:08:00Z",
+        "satellite": "N21",
+        "frp_mw": 1.42,
+        "brightness_ti4_k": 310.89,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-02T21:08:00Z",
+        "satellite": "N21",
+        "frp_mw": 0.57,
+        "brightness_ti4_k": 302.4,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T20:46:00Z",
+        "satellite": "N21",
+        "frp_mw": 2.03,
+        "brightness_ti4_k": 307.76,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T20:46:00Z",
+        "satellite": "N21",
+        "frp_mw": 2.03,
+        "brightness_ti4_k": 309.93,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T20:46:00Z",
+        "satellite": "N21",
+        "frp_mw": 3.15,
+        "brightness_ti4_k": 308.31,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T20:29:00Z",
+        "satellite": "N21",
+        "frp_mw": 4.33,
+        "brightness_ti4_k": 309.78,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T20:29:00Z",
+        "satellite": "N21",
+        "frp_mw": 4.7,
+        "brightness_ti4_k": 306.21,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T21:25:00Z",
+        "satellite": "N20",
+        "frp_mw": 3.11,
+        "brightness_ti4_k": 313.25,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-05T08:37:00Z",
+        "satellite": "N20",
+        "frp_mw": 4.1,
+        "brightness_ti4_k": 333.68,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T20:49:00Z",
+        "satellite": "N20",
+        "frp_mw": 2.99,
+        "brightness_ti4_k": 307.35,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T21:31:00Z",
+        "satellite": "N21",
+        "frp_mw": 1.36,
+        "brightness_ti4_k": 302.36,
+        "daynight": "N",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0006",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 22.93338,
+        "longitude": 69.70133
+      },
+      "observation_count": 6,
+      "active_days": 5,
+      "duration_hours": 144.5,
+      "first_detected": "2026-08-31T20:59:00.000Z",
+      "last_detected": "2026-09-06T21:31:00.000Z",
+      "day_night": {
+        "day": 0,
+        "night": 6
+      },
+      "night_ratio": 1
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 310.2,
+      "raw_mean_drift_meters": 226.9,
+      "normalized_optical_drift_ratio": 0.73,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 1.36,
+      "mean_frp_mw": 2.12,
+      "max_frp_mw": 3.11
+    },
+    "context": {
+      "nearest_facility_name": "ArcelorMittal Nippon Steel (AM/NS) Hazira",
+      "nearest_facility_type": "steel_mill",
+      "operator": "AM/NS India",
+      "distance_to_facility_meters": 363790,
+      "inside_facility_buffer": false
+    },
+    "classification": {
+      "domain": "AGRICULTURAL",
+      "subclass": "CROP_RESIDUE_BURNING",
+      "confidence_label": "HIGH",
+      "confidence_score": 0.87
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [
+        {
+          "factor": "Agricultural Plain Context",
+          "description": "Event situated in open agricultural cropland belt outside industrial zones",
+          "weight": 0.35
+        }
+      ],
+      "counter_evidence": [
+        {
+          "factor": "Facility Absence",
+          "description": "No industrial infrastructure within 364km buffer",
+          "weight": -0.2
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveats": [
+        "High smoke opacity can cause nearby false detections on adjacent optical channels."
+      ]
+    },
+    "priority": "LOW",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-08-31T20:59:00Z",
+        "satellite": "N20",
+        "frp_mw": 3.34,
+        "brightness_ti4_k": 319.81,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-08-31T20:59:00Z",
+        "satellite": "N20",
+        "frp_mw": 1.67,
+        "brightness_ti4_k": 304.41,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-01T21:25:00Z",
+        "satellite": "N21",
+        "frp_mw": 1.21,
+        "brightness_ti4_k": 303.97,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-02T21:08:00Z",
+        "satellite": "N21",
+        "frp_mw": 1.42,
+        "brightness_ti4_k": 318.9,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-02T21:08:00Z",
+        "satellite": "N21",
+        "frp_mw": 1.42,
+        "brightness_ti4_k": 310.89,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-02T21:08:00Z",
+        "satellite": "N21",
+        "frp_mw": 1.56,
+        "brightness_ti4_k": 305.43,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T20:46:00Z",
+        "satellite": "N21",
+        "frp_mw": 2.03,
+        "brightness_ti4_k": 307.76,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T20:46:00Z",
+        "satellite": "N21",
+        "frp_mw": 2.03,
+        "brightness_ti4_k": 309.93,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T20:46:00Z",
+        "satellite": "N21",
+        "frp_mw": 3.15,
+        "brightness_ti4_k": 308.31,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T20:29:00Z",
+        "satellite": "N21",
+        "frp_mw": 4.33,
+        "brightness_ti4_k": 309.78,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T20:29:00Z",
+        "satellite": "N21",
+        "frp_mw": 4.7,
+        "brightness_ti4_k": 306.21,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T21:25:00Z",
+        "satellite": "N20",
+        "frp_mw": 3.11,
+        "brightness_ti4_k": 313.25,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-05T08:37:00Z",
+        "satellite": "N20",
+        "frp_mw": 4.1,
+        "brightness_ti4_k": 333.68,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T20:49:00Z",
+        "satellite": "N20",
+        "frp_mw": 2.99,
+        "brightness_ti4_k": 307.35,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T21:31:00Z",
+        "satellite": "N21",
+        "frp_mw": 1.36,
+        "brightness_ti4_k": 302.36,
+        "daynight": "N",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0007",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 21.10554,
+        "longitude": 72.64656
+      },
+      "observation_count": 31,
+      "active_days": 7,
+      "duration_hours": 144.5,
+      "first_detected": "2026-08-31T20:59:00.000Z",
+      "last_detected": "2026-09-06T21:31:00.000Z",
+      "day_night": {
+        "day": 9,
+        "night": 22
+      },
+      "night_ratio": 0.71
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 685.5,
+      "raw_mean_drift_meters": 297.6,
+      "normalized_optical_drift_ratio": 0.85,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 1.48,
+      "mean_frp_mw": 5.94,
+      "max_frp_mw": 26.51
+    },
+    "context": {
+      "nearest_facility_name": "Reliance Hazira Manufacturing Complex",
+      "nearest_facility_type": "petrochemical_complex",
+      "operator": "Reliance Industries Limited",
+      "distance_to_facility_meters": 184,
+      "inside_facility_buffer": true
+    },
+    "classification": {
+      "domain": "INDUSTRIAL",
+      "subclass": "PERSISTENT_OPERATIONAL_SOURCE",
+      "confidence_label": "HIGH",
+      "confidence_score": 0.91
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [
+        {
+          "factor": "Industrial Infrastructure Proximity",
+          "description": "Event centroid is 184m from Reliance Hazira Manufacturing Complex (Reliance Industries Limited)",
+          "weight": 0.35
+        },
+        {
+          "factor": "Multi-Day Temporal Persistence",
+          "description": "Recurrent thermal emissions recorded across 7 distinct days (144.5h duration)",
+          "weight": 0.25
+        },
+        {
+          "factor": "Stationary Point Source (Flare Stack)",
+          "description": "Normalized optical drift ratio is 0.85 (<= 1.0); coordinate shifts are fully accounted for by satellite pixel footprint elongation",
+          "weight": 0.25
+        },
+        {
+          "factor": "Continuous 24/7 Thermal Emission",
+          "description": "71% of satellite passes occurred at night, characteristic of continuous industrial operations",
+          "weight": 0.15
+        }
+      ],
+      "counter_evidence": []
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveats": [
+        "At VIIRS 375m-800m pixel footprint, detection represents high-probability facility association rather than sub-meter stack attribution."
+      ]
+    },
+    "priority": "MEDIUM",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-08-31T08:33:00Z",
+        "satellite": "N20",
+        "frp_mw": 7.44,
+        "brightness_ti4_k": 337.23,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-08-31T20:04:00Z",
+        "satellite": "N21",
+        "frp_mw": 6.75,
+        "brightness_ti4_k": 328.52,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-08-31T20:59:00Z",
+        "satellite": "N20",
+        "frp_mw": 1.67,
+        "brightness_ti4_k": 312.17,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-08-31T20:59:00Z",
+        "satellite": "N20",
+        "frp_mw": 2.63,
+        "brightness_ti4_k": 306.19,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-01T20:42:00Z",
+        "satellite": "N20",
+        "frp_mw": 5.93,
+        "brightness_ti4_k": 339.47,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-01T20:42:00Z",
+        "satellite": "N20",
+        "frp_mw": 4.03,
+        "brightness_ti4_k": 323.91,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-02T08:37:00Z",
+        "satellite": "N21",
+        "frp_mw": 5.69,
+        "brightness_ti4_k": 333.95,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-02T20:21:00Z",
+        "satellite": "N20",
+        "frp_mw": 5.46,
+        "brightness_ti4_k": 338.93,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-02T20:21:00Z",
+        "satellite": "N20",
+        "frp_mw": 5.46,
+        "brightness_ti4_k": 307.52,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-02T21:08:00Z",
+        "satellite": "N21",
+        "frp_mw": 13.36,
+        "brightness_ti4_k": 338.79,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-02T21:08:00Z",
+        "satellite": "N21",
+        "frp_mw": 1.8,
+        "brightness_ti4_k": 305.34,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-02T21:08:00Z",
+        "satellite": "N21",
+        "frp_mw": 1.8,
+        "brightness_ti4_k": 308.09,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T07:33:00Z",
+        "satellite": "N20",
+        "frp_mw": 9.08,
+        "brightness_ti4_k": 334.62,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T08:20:00Z",
+        "satellite": "N21",
+        "frp_mw": 9.19,
+        "brightness_ti4_k": 341.64,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T08:20:00Z",
+        "satellite": "N21",
+        "frp_mw": 9.19,
+        "brightness_ti4_k": 353,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T20:46:00Z",
+        "satellite": "N21",
+        "frp_mw": 2.7,
+        "brightness_ti4_k": 307.64,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T20:46:00Z",
+        "satellite": "N21",
+        "frp_mw": 5.98,
+        "brightness_ti4_k": 336.85,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T20:46:00Z",
+        "satellite": "N21",
+        "frp_mw": 2.86,
+        "brightness_ti4_k": 308.49,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T20:46:00Z",
+        "satellite": "N21",
+        "frp_mw": 5.98,
+        "brightness_ti4_k": 318.53,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T21:44:00Z",
+        "satellite": "N20",
+        "frp_mw": 1.64,
+        "brightness_ti4_k": 302.58,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T21:44:00Z",
+        "satellite": "N20",
+        "frp_mw": 1.64,
+        "brightness_ti4_k": 303.32,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T21:44:00Z",
+        "satellite": "N20",
+        "frp_mw": 1.48,
+        "brightness_ti4_k": 303.47,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T21:44:00Z",
+        "satellite": "N20",
+        "frp_mw": 1.48,
+        "brightness_ti4_k": 303.05,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T08:01:00Z",
+        "satellite": "N21",
+        "frp_mw": 26.51,
+        "brightness_ti4_k": 344.27,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T20:29:00Z",
+        "satellite": "N21",
+        "frp_mw": 3.67,
+        "brightness_ti4_k": 317.42,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T20:29:00Z",
+        "satellite": "N21",
+        "frp_mw": 8.22,
+        "brightness_ti4_k": 332.4,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T20:29:00Z",
+        "satellite": "N21",
+        "frp_mw": 5.9,
+        "brightness_ti4_k": 309.95,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-05T20:10:00Z",
+        "satellite": "N21",
+        "frp_mw": 2.29,
+        "brightness_ti4_k": 308.08,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-05T20:10:00Z",
+        "satellite": "N21",
+        "frp_mw": 3.22,
+        "brightness_ti4_k": 311.77,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T08:18:00Z",
+        "satellite": "N20",
+        "frp_mw": 7.78,
+        "brightness_ti4_k": 336.51,
+        "daynight": "D",
+        "confidence": "low"
+      },
+      {
+        "timestamp": "2026-09-06T08:18:00Z",
+        "satellite": "N20",
+        "frp_mw": 17.78,
+        "brightness_ti4_k": 342.58,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T09:05:00Z",
+        "satellite": "N21",
+        "frp_mw": 7.04,
+        "brightness_ti4_k": 346.09,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T09:05:00Z",
+        "satellite": "N21",
+        "frp_mw": 4.62,
+        "brightness_ti4_k": 336.07,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T21:31:00Z",
+        "satellite": "N21",
+        "frp_mw": 1.82,
+        "brightness_ti4_k": 298.83,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T21:31:00Z",
+        "satellite": "N21",
+        "frp_mw": 1.82,
+        "brightness_ti4_k": 308.43,
+        "daynight": "N",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0008",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 22.38667,
+        "longitude": 73.11994
+      },
+      "observation_count": 2,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-08-31T21:44:00.000Z",
+      "last_detected": "2026-08-31T21:44:00.000Z",
+      "day_night": {
+        "day": 0,
+        "night": 2
+      },
+      "night_ratio": 1
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 389.7,
+      "raw_mean_drift_meters": 389.7,
+      "normalized_optical_drift_ratio": 0.74,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 2.43,
+      "mean_frp_mw": 3.22,
+      "max_frp_mw": 4.01
+    },
+    "context": {
+      "nearest_facility_name": "ArcelorMittal Nippon Steel (AM/NS) Hazira",
+      "nearest_facility_type": "steel_mill",
+      "operator": "AM/NS India",
+      "distance_to_facility_meters": 143397,
+      "inside_facility_buffer": false
+    },
+    "classification": {
+      "domain": "AGRICULTURAL",
+      "subclass": "CROP_RESIDUE_BURNING",
+      "confidence_label": "HIGH",
+      "confidence_score": 0.87
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [
+        {
+          "factor": "Agricultural Plain Context",
+          "description": "Event situated in open agricultural cropland belt outside industrial zones",
+          "weight": 0.35
+        },
+        {
+          "factor": "Short Lived Ephemeral Burn",
+          "description": "Total duration limited to 0h; dissipates rapidly once crop residue clears",
+          "weight": 0.2
+        }
+      ],
+      "counter_evidence": [
+        {
+          "factor": "Facility Absence",
+          "description": "No industrial infrastructure within 143km buffer",
+          "weight": -0.2
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveats": [
+        "High smoke opacity can cause nearby false detections on adjacent optical channels."
+      ]
+    },
+    "priority": "LOW",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-08-31T21:44:00Z",
+        "satellite": "N21",
+        "frp_mw": 4.01,
+        "brightness_ti4_k": 309.44,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-08-31T21:44:00Z",
+        "satellite": "N21",
+        "frp_mw": 2.43,
+        "brightness_ti4_k": 311.62,
+        "daynight": "N",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0009",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 31.1216,
+        "longitude": 74.69022
+      },
+      "observation_count": 2,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-01T07:20:00.000Z",
+      "last_detected": "2026-09-01T07:20:00.000Z",
+      "day_night": {
+        "day": 2,
+        "night": 0
+      },
+      "night_ratio": 0
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 26.7,
+      "raw_mean_drift_meters": 26.7,
+      "normalized_optical_drift_ratio": 0.07,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 10.48,
+      "mean_frp_mw": 11.8,
+      "max_frp_mw": 13.13
+    },
+    "context": {
+      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
+      "nearest_facility_type": "oil_refinery",
+      "operator": "Indian Oil Corporation Limited",
+      "distance_to_facility_meters": 277183,
+      "inside_facility_buffer": false
+    },
+    "classification": {
+      "domain": "AGRICULTURAL",
+      "subclass": "CROP_RESIDUE_BURNING",
+      "confidence_label": "HIGH",
+      "confidence_score": 0.87
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [
+        {
+          "factor": "Agricultural Plain Context",
+          "description": "Event situated in open agricultural cropland belt outside industrial zones",
+          "weight": 0.35
+        },
+        {
+          "factor": "Diurnal Harvest Restriction",
+          "description": "100% of detections occurred during daylight overpasses, characteristic of field clearing practices",
+          "weight": 0.25
+        },
+        {
+          "factor": "Short Lived Ephemeral Burn",
+          "description": "Total duration limited to 0h; dissipates rapidly once crop residue clears",
+          "weight": 0.2
+        }
+      ],
+      "counter_evidence": [
+        {
+          "factor": "Facility Absence",
+          "description": "No industrial infrastructure within 277km buffer",
+          "weight": -0.2
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveats": [
+        "High smoke opacity can cause nearby false detections on adjacent optical channels."
+      ]
+    },
+    "priority": "LOW",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-09-01T07:20:00Z",
+        "satellite": "N21",
+        "frp_mw": 13.13,
+        "brightness_ti4_k": 353.18,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-01T07:20:00Z",
+        "satellite": "N21",
+        "frp_mw": 10.48,
+        "brightness_ti4_k": 350.72,
+        "daynight": "D",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0010",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 30.66109,
+        "longitude": 76.31641
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-01T08:13:00.000Z",
+      "last_detected": "2026-09-01T08:13:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 0
+      },
+      "night_ratio": 0
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 3.62,
+      "mean_frp_mw": 3.62,
+      "max_frp_mw": 3.62
+    },
+    "context": {
+      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
+      "nearest_facility_type": "oil_refinery",
+      "operator": "Indian Oil Corporation Limited",
+      "distance_to_facility_meters": 141811,
+      "inside_facility_buffer": false
+    },
+    "classification": {
+      "domain": "OTHER",
+      "subclass": "SINGLE_PASS_ANOMALY",
+      "confidence_label": "LOW",
+      "confidence_score": 0.4
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [],
+      "counter_evidence": [
+        {
+          "factor": "Facility Absence",
+          "description": "No industrial facility detected within 2km (nearest is 141811m away)",
+          "weight": -0.2
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveats": [
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+      ]
+    },
+    "priority": "LOW",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-09-01T08:13:00Z",
+        "satellite": "N20",
+        "frp_mw": 3.62,
+        "brightness_ti4_k": 334.5,
+        "daynight": "D",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0011",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 31.13703,
+        "longitude": 74.91448
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-01T08:13:00.000Z",
+      "last_detected": "2026-09-01T08:13:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 0
+      },
+      "night_ratio": 0
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 6.71,
+      "mean_frp_mw": 6.71,
+      "max_frp_mw": 6.71
+    },
+    "context": {
+      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
+      "nearest_facility_type": "oil_refinery",
+      "operator": "Indian Oil Corporation Limited",
+      "distance_to_facility_meters": 262601,
+      "inside_facility_buffer": false
+    },
+    "classification": {
+      "domain": "OTHER",
+      "subclass": "SINGLE_PASS_ANOMALY",
+      "confidence_label": "LOW",
+      "confidence_score": 0.4
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [],
+      "counter_evidence": [
+        {
+          "factor": "Facility Absence",
+          "description": "No industrial facility detected within 2km (nearest is 262601m away)",
+          "weight": -0.2
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveats": [
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+      ]
+    },
+    "priority": "LOW",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-09-01T08:13:00Z",
+        "satellite": "N20",
+        "frp_mw": 6.71,
+        "brightness_ti4_k": 330.19,
+        "daynight": "D",
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0012",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 31.12613,
+        "longitude": 74.62209
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-01T08:13:00.000Z",
+      "last_detected": "2026-09-01T08:13:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 0
+      },
+      "night_ratio": 0
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 8,
+      "mean_frp_mw": 8,
+      "max_frp_mw": 8
+    },
+    "context": {
+      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
+      "nearest_facility_type": "oil_refinery",
+      "operator": "Indian Oil Corporation Limited",
+      "distance_to_facility_meters": 282450,
+      "inside_facility_buffer": false
+    },
+    "classification": {
+      "domain": "OTHER",
+      "subclass": "SINGLE_PASS_ANOMALY",
+      "confidence_label": "LOW",
+      "confidence_score": 0.4
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [],
+      "counter_evidence": [
+        {
+          "factor": "Facility Absence",
+          "description": "No industrial facility detected within 2km (nearest is 282450m away)",
+          "weight": -0.2
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveats": [
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+      ]
+    },
+    "priority": "LOW",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-09-01T08:13:00Z",
+        "satellite": "N20",
+        "frp_mw": 8,
+        "brightness_ti4_k": 336.29,
+        "daynight": "D",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0013",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 29.12574,
+        "longitude": 75.77645
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-01T20:40:00.000Z",
+      "last_detected": "2026-09-01T20:40:00.000Z",
+      "day_night": {
+        "day": 0,
+        "night": 1
+      },
+      "night_ratio": 1
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 0.88,
+      "mean_frp_mw": 0.88,
+      "max_frp_mw": 0.88
+    },
+    "context": {
+      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
+      "nearest_facility_type": "oil_refinery",
+      "operator": "Indian Oil Corporation Limited",
+      "distance_to_facility_meters": 111836,
+      "inside_facility_buffer": false
+    },
+    "classification": {
+      "domain": "OTHER",
+      "subclass": "SINGLE_PASS_ANOMALY",
+      "confidence_label": "LOW",
+      "confidence_score": 0.4
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [],
+      "counter_evidence": [
+        {
+          "factor": "Facility Absence",
+          "description": "No industrial facility detected within 2km (nearest is 111836m away)",
+          "weight": -0.2
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveats": [
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+      ]
+    },
+    "priority": "LOW",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-09-01T20:40:00Z",
+        "satellite": "N20",
+        "frp_mw": 0.88,
+        "brightness_ti4_k": 309.75,
+        "daynight": "N",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0014",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 31.09241,
+        "longitude": 74.68892
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-02T08:39:00.000Z",
+      "last_detected": "2026-09-02T08:39:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 0
+      },
+      "night_ratio": 0
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 4.61,
+      "mean_frp_mw": 4.61,
+      "max_frp_mw": 4.61
+    },
+    "context": {
+      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
+      "nearest_facility_type": "oil_refinery",
+      "operator": "Indian Oil Corporation Limited",
+      "distance_to_facility_meters": 275168,
+      "inside_facility_buffer": false
+    },
+    "classification": {
+      "domain": "OTHER",
+      "subclass": "SINGLE_PASS_ANOMALY",
+      "confidence_label": "LOW",
+      "confidence_score": 0.4
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [],
+      "counter_evidence": [
+        {
+          "factor": "Facility Absence",
+          "description": "No industrial facility detected within 2km (nearest is 275168m away)",
+          "weight": -0.2
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveats": [
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+      ]
+    },
+    "priority": "LOW",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-09-02T08:39:00Z",
+        "satellite": "N21",
+        "frp_mw": 4.61,
+        "brightness_ti4_k": 335.77,
+        "daynight": "D",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0015",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 31.12882,
+        "longitude": 74.65296
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-02T08:39:00.000Z",
+      "last_detected": "2026-09-02T08:39:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 0
+      },
+      "night_ratio": 0
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 7.4,
+      "mean_frp_mw": 7.4,
+      "max_frp_mw": 7.4
+    },
+    "context": {
+      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
+      "nearest_facility_type": "oil_refinery",
+      "operator": "Indian Oil Corporation Limited",
+      "distance_to_facility_meters": 280399,
+      "inside_facility_buffer": false
+    },
+    "classification": {
+      "domain": "OTHER",
+      "subclass": "SINGLE_PASS_ANOMALY",
+      "confidence_label": "LOW",
+      "confidence_score": 0.4
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [],
+      "counter_evidence": [
+        {
+          "factor": "Facility Absence",
+          "description": "No industrial facility detected within 2km (nearest is 280399m away)",
+          "weight": -0.2
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveats": [
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+      ]
+    },
+    "priority": "LOW",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-09-02T08:39:00Z",
+        "satellite": "N21",
+        "frp_mw": 7.4,
+        "brightness_ti4_k": 339.88,
+        "daynight": "D",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0016",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "eastern_ghats_forest",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 20.88781,
+        "longitude": 84.98099
+      },
+      "observation_count": 15,
+      "active_days": 5,
+      "duration_hours": 108.6,
+      "first_detected": "2026-09-02T19:25:00.000Z",
+      "last_detected": "2026-09-07T08:01:00.000Z",
+      "day_night": {
+        "day": 2,
+        "night": 13
+      },
+      "night_ratio": 0.87
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 766.2,
+      "raw_mean_drift_meters": 278.2,
+      "normalized_optical_drift_ratio": 0.76,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 1.24,
+      "mean_frp_mw": 2.43,
+      "max_frp_mw": 4.17
+    },
+    "context": {
+      "nearest_facility_name": "Simlipal Tiger Reserve & National Park Core",
+      "nearest_facility_type": "protected_forest",
+      "operator": "Ministry of Environment, Forest and Climate Change",
+      "distance_to_facility_meters": 2782,
+      "inside_facility_buffer": true
+    },
+    "classification": {
+      "domain": "WILDFIRE",
+      "subclass": "FOREST_CANOPY_FIRE",
+      "confidence_label": "HIGH",
+      "confidence_score": 0.89
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [
+        {
+          "factor": "Protected Forest Landcover",
+          "description": "Thermal event located in Simlipal Tiger Reserve & National Park Core",
+          "weight": 0.35
+        },
+        {
+          "factor": "Expanding Fire Front",
+          "description": "Spatial drift of 766.2m exceeds stationary footprint; indicates active perimeter spread along terrain",
+          "weight": 0.3
+        },
+        {
+          "factor": "Overnight Fire Persistence",
+          "description": "Thermal energy detected during nighttime overpass, indicating sustained heavy fuel combustion",
+          "weight": 0.2
+        }
+      ],
+      "counter_evidence": [
+        {
+          "factor": "Zero Industrial Infrastructure",
+          "description": "Located 3km from any recorded industrial facility",
+          "weight": -0.15
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveats": [
+        "Cloud cover and canopy density can partially attenuate thermal radiative power."
+      ]
+    },
+    "priority": "HIGH",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-09-02T19:25:00Z",
+        "satellite": "N21",
+        "frp_mw": 3.31,
+        "brightness_ti4_k": 314.27,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-02T19:25:00Z",
+        "satellite": "N21",
+        "frp_mw": 4.13,
+        "brightness_ti4_k": 316.9,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T07:16:00Z",
+        "satellite": "N20",
+        "frp_mw": 2.35,
+        "brightness_ti4_k": 329.15,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T19:45:00Z",
+        "satellite": "N20",
+        "frp_mw": 1.59,
+        "brightness_ti4_k": 306.9,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T19:45:00Z",
+        "satellite": "N20",
+        "frp_mw": 2.05,
+        "brightness_ti4_k": 307.64,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T20:29:00Z",
+        "satellite": "N21",
+        "frp_mw": 3.23,
+        "brightness_ti4_k": 309.58,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T20:29:00Z",
+        "satellite": "N21",
+        "frp_mw": 1.65,
+        "brightness_ti4_k": 305.71,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T20:29:00Z",
+        "satellite": "N21",
+        "frp_mw": 2.55,
+        "brightness_ti4_k": 312.42,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-05T20:10:00Z",
+        "satellite": "N21",
+        "frp_mw": 2.3,
+        "brightness_ti4_k": 310.44,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T19:06:00Z",
+        "satellite": "N20",
+        "frp_mw": 1.3,
+        "brightness_ti4_k": 302.11,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T19:06:00Z",
+        "satellite": "N20",
+        "frp_mw": 1.3,
+        "brightness_ti4_k": 301.28,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T19:51:00Z",
+        "satellite": "N21",
+        "frp_mw": 2.84,
+        "brightness_ti4_k": 317.45,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T19:51:00Z",
+        "satellite": "N21",
+        "frp_mw": 2.47,
+        "brightness_ti4_k": 306.85,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T20:49:00Z",
+        "satellite": "N20",
+        "frp_mw": 1.24,
+        "brightness_ti4_k": 304.51,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-07T08:01:00Z",
+        "satellite": "N20",
+        "frp_mw": 4.17,
+        "brightness_ti4_k": 337.22,
+        "daynight": "D",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0017",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "eastern_ghats_forest",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 20.86434,
+        "longitude": 84.99031
+      },
+      "observation_count": 19,
+      "active_days": 5,
+      "duration_hours": 108.6,
+      "first_detected": "2026-09-02T19:25:00.000Z",
+      "last_detected": "2026-09-07T08:01:00.000Z",
+      "day_night": {
+        "day": 5,
+        "night": 14
+      },
+      "night_ratio": 0.74
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 658.5,
+      "raw_mean_drift_meters": 315.9,
+      "normalized_optical_drift_ratio": 0.99,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 0.94,
+      "mean_frp_mw": 3.22,
+      "max_frp_mw": 9.04
+    },
+    "context": {
+      "nearest_facility_name": "Simlipal Tiger Reserve & National Park Core",
+      "nearest_facility_type": "protected_forest",
+      "operator": "Ministry of Environment, Forest and Climate Change",
+      "distance_to_facility_meters": 190,
+      "inside_facility_buffer": true
+    },
+    "classification": {
+      "domain": "WILDFIRE",
+      "subclass": "FOREST_CANOPY_FIRE",
+      "confidence_label": "HIGH",
+      "confidence_score": 0.89
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [
+        {
+          "factor": "Protected Forest Landcover",
+          "description": "Thermal event located in Simlipal Tiger Reserve & National Park Core",
+          "weight": 0.35
+        },
+        {
+          "factor": "Expanding Fire Front",
+          "description": "Spatial drift of 658.5m exceeds stationary footprint; indicates active perimeter spread along terrain",
+          "weight": 0.3
+        },
+        {
+          "factor": "Overnight Fire Persistence",
+          "description": "Thermal energy detected during nighttime overpass, indicating sustained heavy fuel combustion",
+          "weight": 0.2
+        }
+      ],
+      "counter_evidence": [
+        {
+          "factor": "Zero Industrial Infrastructure",
+          "description": "Located 0km from any recorded industrial facility",
+          "weight": -0.15
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveats": [
+        "Cloud cover and canopy density can partially attenuate thermal radiative power."
+      ]
+    },
+    "priority": "HIGH",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-09-02T19:25:00Z",
+        "satellite": "N21",
+        "frp_mw": 3.42,
+        "brightness_ti4_k": 316.15,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-02T19:25:00Z",
+        "satellite": "N21",
+        "frp_mw": 3.42,
+        "brightness_ti4_k": 307.49,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T19:45:00Z",
+        "satellite": "N20",
+        "frp_mw": 2.92,
+        "brightness_ti4_k": 323.11,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T19:45:00Z",
+        "satellite": "N20",
+        "frp_mw": 0.94,
+        "brightness_ti4_k": 305.95,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T19:45:00Z",
+        "satellite": "N20",
+        "frp_mw": 2.92,
+        "brightness_ti4_k": 306.71,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T20:29:00Z",
+        "satellite": "N21",
+        "frp_mw": 4.5,
+        "brightness_ti4_k": 330.69,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T20:29:00Z",
+        "satellite": "N21",
+        "frp_mw": 4.5,
+        "brightness_ti4_k": 311.65,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-05T06:57:00Z",
+        "satellite": "N20",
+        "frp_mw": 4.32,
+        "brightness_ti4_k": 331.74,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-05T07:41:00Z",
+        "satellite": "N21",
+        "frp_mw": 9.04,
+        "brightness_ti4_k": 332.71,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-05T07:41:00Z",
+        "satellite": "N21",
+        "frp_mw": 4.32,
+        "brightness_ti4_k": 332.44,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T19:51:00Z",
+        "satellite": "N21",
+        "frp_mw": 1.47,
+        "brightness_ti4_k": 306.01,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T19:51:00Z",
+        "satellite": "N21",
+        "frp_mw": 1.47,
+        "brightness_ti4_k": 307.79,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T19:51:00Z",
+        "satellite": "N21",
+        "frp_mw": 1.65,
+        "brightness_ti4_k": 323.32,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T19:51:00Z",
+        "satellite": "N21",
+        "frp_mw": 1.65,
+        "brightness_ti4_k": 307.16,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T19:51:00Z",
+        "satellite": "N21",
+        "frp_mw": 1.65,
+        "brightness_ti4_k": 312.63,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T20:49:00Z",
+        "satellite": "N20",
+        "frp_mw": 1.7,
+        "brightness_ti4_k": 321.44,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T20:49:00Z",
+        "satellite": "N20",
+        "frp_mw": 1.7,
+        "brightness_ti4_k": 309.71,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-07T08:01:00Z",
+        "satellite": "N20",
+        "frp_mw": 4.78,
+        "brightness_ti4_k": 333.85,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-07T08:01:00Z",
+        "satellite": "N20",
+        "frp_mw": 4.78,
+        "brightness_ti4_k": 340.33,
+        "daynight": "D",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0018",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 30.21693,
+        "longitude": 76.76219
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-02T20:19:00.000Z",
+      "last_detected": "2026-09-02T20:19:00.000Z",
+      "day_night": {
+        "day": 0,
+        "night": 1
+      },
+      "night_ratio": 1
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 1.37,
+      "mean_frp_mw": 1.37,
+      "max_frp_mw": 1.37
+    },
+    "context": {
+      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
+      "nearest_facility_type": "oil_refinery",
+      "operator": "Indian Oil Corporation Limited",
+      "distance_to_facility_meters": 83015,
+      "inside_facility_buffer": false
+    },
+    "classification": {
+      "domain": "OTHER",
+      "subclass": "SINGLE_PASS_ANOMALY",
+      "confidence_label": "LOW",
+      "confidence_score": 0.4
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [],
+      "counter_evidence": [
+        {
+          "factor": "Facility Absence",
+          "description": "No industrial facility detected within 2km (nearest is 83015m away)",
+          "weight": -0.2
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveats": [
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+      ]
+    },
+    "priority": "LOW",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-09-02T20:19:00Z",
+        "satellite": "N20",
+        "frp_mw": 1.37,
+        "brightness_ti4_k": 306.64,
+        "daynight": "N",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0019",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 22.92547,
+        "longitude": 69.82349
+      },
+      "observation_count": 2,
+      "active_days": 2,
+      "duration_hours": 23.6,
+      "first_detected": "2026-09-02T21:08:00.000Z",
+      "last_detected": "2026-09-03T20:46:00.000Z",
+      "day_night": {
+        "day": 0,
+        "night": 2
+      },
+      "night_ratio": 1
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 162.1,
+      "raw_mean_drift_meters": 162.1,
+      "normalized_optical_drift_ratio": 0.57,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 1.74,
+      "mean_frp_mw": 2.33,
+      "max_frp_mw": 2.91
+    },
+    "context": {
+      "nearest_facility_name": "ArcelorMittal Nippon Steel (AM/NS) Hazira",
+      "nearest_facility_type": "steel_mill",
+      "operator": "AM/NS India",
+      "distance_to_facility_meters": 352780,
+      "inside_facility_buffer": false
+    },
+    "classification": {
+      "domain": "AGRICULTURAL",
+      "subclass": "CROP_RESIDUE_BURNING",
+      "confidence_label": "HIGH",
+      "confidence_score": 0.87
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [
+        {
+          "factor": "Agricultural Plain Context",
+          "description": "Event situated in open agricultural cropland belt outside industrial zones",
+          "weight": 0.35
+        },
+        {
+          "factor": "Short Lived Ephemeral Burn",
+          "description": "Total duration limited to 23.6h; dissipates rapidly once crop residue clears",
+          "weight": 0.2
+        }
+      ],
+      "counter_evidence": [
+        {
+          "factor": "Facility Absence",
+          "description": "No industrial infrastructure within 353km buffer",
+          "weight": -0.2
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveats": [
+        "High smoke opacity can cause nearby false detections on adjacent optical channels."
+      ]
+    },
+    "priority": "LOW",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-09-02T21:08:00Z",
+        "satellite": "N21",
+        "frp_mw": 1.74,
+        "brightness_ti4_k": 305.4,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T20:46:00Z",
+        "satellite": "N21",
+        "frp_mw": 2.91,
+        "brightness_ti4_k": 305.3,
+        "daynight": "N",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0020",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 22.33932,
+        "longitude": 69.85589
+      },
+      "observation_count": 2,
+      "active_days": 2,
+      "duration_hours": 23.6,
+      "first_detected": "2026-09-02T21:08:00.000Z",
+      "last_detected": "2026-09-03T20:46:00.000Z",
+      "day_night": {
+        "day": 0,
+        "night": 2
+      },
+      "night_ratio": 1
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 101.3,
+      "raw_mean_drift_meters": 101.3,
+      "normalized_optical_drift_ratio": 0.36,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 2.26,
+      "mean_frp_mw": 3.28,
+      "max_frp_mw": 4.3
+    },
+    "context": {
+      "nearest_facility_name": "ONGC Hazira Gas Processing Plant",
+      "nearest_facility_type": "gas_processing",
+      "operator": "Oil and Natural Gas Corporation",
+      "distance_to_facility_meters": 318219,
+      "inside_facility_buffer": false
+    },
+    "classification": {
+      "domain": "AGRICULTURAL",
+      "subclass": "CROP_RESIDUE_BURNING",
+      "confidence_label": "HIGH",
+      "confidence_score": 0.87
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [
+        {
+          "factor": "Agricultural Plain Context",
+          "description": "Event situated in open agricultural cropland belt outside industrial zones",
+          "weight": 0.35
+        },
+        {
+          "factor": "Short Lived Ephemeral Burn",
+          "description": "Total duration limited to 23.6h; dissipates rapidly once crop residue clears",
+          "weight": 0.2
+        }
+      ],
+      "counter_evidence": [
+        {
+          "factor": "Facility Absence",
+          "description": "No industrial infrastructure within 318km buffer",
+          "weight": -0.2
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveats": [
+        "High smoke opacity can cause nearby false detections on adjacent optical channels."
+      ]
+    },
+    "priority": "LOW",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-09-02T21:08:00Z",
+        "satellite": "N21",
+        "frp_mw": 2.26,
+        "brightness_ti4_k": 307.95,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T20:46:00Z",
+        "satellite": "N21",
+        "frp_mw": 4.3,
+        "brightness_ti4_k": 308.15,
+        "daynight": "N",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0021",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 22.33454,
+        "longitude": 69.86774
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-02T21:08:00.000Z",
+      "last_detected": "2026-09-02T21:08:00.000Z",
+      "day_night": {
+        "day": 0,
+        "night": 1
+      },
+      "night_ratio": 1
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 3.38,
+      "mean_frp_mw": 3.38,
+      "max_frp_mw": 3.38
+    },
+    "context": {
+      "nearest_facility_name": "ONGC Hazira Gas Processing Plant",
+      "nearest_facility_type": "gas_processing",
+      "operator": "Oil and Natural Gas Corporation",
+      "distance_to_facility_meters": 316890,
+      "inside_facility_buffer": false
+    },
+    "classification": {
+      "domain": "OTHER",
+      "subclass": "SINGLE_PASS_ANOMALY",
+      "confidence_label": "LOW",
+      "confidence_score": 0.4
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [],
+      "counter_evidence": [
+        {
+          "factor": "Facility Absence",
+          "description": "No industrial facility detected within 2km (nearest is 316890m away)",
+          "weight": -0.2
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveats": [
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+      ]
+    },
+    "priority": "LOW",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-09-02T21:08:00Z",
+        "satellite": "N21",
+        "frp_mw": 3.38,
+        "brightness_ti4_k": 310.66,
+        "daynight": "N",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0022",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 21.16537,
+        "longitude": 72.67093
+      },
+      "observation_count": 7,
+      "active_days": 2,
+      "duration_hours": 24.6,
+      "first_detected": "2026-09-02T21:08:00.000Z",
+      "last_detected": "2026-09-03T21:44:00.000Z",
+      "day_night": {
+        "day": 3,
+        "night": 4
+      },
+      "night_ratio": 0.57
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 540.2,
+      "raw_mean_drift_meters": 249.1,
+      "normalized_optical_drift_ratio": 0.6,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 2.07,
+      "mean_frp_mw": 4.09,
+      "max_frp_mw": 6.29
+    },
+    "context": {
+      "nearest_facility_name": "ArcelorMittal Nippon Steel (AM/NS) Hazira",
+      "nearest_facility_type": "steel_mill",
+      "operator": "AM/NS India",
+      "distance_to_facility_meters": 131,
+      "inside_facility_buffer": true
+    },
+    "classification": {
+      "domain": "INDUSTRIAL",
+      "subclass": "PERSISTENT_OPERATIONAL_SOURCE",
+      "confidence_label": "HIGH",
+      "confidence_score": 0.91
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [
+        {
+          "factor": "Industrial Infrastructure Proximity",
+          "description": "Event centroid is 131m from ArcelorMittal Nippon Steel (AM/NS) Hazira (AM/NS India)",
+          "weight": 0.35
+        },
+        {
+          "factor": "Stationary Point Source (Flare Stack)",
+          "description": "Normalized optical drift ratio is 0.6 (<= 1.0); coordinate shifts are fully accounted for by satellite pixel footprint elongation",
+          "weight": 0.25
+        },
+        {
+          "factor": "Continuous 24/7 Thermal Emission",
+          "description": "57% of satellite passes occurred at night, characteristic of continuous industrial operations",
+          "weight": 0.15
+        }
+      ],
+      "counter_evidence": []
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveats": [
+        "At VIIRS 375m-800m pixel footprint, detection represents high-probability facility association rather than sub-meter stack attribution."
+      ]
+    },
+    "priority": "MEDIUM",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-09-02T21:08:00Z",
+        "satellite": "N21",
+        "frp_mw": 3.52,
+        "brightness_ti4_k": 316.32,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T07:33:00Z",
+        "satellite": "N20",
+        "frp_mw": 5.44,
+        "brightness_ti4_k": 338.1,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T08:20:00Z",
+        "satellite": "N21",
+        "frp_mw": 5.56,
+        "brightness_ti4_k": 343.59,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T09:15:00Z",
+        "satellite": "N20",
+        "frp_mw": 6.29,
+        "brightness_ti4_k": 341.15,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T20:46:00Z",
+        "satellite": "N21",
+        "frp_mw": 3.7,
+        "brightness_ti4_k": 322.83,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T21:44:00Z",
+        "satellite": "N20",
+        "frp_mw": 2.07,
+        "brightness_ti4_k": 302.88,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T21:44:00Z",
+        "satellite": "N20",
+        "frp_mw": 2.07,
+        "brightness_ti4_k": 320.12,
+        "daynight": "N",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0023",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 22.92847,
+        "longitude": 70.10669
+      },
+      "observation_count": 4,
+      "active_days": 2,
+      "duration_hours": 37.1,
+      "first_detected": "2026-09-03T08:20:00.000Z",
+      "last_detected": "2026-09-04T21:25:00.000Z",
+      "day_night": {
+        "day": 3,
+        "night": 1
+      },
+      "night_ratio": 0.25
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 314.7,
+      "raw_mean_drift_meters": 174,
+      "normalized_optical_drift_ratio": 0.56,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 3.36,
+      "mean_frp_mw": 6.26,
+      "max_frp_mw": 8.52
+    },
+    "context": {
+      "nearest_facility_name": "ArcelorMittal Nippon Steel (AM/NS) Hazira",
+      "nearest_facility_type": "steel_mill",
+      "operator": "AM/NS India",
+      "distance_to_facility_meters": 329089,
+      "inside_facility_buffer": false
+    },
+    "classification": {
+      "domain": "AGRICULTURAL",
+      "subclass": "CROP_RESIDUE_BURNING",
+      "confidence_label": "HIGH",
+      "confidence_score": 0.87
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [
+        {
+          "factor": "Agricultural Plain Context",
+          "description": "Event situated in open agricultural cropland belt outside industrial zones",
+          "weight": 0.35
+        },
+        {
+          "factor": "Short Lived Ephemeral Burn",
+          "description": "Total duration limited to 37.1h; dissipates rapidly once crop residue clears",
+          "weight": 0.2
+        }
+      ],
+      "counter_evidence": [
+        {
+          "factor": "Facility Absence",
+          "description": "No industrial infrastructure within 329km buffer",
+          "weight": -0.2
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveats": [
+        "High smoke opacity can cause nearby false detections on adjacent optical channels."
+      ]
+    },
+    "priority": "LOW",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-09-03T08:20:00Z",
+        "satellite": "N21",
+        "frp_mw": 8.52,
+        "brightness_ti4_k": 335.84,
+        "daynight": "D",
+        "confidence": "low"
+      },
+      {
+        "timestamp": "2026-09-03T08:20:00Z",
+        "satellite": "N21",
+        "frp_mw": 7.14,
+        "brightness_ti4_k": 332.86,
+        "daynight": "D",
+        "confidence": "low"
+      },
+      {
+        "timestamp": "2026-09-04T08:56:00Z",
+        "satellite": "N20",
+        "frp_mw": 6.03,
+        "brightness_ti4_k": 330.89,
+        "daynight": "D",
+        "confidence": "low"
+      },
+      {
+        "timestamp": "2026-09-04T21:25:00Z",
+        "satellite": "N20",
+        "frp_mw": 3.36,
+        "brightness_ti4_k": 305.4,
+        "daynight": "N",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0024",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 31.16984,
+        "longitude": 75.04272
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-03T08:22:00.000Z",
+      "last_detected": "2026-09-03T08:22:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 0
+      },
+      "night_ratio": 0
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 4.87,
+      "mean_frp_mw": 4.87,
+      "max_frp_mw": 4.87
+    },
+    "context": {
+      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
+      "nearest_facility_type": "oil_refinery",
+      "operator": "Indian Oil Corporation Limited",
+      "distance_to_facility_meters": 256651,
+      "inside_facility_buffer": false
+    },
+    "classification": {
+      "domain": "OTHER",
+      "subclass": "SINGLE_PASS_ANOMALY",
+      "confidence_label": "LOW",
+      "confidence_score": 0.4
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [],
+      "counter_evidence": [
+        {
+          "factor": "Facility Absence",
+          "description": "No industrial facility detected within 2km (nearest is 256651m away)",
+          "weight": -0.2
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveats": [
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+      ]
+    },
+    "priority": "LOW",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-09-03T08:22:00Z",
+        "satellite": "N21",
+        "frp_mw": 4.87,
+        "brightness_ti4_k": 335.59,
+        "daynight": "D",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0025",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 31.46605,
+        "longitude": 74.61465
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-03T08:22:00.000Z",
+      "last_detected": "2026-09-03T08:22:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 0
+      },
+      "night_ratio": 0
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 4.63,
+      "mean_frp_mw": 4.63,
+      "max_frp_mw": 4.63
+    },
+    "context": {
+      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
+      "nearest_facility_type": "oil_refinery",
+      "operator": "Indian Oil Corporation Limited",
+      "distance_to_facility_meters": 308591,
+      "inside_facility_buffer": false
+    },
+    "classification": {
+      "domain": "OTHER",
+      "subclass": "SINGLE_PASS_ANOMALY",
+      "confidence_label": "LOW",
+      "confidence_score": 0.4
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [],
+      "counter_evidence": [
+        {
+          "factor": "Facility Absence",
+          "description": "No industrial facility detected within 2km (nearest is 308591m away)",
+          "weight": -0.2
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveats": [
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+      ]
+    },
+    "priority": "LOW",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-09-03T08:22:00Z",
+        "satellite": "N21",
+        "frp_mw": 4.63,
+        "brightness_ti4_k": 336.94,
+        "daynight": "D",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0026",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 29.90931,
+        "longitude": 74.9473
+      },
+      "observation_count": 4,
+      "active_days": 2,
+      "duration_hours": 12.9,
+      "first_detected": "2026-09-03T20:02:00.000Z",
+      "last_detected": "2026-09-04T08:58:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 3
+      },
+      "night_ratio": 0.75
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 660.6,
+      "raw_mean_drift_meters": 467.6,
+      "normalized_optical_drift_ratio": 1.15,
+      "spatial_consistency": "MODERATE_DISPERSION (Possible multi-stack cluster or local spread)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 0.8,
+      "mean_frp_mw": 1.6,
+      "max_frp_mw": 3.63
+    },
+    "context": {
+      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
+      "nearest_facility_type": "oil_refinery",
+      "operator": "Indian Oil Corporation Limited",
+      "distance_to_facility_meters": 190775,
+      "inside_facility_buffer": false
+    },
+    "classification": {
+      "domain": "AGRICULTURAL",
+      "subclass": "CROP_RESIDUE_BURNING",
+      "confidence_label": "HIGH",
+      "confidence_score": 0.87
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [
+        {
+          "factor": "Agricultural Plain Context",
+          "description": "Event situated in open agricultural cropland belt outside industrial zones",
+          "weight": 0.35
+        },
+        {
+          "factor": "Short Lived Ephemeral Burn",
+          "description": "Total duration limited to 12.9h; dissipates rapidly once crop residue clears",
+          "weight": 0.2
+        }
+      ],
+      "counter_evidence": [
+        {
+          "factor": "Facility Absence",
+          "description": "No industrial infrastructure within 191km buffer",
+          "weight": -0.2
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveats": [
+        "High smoke opacity can cause nearby false detections on adjacent optical channels."
+      ]
+    },
+    "priority": "LOW",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-09-03T20:02:00Z",
+        "satellite": "N20",
+        "frp_mw": 0.8,
+        "brightness_ti4_k": 306.14,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T20:02:00Z",
+        "satellite": "N20",
+        "frp_mw": 1.02,
+        "brightness_ti4_k": 304.52,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T21:42:00Z",
+        "satellite": "N20",
+        "frp_mw": 0.96,
+        "brightness_ti4_k": 304.42,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T08:58:00Z",
+        "satellite": "N20",
+        "frp_mw": 3.63,
+        "brightness_ti4_k": 334.59,
+        "daynight": "D",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0027",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 29.47559,
+        "longitude": 76.85605
+      },
+      "observation_count": 17,
+      "active_days": 3,
+      "duration_hours": 73.5,
+      "first_detected": "2026-09-03T20:02:00.000Z",
+      "last_detected": "2026-09-06T21:29:00.000Z",
+      "day_night": {
+        "day": 0,
+        "night": 17
+      },
+      "night_ratio": 1
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 631.1,
+      "raw_mean_drift_meters": 292.6,
+      "normalized_optical_drift_ratio": 0.78,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 0.57,
+      "mean_frp_mw": 4.32,
+      "max_frp_mw": 9.46
+    },
+    "context": {
+      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
+      "nearest_facility_type": "oil_refinery",
+      "operator": "Indian Oil Corporation Limited",
+      "distance_to_facility_meters": 200,
+      "inside_facility_buffer": true
+    },
+    "classification": {
+      "domain": "INDUSTRIAL",
+      "subclass": "PERSISTENT_OPERATIONAL_SOURCE",
+      "confidence_label": "HIGH",
+      "confidence_score": 0.91
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [
+        {
+          "factor": "Industrial Infrastructure Proximity",
+          "description": "Event centroid is 200m from IOCL Panipat Refinery & Petrochemical Complex (Indian Oil Corporation Limited)",
+          "weight": 0.35
+        },
+        {
+          "factor": "Multi-Day Temporal Persistence",
+          "description": "Recurrent thermal emissions recorded across 3 distinct days (73.5h duration)",
+          "weight": 0.25
+        },
+        {
+          "factor": "Stationary Point Source (Flare Stack)",
+          "description": "Normalized optical drift ratio is 0.78 (<= 1.0); coordinate shifts are fully accounted for by satellite pixel footprint elongation",
+          "weight": 0.25
+        },
+        {
+          "factor": "Continuous 24/7 Thermal Emission",
+          "description": "100% of satellite passes occurred at night, characteristic of continuous industrial operations",
+          "weight": 0.15
+        }
+      ],
+      "counter_evidence": []
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveats": [
+        "At VIIRS 375m-800m pixel footprint, detection represents high-probability facility association rather than sub-meter stack attribution."
+      ]
+    },
+    "priority": "MEDIUM",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-09-03T20:02:00Z",
+        "satellite": "N20",
+        "frp_mw": 0.73,
+        "brightness_ti4_k": 305.02,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T20:02:00Z",
+        "satellite": "N20",
+        "frp_mw": 8.36,
+        "brightness_ti4_k": 367,
+        "daynight": "N",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "2026-09-03T20:02:00Z",
+        "satellite": "N20",
+        "frp_mw": 5.44,
+        "brightness_ti4_k": 309.14,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T20:02:00Z",
+        "satellite": "N20",
+        "frp_mw": 9.46,
+        "brightness_ti4_k": 367,
+        "daynight": "N",
+        "confidence": "high"
+      },
+      {
+        "timestamp": "2026-09-03T20:02:00Z",
+        "satellite": "N20",
+        "frp_mw": 6.79,
+        "brightness_ti4_k": 310.55,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T20:46:00Z",
+        "satellite": "N21",
+        "frp_mw": 4.09,
+        "brightness_ti4_k": 329.76,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T21:42:00Z",
+        "satellite": "N20",
+        "frp_mw": 5.4,
+        "brightness_ti4_k": 334.66,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T21:42:00Z",
+        "satellite": "N20",
+        "frp_mw": 3.16,
+        "brightness_ti4_k": 316.52,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-03T21:42:00Z",
+        "satellite": "N20",
+        "frp_mw": 3.16,
+        "brightness_ti4_k": 313.99,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-05T20:08:00Z",
+        "satellite": "N21",
+        "frp_mw": 0.57,
+        "brightness_ti4_k": 303.57,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-05T21:04:00Z",
+        "satellite": "N20",
+        "frp_mw": 1.29,
+        "brightness_ti4_k": 305.57,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T19:49:00Z",
+        "satellite": "N21",
+        "frp_mw": 4.33,
+        "brightness_ti4_k": 324.33,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T19:49:00Z",
+        "satellite": "N21",
+        "frp_mw": 3.15,
+        "brightness_ti4_k": 302.93,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T19:49:00Z",
+        "satellite": "N21",
+        "frp_mw": 5.28,
+        "brightness_ti4_k": 331.04,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T19:49:00Z",
+        "satellite": "N21",
+        "frp_mw": 3.72,
+        "brightness_ti4_k": 304.26,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T20:46:00Z",
+        "satellite": "N20",
+        "frp_mw": 4.54,
+        "brightness_ti4_k": 330.15,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T21:29:00Z",
+        "satellite": "N21",
+        "frp_mw": 3.96,
+        "brightness_ti4_k": 324.48,
+        "daynight": "N",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0028",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 22.96819,
+        "longitude": 72.55517
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-03T20:46:00.000Z",
+      "last_detected": "2026-09-03T20:46:00.000Z",
+      "day_night": {
+        "day": 0,
+        "night": 1
+      },
+      "night_ratio": 1
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 0.4,
+      "mean_frp_mw": 0.4,
+      "max_frp_mw": 0.4
+    },
+    "context": {
+      "nearest_facility_name": "ArcelorMittal Nippon Steel (AM/NS) Hazira",
+      "nearest_facility_type": "steel_mill",
+      "operator": "AM/NS India",
+      "distance_to_facility_meters": 200756,
+      "inside_facility_buffer": false
+    },
+    "classification": {
+      "domain": "OTHER",
+      "subclass": "SINGLE_PASS_ANOMALY",
+      "confidence_label": "LOW",
+      "confidence_score": 0.4
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [],
+      "counter_evidence": [
+        {
+          "factor": "Facility Absence",
+          "description": "No industrial facility detected within 2km (nearest is 200756m away)",
+          "weight": -0.2
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveats": [
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+      ]
+    },
+    "priority": "LOW",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-09-03T20:46:00Z",
+        "satellite": "N21",
+        "frp_mw": 0.4,
+        "brightness_ti4_k": 307.07,
+        "daynight": "N",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0029",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 22.41651,
+        "longitude": 69.03934
+      },
+      "observation_count": 4,
+      "active_days": 3,
+      "duration_hours": 48.3,
+      "first_detected": "2026-09-03T20:46:00.000Z",
+      "last_detected": "2026-09-05T21:06:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 3
+      },
+      "night_ratio": 0.75
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 223.1,
+      "raw_mean_drift_meters": 133.6,
+      "normalized_optical_drift_ratio": 0.46,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 1.21,
+      "mean_frp_mw": 2.46,
+      "max_frp_mw": 3.19
+    },
+    "context": {
+      "nearest_facility_name": "ONGC Hazira Gas Processing Plant",
+      "nearest_facility_type": "gas_processing",
+      "operator": "Oil and Natural Gas Corporation",
+      "distance_to_facility_meters": 398928,
+      "inside_facility_buffer": false
+    },
+    "classification": {
+      "domain": "AGRICULTURAL",
+      "subclass": "CROP_RESIDUE_BURNING",
+      "confidence_label": "HIGH",
+      "confidence_score": 0.87
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [
+        {
+          "factor": "Agricultural Plain Context",
+          "description": "Event situated in open agricultural cropland belt outside industrial zones",
+          "weight": 0.35
+        }
+      ],
+      "counter_evidence": [
+        {
+          "factor": "Facility Absence",
+          "description": "No industrial infrastructure within 399km buffer",
+          "weight": -0.2
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveats": [
+        "High smoke opacity can cause nearby false detections on adjacent optical channels."
+      ]
+    },
+    "priority": "LOW",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-09-03T20:46:00Z",
+        "satellite": "N21",
+        "frp_mw": 3.19,
+        "brightness_ti4_k": 309.75,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T20:29:00Z",
+        "satellite": "N21",
+        "frp_mw": 2.29,
+        "brightness_ti4_k": 304.38,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-05T08:37:00Z",
+        "satellite": "N20",
+        "frp_mw": 3.14,
+        "brightness_ti4_k": 332.95,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-05T21:06:00Z",
+        "satellite": "N20",
+        "frp_mw": 1.21,
+        "brightness_ti4_k": 305.17,
+        "daynight": "N",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0030",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 22.39963,
+        "longitude": 69.01791
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-03T20:46:00.000Z",
+      "last_detected": "2026-09-03T20:46:00.000Z",
+      "day_night": {
+        "day": 0,
+        "night": 1
+      },
+      "night_ratio": 1
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 3.18,
+      "mean_frp_mw": 3.18,
+      "max_frp_mw": 3.18
+    },
+    "context": {
+      "nearest_facility_name": "ONGC Hazira Gas Processing Plant",
+      "nearest_facility_type": "gas_processing",
+      "operator": "Oil and Natural Gas Corporation",
+      "distance_to_facility_meters": 400329,
+      "inside_facility_buffer": false
+    },
+    "classification": {
+      "domain": "OTHER",
+      "subclass": "SINGLE_PASS_ANOMALY",
+      "confidence_label": "LOW",
+      "confidence_score": 0.4
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [],
+      "counter_evidence": [
+        {
+          "factor": "Facility Absence",
+          "description": "No industrial facility detected within 2km (nearest is 400329m away)",
+          "weight": -0.2
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveats": [
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+      ]
+    },
+    "priority": "LOW",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-09-03T20:46:00Z",
+        "satellite": "N21",
+        "frp_mw": 3.18,
+        "brightness_ti4_k": 305.54,
+        "daynight": "N",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0031",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 21.62968,
+        "longitude": 72.911
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-03T20:46:00.000Z",
+      "last_detected": "2026-09-03T20:46:00.000Z",
+      "day_night": {
+        "day": 0,
+        "night": 1
+      },
+      "night_ratio": 1
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 0.25,
+      "mean_frp_mw": 0.25,
+      "max_frp_mw": 0.25
+    },
+    "context": {
+      "nearest_facility_name": "ArcelorMittal Nippon Steel (AM/NS) Hazira",
+      "nearest_facility_type": "steel_mill",
+      "operator": "AM/NS India",
+      "distance_to_facility_meters": 57189,
+      "inside_facility_buffer": false
+    },
+    "classification": {
+      "domain": "OTHER",
+      "subclass": "SINGLE_PASS_ANOMALY",
+      "confidence_label": "LOW",
+      "confidence_score": 0.4
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [],
+      "counter_evidence": [
+        {
+          "factor": "Facility Absence",
+          "description": "No industrial facility detected within 2km (nearest is 57189m away)",
+          "weight": -0.2
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveats": [
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+      ]
+    },
+    "priority": "LOW",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-09-03T20:46:00Z",
+        "satellite": "N21",
+        "frp_mw": 0.25,
+        "brightness_ti4_k": 299.73,
+        "daynight": "N",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0032",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "eastern_ghats_forest",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 20.87161,
+        "longitude": 84.99631
+      },
+      "observation_count": 2,
+      "active_days": 2,
+      "duration_hours": 60.3,
+      "first_detected": "2026-09-04T19:45:00.000Z",
+      "last_detected": "2026-09-07T08:01:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 1
+      },
+      "night_ratio": 0.5
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 76.8,
+      "raw_mean_drift_meters": 76.8,
+      "normalized_optical_drift_ratio": 0.24,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 1.46,
+      "mean_frp_mw": 2.92,
+      "max_frp_mw": 4.38
+    },
+    "context": {
+      "nearest_facility_name": "Simlipal Tiger Reserve & National Park Core",
+      "nearest_facility_type": "protected_forest",
+      "operator": "Ministry of Environment, Forest and Climate Change",
+      "distance_to_facility_meters": 861,
+      "inside_facility_buffer": true
+    },
+    "classification": {
+      "domain": "WILDFIRE",
+      "subclass": "FOREST_CANOPY_FIRE",
+      "confidence_label": "HIGH",
+      "confidence_score": 0.89
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [
+        {
+          "factor": "Protected Forest Landcover",
+          "description": "Thermal event located in Simlipal Tiger Reserve & National Park Core",
+          "weight": 0.35
+        },
+        {
+          "factor": "Overnight Fire Persistence",
+          "description": "Thermal energy detected during nighttime overpass, indicating sustained heavy fuel combustion",
+          "weight": 0.2
+        }
+      ],
+      "counter_evidence": [
+        {
+          "factor": "Zero Industrial Infrastructure",
+          "description": "Located 1km from any recorded industrial facility",
+          "weight": -0.15
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveats": [
+        "Cloud cover and canopy density can partially attenuate thermal radiative power."
+      ]
+    },
+    "priority": "HIGH",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-09-04T19:45:00Z",
+        "satellite": "N20",
+        "frp_mw": 1.46,
+        "brightness_ti4_k": 305.34,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-07T08:01:00Z",
+        "satellite": "N20",
+        "frp_mw": 4.38,
+        "brightness_ti4_k": 341.45,
+        "daynight": "D",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0033",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "eastern_ghats_forest",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 19.10122,
+        "longitude": 82.16614
+      },
+      "observation_count": 18,
+      "active_days": 4,
+      "duration_hours": 60.2,
+      "first_detected": "2026-09-04T19:47:00.000Z",
+      "last_detected": "2026-09-07T07:58:00.000Z",
+      "day_night": {
+        "day": 2,
+        "night": 16
+      },
+      "night_ratio": 0.89
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 553.6,
+      "raw_mean_drift_meters": 309.4,
+      "normalized_optical_drift_ratio": 0.89,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 0.94,
+      "mean_frp_mw": 2,
+      "max_frp_mw": 4.49
+    },
+    "context": {
+      "nearest_facility_name": "Simlipal Tiger Reserve & National Park Core",
+      "nearest_facility_type": "protected_forest",
+      "operator": "Ministry of Environment, Forest and Climate Change",
+      "distance_to_facility_meters": 354481,
+      "inside_facility_buffer": false
+    },
+    "classification": {
+      "domain": "WILDFIRE",
+      "subclass": "FOREST_CANOPY_FIRE",
+      "confidence_label": "HIGH",
+      "confidence_score": 0.89
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [
+        {
+          "factor": "Protected Forest Landcover",
+          "description": "Thermal event located in Simlipal Tiger Reserve & National Park Core",
+          "weight": 0.35
+        },
+        {
+          "factor": "Expanding Fire Front",
+          "description": "Spatial drift of 553.6m exceeds stationary footprint; indicates active perimeter spread along terrain",
+          "weight": 0.3
+        },
+        {
+          "factor": "Overnight Fire Persistence",
+          "description": "Thermal energy detected during nighttime overpass, indicating sustained heavy fuel combustion",
+          "weight": 0.2
+        }
+      ],
+      "counter_evidence": [
+        {
+          "factor": "Zero Industrial Infrastructure",
+          "description": "Located 354km from any recorded industrial facility",
+          "weight": -0.15
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveats": [
+        "Cloud cover and canopy density can partially attenuate thermal radiative power."
+      ]
+    },
+    "priority": "HIGH",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-09-04T19:47:00Z",
+        "satellite": "N20",
+        "frp_mw": 1.37,
+        "brightness_ti4_k": 305.84,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T19:47:00Z",
+        "satellite": "N20",
+        "frp_mw": 1.37,
+        "brightness_ti4_k": 310.93,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T19:47:00Z",
+        "satellite": "N20",
+        "frp_mw": 1.53,
+        "brightness_ti4_k": 302.63,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T19:47:00Z",
+        "satellite": "N20",
+        "frp_mw": 2.96,
+        "brightness_ti4_k": 310.06,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T20:29:00Z",
+        "satellite": "N21",
+        "frp_mw": 0.94,
+        "brightness_ti4_k": 304.91,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T20:29:00Z",
+        "satellite": "N21",
+        "frp_mw": 0.94,
+        "brightness_ti4_k": 309.55,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T20:29:00Z",
+        "satellite": "N21",
+        "frp_mw": 2.11,
+        "brightness_ti4_k": 314.56,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-05T19:25:00Z",
+        "satellite": "N20",
+        "frp_mw": 2.07,
+        "brightness_ti4_k": 308.25,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-05T21:06:00Z",
+        "satellite": "N20",
+        "frp_mw": 1.65,
+        "brightness_ti4_k": 306.83,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-05T21:06:00Z",
+        "satellite": "N20",
+        "frp_mw": 1.41,
+        "brightness_ti4_k": 299.56,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T19:51:00Z",
+        "satellite": "N21",
+        "frp_mw": 1.96,
+        "brightness_ti4_k": 322.2,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T19:51:00Z",
+        "satellite": "N21",
+        "frp_mw": 1.96,
+        "brightness_ti4_k": 310.01,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T19:51:00Z",
+        "satellite": "N21",
+        "frp_mw": 2.64,
+        "brightness_ti4_k": 318.95,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T20:49:00Z",
+        "satellite": "N20",
+        "frp_mw": 2.12,
+        "brightness_ti4_k": 308.43,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T20:49:00Z",
+        "satellite": "N20",
+        "frp_mw": 0.97,
+        "brightness_ti4_k": 300.95,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T20:49:00Z",
+        "satellite": "N20",
+        "frp_mw": 0.97,
+        "brightness_ti4_k": 302.97,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-07T07:58:00Z",
+        "satellite": "N20",
+        "frp_mw": 4.49,
+        "brightness_ti4_k": 334.66,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-07T07:58:00Z",
+        "satellite": "N20",
+        "frp_mw": 4.49,
+        "brightness_ti4_k": 332.4,
+        "daynight": "D",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0034",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "eastern_ghats_forest",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 19.09186,
+        "longitude": 82.17159
+      },
+      "observation_count": 3,
+      "active_days": 2,
+      "duration_hours": 11.9,
+      "first_detected": "2026-09-04T19:47:00.000Z",
+      "last_detected": "2026-09-05T07:39:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 2
+      },
+      "night_ratio": 0.67
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 348.9,
+      "raw_mean_drift_meters": 259.9,
+      "normalized_optical_drift_ratio": 0.83,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 1.06,
+      "mean_frp_mw": 2.48,
+      "max_frp_mw": 4.83
+    },
+    "context": {
+      "nearest_facility_name": "Simlipal Tiger Reserve & National Park Core",
+      "nearest_facility_type": "protected_forest",
+      "operator": "Ministry of Environment, Forest and Climate Change",
+      "distance_to_facility_meters": 354591,
+      "inside_facility_buffer": false
+    },
+    "classification": {
+      "domain": "WILDFIRE",
+      "subclass": "FOREST_CANOPY_FIRE",
+      "confidence_label": "HIGH",
+      "confidence_score": 0.89
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [
+        {
+          "factor": "Protected Forest Landcover",
+          "description": "Thermal event located in Simlipal Tiger Reserve & National Park Core",
+          "weight": 0.35
+        },
+        {
+          "factor": "Overnight Fire Persistence",
+          "description": "Thermal energy detected during nighttime overpass, indicating sustained heavy fuel combustion",
+          "weight": 0.2
+        }
+      ],
+      "counter_evidence": [
+        {
+          "factor": "Zero Industrial Infrastructure",
+          "description": "Located 355km from any recorded industrial facility",
+          "weight": -0.15
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveats": [
+        "Cloud cover and canopy density can partially attenuate thermal radiative power."
+      ]
+    },
+    "priority": "HIGH",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-09-04T19:47:00Z",
+        "satellite": "N20",
+        "frp_mw": 1.55,
+        "brightness_ti4_k": 303.72,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T20:29:00Z",
+        "satellite": "N21",
+        "frp_mw": 1.06,
+        "brightness_ti4_k": 302.41,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-05T07:39:00Z",
+        "satellite": "N21",
+        "frp_mw": 4.83,
+        "brightness_ti4_k": 333.96,
+        "daynight": "D",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0035",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 21.43288,
+        "longitude": 72.97603
+      },
+      "observation_count": 2,
+      "active_days": 2,
+      "duration_hours": 48.3,
+      "first_detected": "2026-09-04T20:29:00.000Z",
+      "last_detected": "2026-09-06T20:49:00.000Z",
+      "day_night": {
+        "day": 0,
+        "night": 2
+      },
+      "night_ratio": 1
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 133.2,
+      "raw_mean_drift_meters": 133.2,
+      "normalized_optical_drift_ratio": 0.45,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 1.49,
+      "mean_frp_mw": 1.84,
+      "max_frp_mw": 2.19
+    },
+    "context": {
+      "nearest_facility_name": "ArcelorMittal Nippon Steel (AM/NS) Hazira",
+      "nearest_facility_type": "steel_mill",
+      "operator": "AM/NS India",
+      "distance_to_facility_meters": 43275,
+      "inside_facility_buffer": false
+    },
+    "classification": {
+      "domain": "AGRICULTURAL",
+      "subclass": "CROP_RESIDUE_BURNING",
+      "confidence_label": "HIGH",
+      "confidence_score": 0.87
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [
+        {
+          "factor": "Agricultural Plain Context",
+          "description": "Event situated in open agricultural cropland belt outside industrial zones",
+          "weight": 0.35
+        }
+      ],
+      "counter_evidence": [
+        {
+          "factor": "Facility Absence",
+          "description": "No industrial infrastructure within 43km buffer",
+          "weight": -0.2
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveats": [
+        "High smoke opacity can cause nearby false detections on adjacent optical channels."
+      ]
+    },
+    "priority": "LOW",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-09-04T20:29:00Z",
+        "satellite": "N21",
+        "frp_mw": 2.19,
+        "brightness_ti4_k": 306.16,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T20:49:00Z",
+        "satellite": "N20",
+        "frp_mw": 1.49,
+        "brightness_ti4_k": 314.63,
+        "daynight": "N",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0036",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 31.25884,
+        "longitude": 76.92423
+      },
+      "observation_count": 3,
+      "active_days": 2,
+      "duration_hours": 23.7,
+      "first_detected": "2026-09-04T21:23:00.000Z",
+      "last_detected": "2026-09-05T21:04:00.000Z",
+      "day_night": {
+        "day": 0,
+        "night": 3
+      },
+      "night_ratio": 1
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 207.4,
+      "raw_mean_drift_meters": 149.7,
+      "normalized_optical_drift_ratio": 0.46,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 0.4,
+      "mean_frp_mw": 0.71,
+      "max_frp_mw": 1
+    },
+    "context": {
+      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
+      "nearest_facility_type": "oil_refinery",
+      "operator": "Indian Oil Corporation Limited",
+      "distance_to_facility_meters": 198456,
+      "inside_facility_buffer": false
+    },
+    "classification": {
+      "domain": "AGRICULTURAL",
+      "subclass": "CROP_RESIDUE_BURNING",
+      "confidence_label": "HIGH",
+      "confidence_score": 0.87
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [
+        {
+          "factor": "Agricultural Plain Context",
+          "description": "Event situated in open agricultural cropland belt outside industrial zones",
+          "weight": 0.35
+        },
+        {
+          "factor": "Short Lived Ephemeral Burn",
+          "description": "Total duration limited to 23.7h; dissipates rapidly once crop residue clears",
+          "weight": 0.2
+        }
+      ],
+      "counter_evidence": [
+        {
+          "factor": "Facility Absence",
+          "description": "No industrial infrastructure within 198km buffer",
+          "weight": -0.2
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveats": [
+        "High smoke opacity can cause nearby false detections on adjacent optical channels."
+      ]
+    },
+    "priority": "LOW",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-09-04T21:23:00Z",
+        "satellite": "N20",
+        "frp_mw": 0.74,
+        "brightness_ti4_k": 299.65,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-04T21:23:00Z",
+        "satellite": "N20",
+        "frp_mw": 1,
+        "brightness_ti4_k": 299.97,
+        "daynight": "N",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-05T21:04:00Z",
+        "satellite": "N20",
+        "frp_mw": 0.4,
+        "brightness_ti4_k": 300.63,
+        "daynight": "N",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0037",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 31.37815,
+        "longitude": 74.56349
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-05T07:44:00.000Z",
+      "last_detected": "2026-09-05T07:44:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 0
+      },
+      "night_ratio": 0
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 3.97,
+      "mean_frp_mw": 3.97,
+      "max_frp_mw": 3.97
+    },
+    "context": {
+      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
+      "nearest_facility_type": "oil_refinery",
+      "operator": "Indian Oil Corporation Limited",
+      "distance_to_facility_meters": 305242,
+      "inside_facility_buffer": false
+    },
+    "classification": {
+      "domain": "OTHER",
+      "subclass": "SINGLE_PASS_ANOMALY",
+      "confidence_label": "LOW",
+      "confidence_score": 0.4
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [],
+      "counter_evidence": [
+        {
+          "factor": "Facility Absence",
+          "description": "No industrial facility detected within 2km (nearest is 305242m away)",
+          "weight": -0.2
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveats": [
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+      ]
+    },
+    "priority": "LOW",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-09-05T07:44:00Z",
+        "satellite": "N21",
+        "frp_mw": 3.97,
+        "brightness_ti4_k": 332.02,
+        "daynight": "D",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0038",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 22.7807,
+        "longitude": 69.45878
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-05T08:37:00.000Z",
+      "last_detected": "2026-09-05T08:37:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 0
+      },
+      "night_ratio": 0
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 5.93,
+      "mean_frp_mw": 5.93,
+      "max_frp_mw": 5.93
+    },
+    "context": {
+      "nearest_facility_name": "ArcelorMittal Nippon Steel (AM/NS) Hazira",
+      "nearest_facility_type": "steel_mill",
+      "operator": "AM/NS India",
+      "distance_to_facility_meters": 376839,
+      "inside_facility_buffer": false
+    },
+    "classification": {
+      "domain": "OTHER",
+      "subclass": "SINGLE_PASS_ANOMALY",
+      "confidence_label": "LOW",
+      "confidence_score": 0.4
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [],
+      "counter_evidence": [
+        {
+          "factor": "Facility Absence",
+          "description": "No industrial facility detected within 2km (nearest is 376839m away)",
+          "weight": -0.2
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveats": [
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+      ]
+    },
+    "priority": "LOW",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-09-05T08:37:00Z",
+        "satellite": "N20",
+        "frp_mw": 5.93,
+        "brightness_ti4_k": 347.66,
+        "daynight": "D",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0039",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 21.10128,
+        "longitude": 72.65502
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-06T08:18:00.000Z",
+      "last_detected": "2026-09-06T08:18:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 0
+      },
+      "night_ratio": 0
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 5.59,
+      "mean_frp_mw": 5.59,
+      "max_frp_mw": 5.59
+    },
+    "context": {
+      "nearest_facility_name": "Reliance Hazira Manufacturing Complex",
+      "nearest_facility_type": "petrochemical_complex",
+      "operator": "Reliance Industries Limited",
+      "distance_to_facility_meters": 931,
+      "inside_facility_buffer": true
+    },
+    "classification": {
+      "domain": "INDUSTRIAL",
+      "subclass": "SINGLE_PASS_ANOMALY",
+      "confidence_label": "LOW",
+      "confidence_score": 0.4
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [
+        {
+          "factor": "Facility Perimeter Proximity",
+          "description": "Detected within 931m of Reliance Hazira Manufacturing Complex (Reliance Industries Limited)",
+          "weight": 0.3
+        }
+      ],
+      "counter_evidence": []
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveats": [
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+      ]
+    },
+    "priority": "MEDIUM",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-09-06T08:18:00Z",
+        "satellite": "N20",
+        "frp_mw": 5.59,
+        "brightness_ti4_k": 335.5,
+        "daynight": "D",
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0040",
+    "event_type": "MULTI_PASS_TRACKED_EVENT",
+    "region": "gujarat_industrial",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 22.49567,
+        "longitude": 70.02426
+      },
+      "observation_count": 2,
+      "active_days": 1,
+      "duration_hours": 0.8,
+      "first_detected": "2026-09-06T08:20:00.000Z",
+      "last_detected": "2026-09-06T09:05:00.000Z",
+      "day_night": {
+        "day": 2,
+        "night": 0
+      },
+      "night_ratio": 0
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 231.6,
+      "raw_mean_drift_meters": 231.6,
+      "normalized_optical_drift_ratio": 0.64,
+      "spatial_consistency": "STATIONARY_POINT_SOURCE (Drift fully within satellite pixel footprint)"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 4.24,
+      "mean_frp_mw": 5.88,
+      "max_frp_mw": 7.52
+    },
+    "context": {
+      "nearest_facility_name": "ArcelorMittal Nippon Steel (AM/NS) Hazira",
+      "nearest_facility_type": "steel_mill",
+      "operator": "AM/NS India",
+      "distance_to_facility_meters": 310721,
+      "inside_facility_buffer": false
+    },
+    "classification": {
+      "domain": "AGRICULTURAL",
+      "subclass": "CROP_RESIDUE_BURNING",
+      "confidence_label": "HIGH",
+      "confidence_score": 0.87
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [
+        {
+          "factor": "Agricultural Plain Context",
+          "description": "Event situated in open agricultural cropland belt outside industrial zones",
+          "weight": 0.35
+        },
+        {
+          "factor": "Diurnal Harvest Restriction",
+          "description": "100% of detections occurred during daylight overpasses, characteristic of field clearing practices",
+          "weight": 0.25
+        },
+        {
+          "factor": "Short Lived Ephemeral Burn",
+          "description": "Total duration limited to 0.8h; dissipates rapidly once crop residue clears",
+          "weight": 0.2
+        }
+      ],
+      "counter_evidence": [
+        {
+          "factor": "Facility Absence",
+          "description": "No industrial infrastructure within 311km buffer",
+          "weight": -0.2
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "MODERATE",
+      "caveats": [
+        "High smoke opacity can cause nearby false detections on adjacent optical channels."
+      ]
+    },
+    "priority": "LOW",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-09-06T08:20:00Z",
+        "satellite": "N20",
+        "frp_mw": 7.52,
+        "brightness_ti4_k": 338.11,
+        "daynight": "D",
+        "confidence": "nominal"
+      },
+      {
+        "timestamp": "2026-09-06T09:05:00Z",
+        "satellite": "N21",
+        "frp_mw": 4.24,
+        "brightness_ti4_k": 334.17,
+        "daynight": "D",
+        "confidence": "nominal"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT-V2-0041",
+    "event_type": "SINGLE_PASS_ANOMALY",
+    "region": "punjab_agriculture",
+    "spatio_temporal": {
+      "centroid": {
+        "latitude": 31.13125,
+        "longitude": 74.60674
+      },
+      "observation_count": 1,
+      "active_days": 1,
+      "duration_hours": 0,
+      "first_detected": "2026-09-06T08:22:00.000Z",
+      "last_detected": "2026-09-06T08:22:00.000Z",
+      "day_night": {
+        "day": 1,
+        "night": 0
+      },
+      "night_ratio": 0
+    },
+    "spatial_diagnostics": {
+      "raw_max_drift_meters": 0,
+      "raw_mean_drift_meters": 0,
+      "normalized_optical_drift_ratio": 0,
+      "spatial_consistency": "SINGLE_OBSERVATION_NO_DRIFT_EVALUATION"
+    },
+    "thermal_diagnostics": {
+      "min_frp_mw": 4.08,
+      "mean_frp_mw": 4.08,
+      "max_frp_mw": 4.08
+    },
+    "context": {
+      "nearest_facility_name": "IOCL Panipat Refinery & Petrochemical Complex",
+      "nearest_facility_type": "oil_refinery",
+      "operator": "Indian Oil Corporation Limited",
+      "distance_to_facility_meters": 283936,
+      "inside_facility_buffer": false
+    },
+    "classification": {
+      "domain": "OTHER",
+      "subclass": "SINGLE_PASS_ANOMALY",
+      "confidence_label": "LOW",
+      "confidence_score": 0.4
+    },
+    "evidence_breakdown": {
+      "supporting_evidence": [],
+      "counter_evidence": [
+        {
+          "factor": "Facility Absence",
+          "description": "No industrial facility detected within 2km (nearest is 283936m away)",
+          "weight": -0.2
+        }
+      ]
+    },
+    "uncertainty": {
+      "level": "HIGH",
+      "caveats": [
+        "Single satellite observation. Insufficient temporal data to evaluate persistence or physical spread."
+      ]
+    },
+    "priority": "LOW",
+    "observation_timeline": [
+      {
+        "timestamp": "2026-09-06T08:22:00Z",
+        "satellite": "N20",
+        "frp_mw": 4.08,
+        "brightness_ti4_k": 333.54,
+        "daynight": "D",
+        "confidence": "nominal"
+      }
+    ]
+  }
+]

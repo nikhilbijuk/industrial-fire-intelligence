@@ -32,13 +32,20 @@ industrial-fire-intelligence/
 
 ---
 
-## ⚡ Quickstart: Run the Prototype
+## ⚡ Quickstart: Launch the Dashboard
 
-You have **Node.js v25.9.0** installed on your system. You can immediately run the end-to-end prototype on sample FIRMS data:
+Run the offline dashboard on any machine with Node.js installed:
 
 ```bash
-cd "C:\Users\Nikhil Biju\.gemini\antigravity-ide\scratch\industrial-fire-intelligence"
-node prototype/thermal_events.js
+# 1. Clone the repository
+git clone https://github.com/nikhilbijuk/industrial-fire-intelligence.git
+cd industrial-fire-intelligence
+
+# 2. Start the zero-dependency local dashboard server
+node dashboard/server.js
+
+# 3. Open in your browser:
+http://localhost:3000
 ```
 
-This takes raw satellite pixel detections, clusters them into spatio-temporal events ($R \le 800\text{ m}, \Delta T \le 72\text{ h}$), checks geographic context, and outputs explainable intelligence reports with supporting and counter-evidence.
+This runs the interactive GIS console evaluating real satellite detections against industrial facilities with explainable evidence breakdowns.

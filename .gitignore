@@ -19,6 +19,9 @@ env/
 *.key
 map_key.txt
 
+# Raw satellite downloads (keep processed benchmark in repo)
+prototype/data/raw/
+
 # System Files
 .DS_Store
 Thumbs.db

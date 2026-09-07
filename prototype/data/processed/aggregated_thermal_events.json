@@ -1,0 +1,1145 @@
+[
+  {
+    "event_id": "EVT-REAL-0001",
+    "observation_count": 52,
+    "active_days": 7,
+    "duration_hours": 157,
+    "first_detected": "2026-08-31T08:33:00.000Z",
+    "last_detected": "2026-09-06T21:31:00.000Z",
+    "centroid": {
+      "latitude": 21.10491,
+      "longitude": 72.64285
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 1325.6,
+      "mean_drift_meters": 595.3
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 0.87,
+      "mean_frp_mw": 6.11,
+      "max_frp_mw": 26.51
+    },
+    "sensor_composition": {
+      "N20": 21,
+      "N21": 31
+    },
+    "day_night": {
+      "day": 17,
+      "night": 35
+    },
+    "region": "gujarat_industrial"
+  },
+  {
+    "event_id": "EVT-REAL-0002",
+    "observation_count": 1,
+    "active_days": 1,
+    "duration_hours": 0,
+    "first_detected": "2026-08-31T08:35:00.000Z",
+    "last_detected": "2026-08-31T08:35:00.000Z",
+    "centroid": {
+      "latitude": 31.41202,
+      "longitude": 74.55347
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 0,
+      "mean_drift_meters": 0
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 1.49,
+      "mean_frp_mw": 1.49,
+      "max_frp_mw": 1.49
+    },
+    "sensor_composition": {
+      "N20": 1
+    },
+    "day_night": {
+      "day": 1,
+      "night": 0
+    },
+    "region": "punjab_agriculture"
+  },
+  {
+    "event_id": "EVT-REAL-0003",
+    "observation_count": 1,
+    "active_days": 1,
+    "duration_hours": 0,
+    "first_detected": "2026-08-31T20:57:00.000Z",
+    "last_detected": "2026-08-31T20:57:00.000Z",
+    "centroid": {
+      "latitude": 30.25077,
+      "longitude": 74.9136
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 0,
+      "mean_drift_meters": 0
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 1.01,
+      "mean_frp_mw": 1.01,
+      "max_frp_mw": 1.01
+    },
+    "sensor_composition": {
+      "N20": 1
+    },
+    "day_night": {
+      "day": 0,
+      "night": 1
+    },
+    "region": "punjab_agriculture"
+  },
+  {
+    "event_id": "EVT-REAL-0004",
+    "observation_count": 1,
+    "active_days": 1,
+    "duration_hours": 0,
+    "first_detected": "2026-08-31T20:57:00.000Z",
+    "last_detected": "2026-08-31T20:57:00.000Z",
+    "centroid": {
+      "latitude": 29.46107,
+      "longitude": 76.8892
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 0,
+      "mean_drift_meters": 0
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 3.12,
+      "mean_frp_mw": 3.12,
+      "max_frp_mw": 3.12
+    },
+    "sensor_composition": {
+      "N20": 1
+    },
+    "day_night": {
+      "day": 0,
+      "night": 1
+    },
+    "region": "punjab_agriculture"
+  },
+  {
+    "event_id": "EVT-REAL-0005",
+    "observation_count": 15,
+    "active_days": 7,
+    "duration_hours": 144.5,
+    "first_detected": "2026-08-31T20:59:00.000Z",
+    "last_detected": "2026-09-06T21:31:00.000Z",
+    "centroid": {
+      "latitude": 22.93294,
+      "longitude": 69.69835
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 539.7,
+      "mean_drift_meters": 276.7
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 0.57,
+      "mean_frp_mw": 2.49,
+      "max_frp_mw": 4.7
+    },
+    "sensor_composition": {
+      "N20": 4,
+      "N21": 11
+    },
+    "day_night": {
+      "day": 1,
+      "night": 14
+    },
+    "region": "gujarat_industrial"
+  },
+  {
+    "event_id": "EVT-REAL-0006",
+    "observation_count": 1,
+    "active_days": 1,
+    "duration_hours": 0,
+    "first_detected": "2026-08-31T20:59:00.000Z",
+    "last_detected": "2026-08-31T20:59:00.000Z",
+    "centroid": {
+      "latitude": 22.93215,
+      "longitude": 69.70328
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 0,
+      "mean_drift_meters": 0
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 1.67,
+      "mean_frp_mw": 1.67,
+      "max_frp_mw": 1.67
+    },
+    "sensor_composition": {
+      "N20": 1
+    },
+    "day_night": {
+      "day": 0,
+      "night": 1
+    },
+    "region": "gujarat_industrial"
+  },
+  {
+    "event_id": "EVT-REAL-0007",
+    "observation_count": 2,
+    "active_days": 1,
+    "duration_hours": 0,
+    "first_detected": "2026-08-31T21:44:00.000Z",
+    "last_detected": "2026-08-31T21:44:00.000Z",
+    "centroid": {
+      "latitude": 22.38667,
+      "longitude": 73.11994
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 389.7,
+      "mean_drift_meters": 389.7
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 2.43,
+      "mean_frp_mw": 3.22,
+      "max_frp_mw": 4.01
+    },
+    "sensor_composition": {
+      "N21": 2
+    },
+    "day_night": {
+      "day": 0,
+      "night": 2
+    },
+    "region": "gujarat_industrial"
+  },
+  {
+    "event_id": "EVT-REAL-0008",
+    "observation_count": 2,
+    "active_days": 1,
+    "duration_hours": 0,
+    "first_detected": "2026-09-01T07:20:00.000Z",
+    "last_detected": "2026-09-01T07:20:00.000Z",
+    "centroid": {
+      "latitude": 31.1216,
+      "longitude": 74.69022
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 26.7,
+      "mean_drift_meters": 26.7
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 10.48,
+      "mean_frp_mw": 11.8,
+      "max_frp_mw": 13.13
+    },
+    "sensor_composition": {
+      "N21": 2
+    },
+    "day_night": {
+      "day": 2,
+      "night": 0
+    },
+    "region": "punjab_agriculture"
+  },
+  {
+    "event_id": "EVT-REAL-0009",
+    "observation_count": 1,
+    "active_days": 1,
+    "duration_hours": 0,
+    "first_detected": "2026-09-01T08:13:00.000Z",
+    "last_detected": "2026-09-01T08:13:00.000Z",
+    "centroid": {
+      "latitude": 30.66109,
+      "longitude": 76.31641
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 0,
+      "mean_drift_meters": 0
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 3.62,
+      "mean_frp_mw": 3.62,
+      "max_frp_mw": 3.62
+    },
+    "sensor_composition": {
+      "N20": 1
+    },
+    "day_night": {
+      "day": 1,
+      "night": 0
+    },
+    "region": "punjab_agriculture"
+  },
+  {
+    "event_id": "EVT-REAL-0010",
+    "observation_count": 1,
+    "active_days": 1,
+    "duration_hours": 0,
+    "first_detected": "2026-09-01T08:13:00.000Z",
+    "last_detected": "2026-09-01T08:13:00.000Z",
+    "centroid": {
+      "latitude": 31.13703,
+      "longitude": 74.91448
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 0,
+      "mean_drift_meters": 0
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 6.71,
+      "mean_frp_mw": 6.71,
+      "max_frp_mw": 6.71
+    },
+    "sensor_composition": {
+      "N20": 1
+    },
+    "day_night": {
+      "day": 1,
+      "night": 0
+    },
+    "region": "punjab_agriculture"
+  },
+  {
+    "event_id": "EVT-REAL-0011",
+    "observation_count": 1,
+    "active_days": 1,
+    "duration_hours": 0,
+    "first_detected": "2026-09-01T08:13:00.000Z",
+    "last_detected": "2026-09-01T08:13:00.000Z",
+    "centroid": {
+      "latitude": 31.12613,
+      "longitude": 74.62209
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 0,
+      "mean_drift_meters": 0
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 8,
+      "mean_frp_mw": 8,
+      "max_frp_mw": 8
+    },
+    "sensor_composition": {
+      "N20": 1
+    },
+    "day_night": {
+      "day": 1,
+      "night": 0
+    },
+    "region": "punjab_agriculture"
+  },
+  {
+    "event_id": "EVT-REAL-0012",
+    "observation_count": 1,
+    "active_days": 1,
+    "duration_hours": 0,
+    "first_detected": "2026-09-01T20:40:00.000Z",
+    "last_detected": "2026-09-01T20:40:00.000Z",
+    "centroid": {
+      "latitude": 29.12574,
+      "longitude": 75.77645
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 0,
+      "mean_drift_meters": 0
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 0.88,
+      "mean_frp_mw": 0.88,
+      "max_frp_mw": 0.88
+    },
+    "sensor_composition": {
+      "N20": 1
+    },
+    "day_night": {
+      "day": 0,
+      "night": 1
+    },
+    "region": "punjab_agriculture"
+  },
+  {
+    "event_id": "EVT-REAL-0013",
+    "observation_count": 1,
+    "active_days": 1,
+    "duration_hours": 0,
+    "first_detected": "2026-09-02T08:39:00.000Z",
+    "last_detected": "2026-09-02T08:39:00.000Z",
+    "centroid": {
+      "latitude": 31.09241,
+      "longitude": 74.68892
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 0,
+      "mean_drift_meters": 0
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 4.61,
+      "mean_frp_mw": 4.61,
+      "max_frp_mw": 4.61
+    },
+    "sensor_composition": {
+      "N21": 1
+    },
+    "day_night": {
+      "day": 1,
+      "night": 0
+    },
+    "region": "punjab_agriculture"
+  },
+  {
+    "event_id": "EVT-REAL-0014",
+    "observation_count": 1,
+    "active_days": 1,
+    "duration_hours": 0,
+    "first_detected": "2026-09-02T08:39:00.000Z",
+    "last_detected": "2026-09-02T08:39:00.000Z",
+    "centroid": {
+      "latitude": 31.12882,
+      "longitude": 74.65296
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 0,
+      "mean_drift_meters": 0
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 7.4,
+      "mean_frp_mw": 7.4,
+      "max_frp_mw": 7.4
+    },
+    "sensor_composition": {
+      "N21": 1
+    },
+    "day_night": {
+      "day": 1,
+      "night": 0
+    },
+    "region": "punjab_agriculture"
+  },
+  {
+    "event_id": "EVT-REAL-0015",
+    "observation_count": 15,
+    "active_days": 5,
+    "duration_hours": 108.6,
+    "first_detected": "2026-09-02T19:25:00.000Z",
+    "last_detected": "2026-09-07T08:01:00.000Z",
+    "centroid": {
+      "latitude": 20.88781,
+      "longitude": 84.98099
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 766.2,
+      "mean_drift_meters": 278.2
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 1.24,
+      "mean_frp_mw": 2.43,
+      "max_frp_mw": 4.17
+    },
+    "sensor_composition": {
+      "N21": 8,
+      "N20": 7
+    },
+    "day_night": {
+      "day": 2,
+      "night": 13
+    },
+    "region": "eastern_ghats_forest"
+  },
+  {
+    "event_id": "EVT-REAL-0016",
+    "observation_count": 20,
+    "active_days": 5,
+    "duration_hours": 108.6,
+    "first_detected": "2026-09-02T19:25:00.000Z",
+    "last_detected": "2026-09-07T08:01:00.000Z",
+    "centroid": {
+      "latitude": 20.86468,
+      "longitude": 84.99064
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 977,
+      "mean_drift_meters": 355.3
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 0.94,
+      "mean_frp_mw": 3.28,
+      "max_frp_mw": 9.04
+    },
+    "sensor_composition": {
+      "N21": 11,
+      "N20": 9
+    },
+    "day_night": {
+      "day": 6,
+      "night": 14
+    },
+    "region": "eastern_ghats_forest"
+  },
+  {
+    "event_id": "EVT-REAL-0017",
+    "observation_count": 1,
+    "active_days": 1,
+    "duration_hours": 0,
+    "first_detected": "2026-09-02T20:19:00.000Z",
+    "last_detected": "2026-09-02T20:19:00.000Z",
+    "centroid": {
+      "latitude": 30.21693,
+      "longitude": 76.76219
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 0,
+      "mean_drift_meters": 0
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 1.37,
+      "mean_frp_mw": 1.37,
+      "max_frp_mw": 1.37
+    },
+    "sensor_composition": {
+      "N20": 1
+    },
+    "day_night": {
+      "day": 0,
+      "night": 1
+    },
+    "region": "punjab_agriculture"
+  },
+  {
+    "event_id": "EVT-REAL-0018",
+    "observation_count": 2,
+    "active_days": 2,
+    "duration_hours": 23.6,
+    "first_detected": "2026-09-02T21:08:00.000Z",
+    "last_detected": "2026-09-03T20:46:00.000Z",
+    "centroid": {
+      "latitude": 22.92547,
+      "longitude": 69.82349
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 162.1,
+      "mean_drift_meters": 162.1
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 1.74,
+      "mean_frp_mw": 2.33,
+      "max_frp_mw": 2.91
+    },
+    "sensor_composition": {
+      "N21": 2
+    },
+    "day_night": {
+      "day": 0,
+      "night": 2
+    },
+    "region": "gujarat_industrial"
+  },
+  {
+    "event_id": "EVT-REAL-0019",
+    "observation_count": 2,
+    "active_days": 2,
+    "duration_hours": 23.6,
+    "first_detected": "2026-09-02T21:08:00.000Z",
+    "last_detected": "2026-09-03T20:46:00.000Z",
+    "centroid": {
+      "latitude": 22.33932,
+      "longitude": 69.85589
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 101.3,
+      "mean_drift_meters": 101.3
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 2.26,
+      "mean_frp_mw": 3.28,
+      "max_frp_mw": 4.3
+    },
+    "sensor_composition": {
+      "N21": 2
+    },
+    "day_night": {
+      "day": 0,
+      "night": 2
+    },
+    "region": "gujarat_industrial"
+  },
+  {
+    "event_id": "EVT-REAL-0020",
+    "observation_count": 1,
+    "active_days": 1,
+    "duration_hours": 0,
+    "first_detected": "2026-09-02T21:08:00.000Z",
+    "last_detected": "2026-09-02T21:08:00.000Z",
+    "centroid": {
+      "latitude": 22.33454,
+      "longitude": 69.86774
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 0,
+      "mean_drift_meters": 0
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 3.38,
+      "mean_frp_mw": 3.38,
+      "max_frp_mw": 3.38
+    },
+    "sensor_composition": {
+      "N21": 1
+    },
+    "day_night": {
+      "day": 0,
+      "night": 1
+    },
+    "region": "gujarat_industrial"
+  },
+  {
+    "event_id": "EVT-REAL-0021",
+    "observation_count": 7,
+    "active_days": 2,
+    "duration_hours": 24.6,
+    "first_detected": "2026-09-02T21:08:00.000Z",
+    "last_detected": "2026-09-03T21:44:00.000Z",
+    "centroid": {
+      "latitude": 21.16537,
+      "longitude": 72.67093
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 540.2,
+      "mean_drift_meters": 249.1
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 2.07,
+      "mean_frp_mw": 4.09,
+      "max_frp_mw": 6.29
+    },
+    "sensor_composition": {
+      "N21": 3,
+      "N20": 4
+    },
+    "day_night": {
+      "day": 3,
+      "night": 4
+    },
+    "region": "gujarat_industrial"
+  },
+  {
+    "event_id": "EVT-REAL-0022",
+    "observation_count": 4,
+    "active_days": 2,
+    "duration_hours": 37.1,
+    "first_detected": "2026-09-03T08:20:00.000Z",
+    "last_detected": "2026-09-04T21:25:00.000Z",
+    "centroid": {
+      "latitude": 22.92847,
+      "longitude": 70.10669
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 314.7,
+      "mean_drift_meters": 174
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 3.36,
+      "mean_frp_mw": 6.26,
+      "max_frp_mw": 8.52
+    },
+    "sensor_composition": {
+      "N21": 2,
+      "N20": 2
+    },
+    "day_night": {
+      "day": 3,
+      "night": 1
+    },
+    "region": "gujarat_industrial"
+  },
+  {
+    "event_id": "EVT-REAL-0023",
+    "observation_count": 1,
+    "active_days": 1,
+    "duration_hours": 0,
+    "first_detected": "2026-09-03T08:22:00.000Z",
+    "last_detected": "2026-09-03T08:22:00.000Z",
+    "centroid": {
+      "latitude": 31.16984,
+      "longitude": 75.04272
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 0,
+      "mean_drift_meters": 0
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 4.87,
+      "mean_frp_mw": 4.87,
+      "max_frp_mw": 4.87
+    },
+    "sensor_composition": {
+      "N21": 1
+    },
+    "day_night": {
+      "day": 1,
+      "night": 0
+    },
+    "region": "punjab_agriculture"
+  },
+  {
+    "event_id": "EVT-REAL-0024",
+    "observation_count": 1,
+    "active_days": 1,
+    "duration_hours": 0,
+    "first_detected": "2026-09-03T08:22:00.000Z",
+    "last_detected": "2026-09-03T08:22:00.000Z",
+    "centroid": {
+      "latitude": 31.46605,
+      "longitude": 74.61465
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 0,
+      "mean_drift_meters": 0
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 4.63,
+      "mean_frp_mw": 4.63,
+      "max_frp_mw": 4.63
+    },
+    "sensor_composition": {
+      "N21": 1
+    },
+    "day_night": {
+      "day": 1,
+      "night": 0
+    },
+    "region": "punjab_agriculture"
+  },
+  {
+    "event_id": "EVT-REAL-0025",
+    "observation_count": 4,
+    "active_days": 2,
+    "duration_hours": 12.9,
+    "first_detected": "2026-09-03T20:02:00.000Z",
+    "last_detected": "2026-09-04T08:58:00.000Z",
+    "centroid": {
+      "latitude": 29.90931,
+      "longitude": 74.9473
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 660.6,
+      "mean_drift_meters": 467.6
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 0.8,
+      "mean_frp_mw": 1.6,
+      "max_frp_mw": 3.63
+    },
+    "sensor_composition": {
+      "N20": 4
+    },
+    "day_night": {
+      "day": 1,
+      "night": 3
+    },
+    "region": "punjab_agriculture"
+  },
+  {
+    "event_id": "EVT-REAL-0026",
+    "observation_count": 17,
+    "active_days": 3,
+    "duration_hours": 73.5,
+    "first_detected": "2026-09-03T20:02:00.000Z",
+    "last_detected": "2026-09-06T21:29:00.000Z",
+    "centroid": {
+      "latitude": 29.47559,
+      "longitude": 76.85605
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 631.1,
+      "mean_drift_meters": 292.6
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 0.57,
+      "mean_frp_mw": 4.32,
+      "max_frp_mw": 9.46
+    },
+    "sensor_composition": {
+      "N20": 10,
+      "N21": 7
+    },
+    "day_night": {
+      "day": 0,
+      "night": 17
+    },
+    "region": "punjab_agriculture"
+  },
+  {
+    "event_id": "EVT-REAL-0027",
+    "observation_count": 1,
+    "active_days": 1,
+    "duration_hours": 0,
+    "first_detected": "2026-09-03T20:46:00.000Z",
+    "last_detected": "2026-09-03T20:46:00.000Z",
+    "centroid": {
+      "latitude": 22.96819,
+      "longitude": 72.55517
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 0,
+      "mean_drift_meters": 0
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 0.4,
+      "mean_frp_mw": 0.4,
+      "max_frp_mw": 0.4
+    },
+    "sensor_composition": {
+      "N21": 1
+    },
+    "day_night": {
+      "day": 0,
+      "night": 1
+    },
+    "region": "gujarat_industrial"
+  },
+  {
+    "event_id": "EVT-REAL-0028",
+    "observation_count": 4,
+    "active_days": 3,
+    "duration_hours": 48.3,
+    "first_detected": "2026-09-03T20:46:00.000Z",
+    "last_detected": "2026-09-05T21:06:00.000Z",
+    "centroid": {
+      "latitude": 22.41651,
+      "longitude": 69.03934
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 223.1,
+      "mean_drift_meters": 133.6
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 1.21,
+      "mean_frp_mw": 2.46,
+      "max_frp_mw": 3.19
+    },
+    "sensor_composition": {
+      "N21": 2,
+      "N20": 2
+    },
+    "day_night": {
+      "day": 1,
+      "night": 3
+    },
+    "region": "gujarat_industrial"
+  },
+  {
+    "event_id": "EVT-REAL-0029",
+    "observation_count": 1,
+    "active_days": 1,
+    "duration_hours": 0,
+    "first_detected": "2026-09-03T20:46:00.000Z",
+    "last_detected": "2026-09-03T20:46:00.000Z",
+    "centroid": {
+      "latitude": 22.39963,
+      "longitude": 69.01791
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 0,
+      "mean_drift_meters": 0
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 3.18,
+      "mean_frp_mw": 3.18,
+      "max_frp_mw": 3.18
+    },
+    "sensor_composition": {
+      "N21": 1
+    },
+    "day_night": {
+      "day": 0,
+      "night": 1
+    },
+    "region": "gujarat_industrial"
+  },
+  {
+    "event_id": "EVT-REAL-0030",
+    "observation_count": 1,
+    "active_days": 1,
+    "duration_hours": 0,
+    "first_detected": "2026-09-03T20:46:00.000Z",
+    "last_detected": "2026-09-03T20:46:00.000Z",
+    "centroid": {
+      "latitude": 21.62968,
+      "longitude": 72.911
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 0,
+      "mean_drift_meters": 0
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 0.25,
+      "mean_frp_mw": 0.25,
+      "max_frp_mw": 0.25
+    },
+    "sensor_composition": {
+      "N21": 1
+    },
+    "day_night": {
+      "day": 0,
+      "night": 1
+    },
+    "region": "gujarat_industrial"
+  },
+  {
+    "event_id": "EVT-REAL-0031",
+    "observation_count": 1,
+    "active_days": 1,
+    "duration_hours": 0,
+    "first_detected": "2026-09-04T19:45:00.000Z",
+    "last_detected": "2026-09-04T19:45:00.000Z",
+    "centroid": {
+      "latitude": 20.872,
+      "longitude": 84.9957
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 0,
+      "mean_drift_meters": 0
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 1.46,
+      "mean_frp_mw": 1.46,
+      "max_frp_mw": 1.46
+    },
+    "sensor_composition": {
+      "N20": 1
+    },
+    "day_night": {
+      "day": 0,
+      "night": 1
+    },
+    "region": "eastern_ghats_forest"
+  },
+  {
+    "event_id": "EVT-REAL-0032",
+    "observation_count": 19,
+    "active_days": 4,
+    "duration_hours": 60.2,
+    "first_detected": "2026-09-04T19:47:00.000Z",
+    "last_detected": "2026-09-07T07:58:00.000Z",
+    "centroid": {
+      "latitude": 19.10078,
+      "longitude": 82.1664
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 1007.6,
+      "mean_drift_meters": 357
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 0.94,
+      "mean_frp_mw": 2.15,
+      "max_frp_mw": 4.83
+    },
+    "sensor_composition": {
+      "N20": 12,
+      "N21": 7
+    },
+    "day_night": {
+      "day": 3,
+      "night": 16
+    },
+    "region": "eastern_ghats_forest"
+  },
+  {
+    "event_id": "EVT-REAL-0033",
+    "observation_count": 2,
+    "active_days": 1,
+    "duration_hours": 0.7,
+    "first_detected": "2026-09-04T19:47:00.000Z",
+    "last_detected": "2026-09-04T20:29:00.000Z",
+    "centroid": {
+      "latitude": 19.09136,
+      "longitude": 82.17185
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 322.8,
+      "mean_drift_meters": 322.8
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 1.06,
+      "mean_frp_mw": 1.31,
+      "max_frp_mw": 1.55
+    },
+    "sensor_composition": {
+      "N20": 1,
+      "N21": 1
+    },
+    "day_night": {
+      "day": 0,
+      "night": 2
+    },
+    "region": "eastern_ghats_forest"
+  },
+  {
+    "event_id": "EVT-REAL-0034",
+    "observation_count": 2,
+    "active_days": 2,
+    "duration_hours": 48.3,
+    "first_detected": "2026-09-04T20:29:00.000Z",
+    "last_detected": "2026-09-06T20:49:00.000Z",
+    "centroid": {
+      "latitude": 21.43288,
+      "longitude": 72.97603
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 133.2,
+      "mean_drift_meters": 133.2
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 1.49,
+      "mean_frp_mw": 1.84,
+      "max_frp_mw": 2.19
+    },
+    "sensor_composition": {
+      "N21": 1,
+      "N20": 1
+    },
+    "day_night": {
+      "day": 0,
+      "night": 2
+    },
+    "region": "gujarat_industrial"
+  },
+  {
+    "event_id": "EVT-REAL-0035",
+    "observation_count": 3,
+    "active_days": 2,
+    "duration_hours": 23.7,
+    "first_detected": "2026-09-04T21:23:00.000Z",
+    "last_detected": "2026-09-05T21:04:00.000Z",
+    "centroid": {
+      "latitude": 31.25884,
+      "longitude": 76.92423
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 207.4,
+      "mean_drift_meters": 149.7
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 0.4,
+      "mean_frp_mw": 0.71,
+      "max_frp_mw": 1
+    },
+    "sensor_composition": {
+      "N20": 3
+    },
+    "day_night": {
+      "day": 0,
+      "night": 3
+    },
+    "region": "punjab_agriculture"
+  },
+  {
+    "event_id": "EVT-REAL-0036",
+    "observation_count": 1,
+    "active_days": 1,
+    "duration_hours": 0,
+    "first_detected": "2026-09-05T07:44:00.000Z",
+    "last_detected": "2026-09-05T07:44:00.000Z",
+    "centroid": {
+      "latitude": 31.37815,
+      "longitude": 74.56349
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 0,
+      "mean_drift_meters": 0
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 3.97,
+      "mean_frp_mw": 3.97,
+      "max_frp_mw": 3.97
+    },
+    "sensor_composition": {
+      "N21": 1
+    },
+    "day_night": {
+      "day": 1,
+      "night": 0
+    },
+    "region": "punjab_agriculture"
+  },
+  {
+    "event_id": "EVT-REAL-0037",
+    "observation_count": 1,
+    "active_days": 1,
+    "duration_hours": 0,
+    "first_detected": "2026-09-05T08:37:00.000Z",
+    "last_detected": "2026-09-05T08:37:00.000Z",
+    "centroid": {
+      "latitude": 22.7807,
+      "longitude": 69.45878
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 0,
+      "mean_drift_meters": 0
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 5.93,
+      "mean_frp_mw": 5.93,
+      "max_frp_mw": 5.93
+    },
+    "sensor_composition": {
+      "N20": 1
+    },
+    "day_night": {
+      "day": 1,
+      "night": 0
+    },
+    "region": "gujarat_industrial"
+  },
+  {
+    "event_id": "EVT-REAL-0038",
+    "observation_count": 2,
+    "active_days": 1,
+    "duration_hours": 0.8,
+    "first_detected": "2026-09-06T08:20:00.000Z",
+    "last_detected": "2026-09-06T09:05:00.000Z",
+    "centroid": {
+      "latitude": 22.49567,
+      "longitude": 70.02426
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 231.6,
+      "mean_drift_meters": 231.6
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 4.24,
+      "mean_frp_mw": 5.88,
+      "max_frp_mw": 7.52
+    },
+    "sensor_composition": {
+      "N20": 1,
+      "N21": 1
+    },
+    "day_night": {
+      "day": 2,
+      "night": 0
+    },
+    "region": "gujarat_industrial"
+  },
+  {
+    "event_id": "EVT-REAL-0039",
+    "observation_count": 1,
+    "active_days": 1,
+    "duration_hours": 0,
+    "first_detected": "2026-09-06T08:22:00.000Z",
+    "last_detected": "2026-09-06T08:22:00.000Z",
+    "centroid": {
+      "latitude": 31.13125,
+      "longitude": 74.60674
+    },
+    "spatial_metrics": {
+      "max_drift_meters": 0,
+      "mean_drift_meters": 0
+    },
+    "thermal_metrics": {
+      "min_frp_mw": 4.08,
+      "mean_frp_mw": 4.08,
+      "max_frp_mw": 4.08
+    },
+    "sensor_composition": {
+      "N20": 1
+    },
+    "day_night": {
+      "day": 1,
+      "night": 0
+    },
+    "region": "punjab_agriculture"
+  }
+]

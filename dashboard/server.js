@@ -8,6 +8,7 @@ const fs = require('fs');
 const path = require('path');
 
 const PORT = 3000;
+const DASHBOARD_DIR = __dirname;
 const ROOT_DIR = path.resolve(__dirname, '..');
 
 const MIME_TYPES = {
@@ -22,11 +23,17 @@ const MIME_TYPES = {
 
 const server = http.createServer((req, res) => {
   let reqUrl = req.url.split('?')[0];
-  if (reqUrl === '/' || reqUrl === '/dashboard') {
-    reqUrl = '/dashboard/index.html';
+  if (reqUrl === '/' || reqUrl === '/dashboard' || reqUrl === '/dashboard/') {
+    reqUrl = '/index.html';
   }
 
-  const filePath = path.join(ROOT_DIR, reqUrl);
+  // First try resolving within dashboard/ directory
+  let filePath = path.join(DASHBOARD_DIR, reqUrl);
+  
+  if (!fs.existsSync(filePath) || !fs.statSync(filePath).isFile()) {
+    // If not found in dashboard, try resolving from project root (e.g., prototype/data/...)
+    filePath = path.join(ROOT_DIR, reqUrl);
+  }
 
   fs.stat(filePath, (err, stats) => {
     if (err || !stats.isFile()) {
@@ -53,6 +60,7 @@ function startServer(port) {
     console.log('       INDUSTRIAL FIRE INTELLIGENCE - DASHBOARD ACTIVE         ');
     console.log('===============================================================');
     console.log(`Local URL: http://localhost:${port}`);
+    console.log('Serving from: ' + DASHBOARD_DIR);
     console.log('Press Ctrl+C to stop.');
     console.log('===============================================================');
   });

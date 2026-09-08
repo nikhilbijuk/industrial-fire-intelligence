@@ -63,7 +63,7 @@ In V2, the aggregator cleanly split them into **distinct physical facilities**:
 * **`EVT-V2-0027`:** Centroid $[29.47559^\circ\text{N}, 76.85605^\circ\text{E}]$, 17 observations across 3 active days ($100\%$ night passes).
 * **Raw Coordinate Drift:** $631.1\text{ m}$.
 * **Optical Drift Ratio:** **$0.78$**.
-* **Scientific Defense:** Because $0.78 < 1.0$, the apparent $631\text{ m}$ shift is mathematically proven to be sensor pixel elongation at high scan angles, not physical movement of the flame. The source is correctly classified as a **Stationary Point Source**.
+* **Scientific Defense:** Because $0.78 < 1.0$, the apparent $631\text{ m}$ shift is fully explained by sensor pixel elongation at high scan angles, so the data does not require us to assume physical movement of the flame. The source is correctly classified as a **Stationary Point Source** (consistent with, not proof of, a stationary origin).
 
 ---
 

@@ -5,23 +5,89 @@
  * 100% Client-side, zero live external API calls.
  */
 
-let map;
+let map = null;
 let eventMarkers = [];
 let facilityLayers = [];
 let allEvents = [];
 let allFacilities = [];
 
+// Ensure datasets are loaded immediately from window if precomputed bundle is loaded
+function ensureDatasetsLoaded() {
+  if (allEvents.length === 0 && window.PRECOMPUTED_EVENTS) {
+    allEvents = window.PRECOMPUTED_EVENTS;
+  }
+  if (allFacilities.length === 0 && window.PRECOMPUTED_FACILITIES) {
+    allFacilities = window.PRECOMPUTED_FACILITIES;
+  }
+}
+
+// Global click handler accessible directly via HTML onclick or JavaScript event listeners
+window.handleDemoClick = function(scenario) {
+  const configs = {
+    'hazira': { id: 'EVT-V2-0007', coords: [21.1055, 72.6465], zoom: 14, btnId: 'btn-demo-hazira' },
+    'panipat': { id: 'EVT-V2-0027', coords: [29.4756, 76.8560], zoom: 14, btnId: 'btn-demo-panipat' },
+    'forest': { id: 'EVT-V2-0033', coords: [19.1012, 82.1661], zoom: 12, btnId: 'btn-demo-forest' },
+    'anomaly': { id: 'EVT-V2-0004', coords: [29.4611, 76.8892], zoom: 14, btnId: 'btn-demo-anomaly' }
+  };
+
+  const cfg = configs[scenario];
+  if (!cfg) return;
+
+  // 1. Update button styling
+  document.querySelectorAll('.demo-btn').forEach(b => b.classList.remove('active'));
+  const activeBtn = document.getElementById(cfg.btnId);
+  if (activeBtn) activeBtn.classList.add('active');
+
+  // 2. Fly map to coordinates (if map initialized)
+  if (map && typeof map.flyTo === 'function') {
+    try {
+      map.flyTo(cfg.coords, cfg.zoom, { duration: 1.2 });
+    } catch (e) {
+      console.warn('Map flyTo warning:', e);
+    }
+  }
+
+  // 3. Ensure datasets loaded
+  ensureDatasetsLoaded();
+
+  // 4. Find and select the event
+  const ev = allEvents.find(e => e.event_id === cfg.id);
+  if (ev) {
+    selectEvent(ev);
+  } else {
+    console.warn('Event not found in dataset:', cfg.id);
+  }
+};
+
 // Initialize Map & Application
 document.addEventListener('DOMContentLoaded', async () => {
-  initMap();
-  await loadDatasets();
+  // 1. Setup demo button listeners immediately so buttons respond without delay
   setupDemoButtons();
-  
-  // Default to Showcase 1: Hazira Industrial Flare
-  triggerShowcase('EVT-V2-0007', [21.1055, 72.6465], 14);
+
+  // 2. Load precomputed data
+  await loadDatasets();
+
+  // 3. Initialize Leaflet Map safely (even if offline or missing tiles, UI will not freeze)
+  try {
+    if (typeof L !== 'undefined') {
+      initMap();
+      renderFacilities(allFacilities);
+      renderEvents(allEvents);
+    } else {
+      console.warn('Leaflet not loaded; running in evidence drawer inspector mode.');
+    }
+  } catch (err) {
+    console.error('Error initializing map:', err);
+  }
+
+  // 4. Default to Showcase 1: Hazira Industrial Flare
+  window.handleDemoClick('hazira');
 });
 
 function initMap() {
+  const mapEl = document.getElementById('map');
+  if (!mapEl) return;
+
   map = L.map('map', {
     zoomControl: false,
     attributionControl: false
@@ -29,24 +95,30 @@ function initMap() {
 
   L.control.zoom({ position: 'topright' }).addTo(map);
 
-  // Free Dark Mode Basemap (CARTO Dark Matter)
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-    maxZoom: 19,
-    subdomains: 'abcd'
-  }).addTo(map);
+  // Esri World Satellite Imagery (public, high resolution satellite imagery, NO API KEY REQUIRED)
+  try {
+    const satelliteLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+      maxZoom: 18
+    }).addTo(map);
+
+    satelliteLayer.on('tileerror', function() {
+      // Fallback to standard OpenStreetMap if Esri times out
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19
+      }).addTo(map);
+    });
+  } catch (e) {
+    console.warn('Tile layer offline or blocked:', e);
+  }
 }
 
 async function loadDatasets() {
-  // 1. Direct standalone support: check if loaded via data_bundle.js (works on direct file:// double-click)
-  if (window.PRECOMPUTED_EVENTS && window.PRECOMPUTED_FACILITIES) {
-    allEvents = window.PRECOMPUTED_EVENTS;
-    allFacilities = window.PRECOMPUTED_FACILITIES;
-    renderFacilities(allFacilities);
-    renderEvents(allEvents);
+  ensureDatasetsLoaded();
+  if (allEvents.length > 0 && allFacilities.length > 0) {
     return;
   }
 
-  // 2. Fallback to fetch if running via HTTP web server
+  // Fallback to fetch if running via HTTP web server without data_bundle.js
   try {
     const [eventsRes, facRes] = await Promise.all([
       fetch('../prototype/data/processed/final_event_intelligence.json'),
@@ -55,15 +127,13 @@ async function loadDatasets() {
 
     allEvents = await eventsRes.json();
     allFacilities = await facRes.json();
-
-    renderFacilities(allFacilities);
-    renderEvents(allEvents);
   } catch (err) {
-    console.error('Error loading local datasets:', err);
+    console.warn('Local fetch fallback completed with status:', err);
   }
 }
 
 function renderFacilities(facilities) {
+  if (!map || typeof L === 'undefined') return;
   facilities.forEach(fac => {
     const circle = L.circle([fac.latitude, fac.longitude], {
       radius: 600,
@@ -84,10 +154,13 @@ function renderFacilities(facilities) {
 }
 
 function renderEvents(events) {
+  if (!map || typeof L === 'undefined') return;
   events.forEach(ev => {
-    const lat = ev.spatio_temporal.centroid.latitude;
-    const lon = ev.spatio_temporal.centroid.longitude;
-    const domain = ev.classification.domain;
+    const lat = ev.spatio_temporal?.centroid?.latitude;
+    const lon = ev.spatio_temporal?.centroid?.longitude;
+    if (typeof lat !== 'number' || typeof lon !== 'number') return;
+
+    const domain = ev.classification?.domain;
 
     let markerColor = '#9c27b0'; // Anomaly default
     if (domain === 'INDUSTRIAL') markerColor = '#ff5252';
@@ -112,85 +185,131 @@ function renderEvents(events) {
 }
 
 function selectEvent(ev) {
-  // Update Top Badges & Titles
-  const domainBadge = document.getElementById('drawer-domain');
-  domainBadge.textContent = ev.classification.domain;
-  domainBadge.className = `badge domain ${ev.classification.domain.toLowerCase()}`;
+  if (!ev) return;
+  try {
+    // Update Top Badges & Titles
+    const domain = ev.classification?.domain || 'UNKNOWN';
+    const domainBadge = document.getElementById('drawer-domain');
+    if (domainBadge) {
+      domainBadge.textContent = domain;
+      domainBadge.className = `badge domain ${domain.toLowerCase()}`;
+    }
 
-  const priorityBadge = document.getElementById('drawer-priority');
-  priorityBadge.textContent = `${ev.priority} PRIORITY`;
+    const priorityBadge = document.getElementById('drawer-priority');
+    if (priorityBadge) {
+      priorityBadge.textContent = `${ev.priority || 'LOW'} PRIORITY`;
+    }
 
-  document.getElementById('drawer-title').textContent = formatSubclassTitle(ev.classification.subclass);
-  document.getElementById('drawer-event-id').textContent = `${ev.event_id} • ${ev.region.toUpperCase()}`;
+    const titleEl = document.getElementById('drawer-title');
+    if (titleEl) {
+      titleEl.textContent = formatSubclassTitle(ev.classification?.subclass || 'Thermal Event');
+    }
 
-  // Update Summary Metrics
-  document.getElementById('drawer-confidence').textContent = `${(ev.classification.confidence_score * 100).toFixed(0)}%`;
-  document.getElementById('drawer-persistence').textContent = ev.spatio_temporal.active_days > 1 
-    ? `${ev.spatio_temporal.active_days} Days` 
-    : '1 Day (Single)';
-  document.getElementById('drawer-observations').textContent = `${ev.spatio_temporal.observation_count} Passes`;
-  document.getElementById('drawer-drift-ratio').textContent = ev.spatial_diagnostics.normalized_optical_drift_ratio > 0
-    ? `${ev.spatial_diagnostics.normalized_optical_drift_ratio}x`
-    : 'N/A';
+    const eventIdEl = document.getElementById('drawer-event-id');
+    if (eventIdEl) {
+      eventIdEl.textContent = `${ev.event_id || 'EVT'} • ${(ev.region || '').toUpperCase()}`;
+    }
 
-  // Populate Supporting Evidence
-  const suppList = document.getElementById('drawer-supporting-list');
-  suppList.innerHTML = '';
-  if (ev.evidence_breakdown.supporting_evidence.length === 0) {
-    suppList.innerHTML = '<li><span class="factor-tag">None</span>No strong positive indicators.</li>';
-  } else {
-    ev.evidence_breakdown.supporting_evidence.forEach(s => {
-      const li = document.createElement('li');
-      li.innerHTML = `<span class="factor-tag">+ ${s.factor}</span>${s.description}`;
-      suppList.appendChild(li);
-    });
+    // Update Summary Metrics
+    const confEl = document.getElementById('drawer-confidence');
+    if (confEl) {
+      const conf = ev.classification?.confidence_score;
+      confEl.textContent = typeof conf === 'number' ? `${(conf * 100).toFixed(0)}%` : 'N/A';
+    }
+
+    const persEl = document.getElementById('drawer-persistence');
+    if (persEl) {
+      const days = ev.spatio_temporal?.active_days;
+      persEl.textContent = days > 1 ? `${days} Days` : '1 Day (Single)';
+    }
+
+    const obsEl = document.getElementById('drawer-observations');
+    if (obsEl) {
+      const count = ev.spatio_temporal?.observation_count;
+      obsEl.textContent = count ? `${count} Passes` : '1 Pass';
+    }
+
+    const driftEl = document.getElementById('drawer-drift-ratio');
+    if (driftEl) {
+      const drift = ev.spatial_diagnostics?.normalized_optical_drift_ratio;
+      driftEl.textContent = typeof drift === 'number' && drift > 0 ? `${drift}x` : 'N/A';
+    }
+
+    // Populate Supporting Evidence
+    const suppList = document.getElementById('drawer-supporting-list');
+    if (suppList) {
+      suppList.innerHTML = '';
+      const supp = ev.evidence_breakdown?.supporting_evidence || [];
+      if (supp.length === 0) {
+        suppList.innerHTML = '<li><span class="factor-tag">None</span>No strong positive indicators.</li>';
+      } else {
+        supp.forEach(s => {
+          const li = document.createElement('li');
+          li.innerHTML = `<span class="factor-tag">+ ${s.factor || 'Indicator'}</span>${s.description || ''}`;
+          suppList.appendChild(li);
+        });
+      }
+    }
+
+    // Populate Counter Evidence
+    const counterSection = document.getElementById('counter-section');
+    const counterList = document.getElementById('drawer-counter-list');
+    if (counterSection && counterList) {
+      counterList.innerHTML = '';
+      const counter = ev.evidence_breakdown?.counter_evidence || [];
+      if (counter.length === 0) {
+        counterSection.style.display = 'none';
+      } else {
+        counterSection.style.display = 'block';
+        counter.forEach(c => {
+          const li = document.createElement('li');
+          li.innerHTML = `<span class="factor-tag">- ${c.factor || 'Counter'}</span>${c.description || ''}`;
+          counterList.appendChild(li);
+        });
+      }
+    }
+
+    // Populate Timeline Table
+    const timelineBody = document.getElementById('drawer-timeline-body');
+    if (timelineBody) {
+      timelineBody.innerHTML = '';
+      const timeline = ev.observation_timeline || [];
+      if (timeline.length > 0) {
+        timeline.slice(0, 8).forEach(obs => {
+          const tr = document.createElement('tr');
+          const timeFormatted = (obs.timestamp || '').replace('T', ' ').replace(':00Z', '');
+          const frpVal = typeof obs.frp_mw === 'number' ? obs.frp_mw.toFixed(1) : '-';
+          tr.innerHTML = `
+            <td>${timeFormatted}</td>
+            <td>${obs.satellite || 'VIIRS'}</td>
+            <td><span class="pass-tag ${obs.daynight === 'N' ? 'night' : 'day'}">${obs.daynight === 'N' ? 'NIGHT' : 'DAY'}</span></td>
+            <td>${frpVal}</td>
+          `;
+          timelineBody.appendChild(tr);
+        });
+      } else {
+        timelineBody.innerHTML = '<tr><td colspan="4" style="text-align:center;color:#8ea0be;">Single observation</td></tr>';
+      }
+    }
+
+    // Populate Caveats
+    const caveatBox = document.getElementById('drawer-caveats');
+    if (caveatBox) {
+      caveatBox.innerHTML = '';
+      const caveats = ev.uncertainty?.caveats || [];
+      caveats.forEach(cav => {
+        const p = document.createElement('p');
+        p.textContent = `• ${cav}`;
+        caveatBox.appendChild(p);
+      });
+    }
+  } catch (err) {
+    console.error('Error in selectEvent:', err);
   }
-
-  // Populate Counter Evidence
-  const counterSection = document.getElementById('counter-section');
-  const counterList = document.getElementById('drawer-counter-list');
-  counterList.innerHTML = '';
-  if (ev.evidence_breakdown.counter_evidence.length === 0) {
-    counterSection.style.display = 'none';
-  } else {
-    counterSection.style.display = 'block';
-    ev.evidence_breakdown.counter_evidence.forEach(c => {
-      const li = document.createElement('li');
-      li.innerHTML = `<span class="factor-tag">- ${c.factor}</span>${c.description}`;
-      counterList.appendChild(li);
-    });
-  }
-
-  // Populate Timeline Table
-  const timelineBody = document.getElementById('drawer-timeline-body');
-  timelineBody.innerHTML = '';
-  if (ev.observation_timeline && ev.observation_timeline.length > 0) {
-    ev.observation_timeline.slice(0, 8).forEach(obs => {
-      const tr = document.createElement('tr');
-      const timeFormatted = obs.timestamp.replace('T', ' ').replace(':00Z', '');
-      tr.innerHTML = `
-        <td>${timeFormatted}</td>
-        <td>${obs.satellite}</td>
-        <td><span class="pass-tag ${obs.daynight === 'N' ? 'night' : 'day'}">${obs.daynight === 'N' ? 'NIGHT' : 'DAY'}</span></td>
-        <td>${obs.frp_mw.toFixed(1)}</td>
-      `;
-      timelineBody.appendChild(tr);
-    });
-  } else {
-    timelineBody.innerHTML = '<tr><td colspan="4" style="text-align:center;color:#8ea0be;">Single observation</td></tr>';
-  }
-
-  // Populate Caveats
-  const caveatBox = document.getElementById('drawer-caveats');
-  caveatBox.innerHTML = '';
-  ev.uncertainty.caveats.forEach(cav => {
-    const p = document.createElement('p');
-    p.textContent = `• ${cav}`;
-    caveatBox.appendChild(p);
-  });
 }
 
 function formatSubclassTitle(subclass) {
+  if (!subclass) return 'Thermal Event';
   return subclass
     .replace(/_/g, ' ')
     .toLowerCase()
@@ -203,38 +322,16 @@ function setupDemoButtons() {
   const btnForest = document.getElementById('btn-demo-forest');
   const btnAnomaly = document.getElementById('btn-demo-anomaly');
 
-  const btns = [btnHazira, btnPanipat, btnForest, btnAnomaly];
-
-  btnHazira.addEventListener('click', () => {
-    setActiveBtn(btnHazira, btns);
-    triggerShowcase('EVT-V2-0007', [21.1055, 72.6465], 14);
-  });
-
-  btnPanipat.addEventListener('click', () => {
-    setActiveBtn(btnPanipat, btns);
-    triggerShowcase('EVT-V2-0027', [29.4756, 76.8560], 14);
-  });
-
-  btnForest.addEventListener('click', () => {
-    setActiveBtn(btnForest, btns);
-    triggerShowcase('EVT-V2-0033', [19.1012, 82.1661], 12);
-  });
-
-  btnAnomaly.addEventListener('click', () => {
-    setActiveBtn(btnAnomaly, btns);
-    triggerShowcase('EVT-V2-0004', [29.4611, 76.8892], 14);
-  });
-}
-
-function setActiveBtn(activeBtn, allBtns) {
-  allBtns.forEach(b => b.classList.remove('active'));
-  activeBtn.classList.add('active');
-}
-
-function triggerShowcase(eventId, coords, zoom) {
-  map.flyTo(coords, zoom, { duration: 1.2 });
-  const ev = allEvents.find(e => e.event_id === eventId);
-  if (ev) {
-    selectEvent(ev);
+  if (btnHazira) {
+    btnHazira.onclick = () => window.handleDemoClick('hazira');
+  }
+  if (btnPanipat) {
+    btnPanipat.onclick = () => window.handleDemoClick('panipat');
+  }
+  if (btnForest) {
+    btnForest.onclick = () => window.handleDemoClick('forest');
+  }
+  if (btnAnomaly) {
+    btnAnomaly.onclick = () => window.handleDemoClick('anomaly');
   }
 }

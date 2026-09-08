@@ -32,20 +32,33 @@ industrial-fire-intelligence/
 
 ---
 
-## ⚡ Quickstart: Launch the Dashboard
+## ⚡ How to Run on Any PC (After Downloading the ZIP)
 
-Run the offline dashboard on any machine with Node.js installed:
+Detailed guide also available in [`HOW_TO_RUN.md`](HOW_TO_RUN.md).
 
-```bash
-# 1. Clone the repository
-git clone https://github.com/nikhilbijuk/industrial-fire-intelligence.git
-cd industrial-fire-intelligence
+### Option 1: 1-Click Launch (Recommended for Windows)
+1. Extract the downloaded ZIP.
+2. Double-click **`start_dashboard.bat`** in the project root.
+3. The server will start and automatically open `http://localhost:3000` in your default browser.
 
-# 2. Start the zero-dependency local dashboard server
+### Option 2: Terminal Command
+Open PowerShell or Command Prompt inside the project folder:
+```powershell
 node dashboard/server.js
-
-# 3. Open in your browser:
-http://localhost:3000
 ```
+Then navigate to `http://localhost:3000` in your browser.
 
-This runs the interactive GIS console evaluating real satellite detections against industrial facilities with explainable evidence breakdowns.
+### Option 3: Direct File Open (Offline Fallback, No Node.js Needed)
+Double-click **`dashboard/index.html`** directly in any browser (Chrome/Edge/Firefox). The pre-compiled bundle (`data_bundle.js`) and local Leaflet vendor files allow the full UI and inspector drawer to function offline without a web server.
+
+---
+
+## 🎯 Verifying the Rehearsed Scenarios
+
+Open `http://localhost:3000` and click the 4 buttons in the top navigation bar:
+
+* 🏭 **Hazira Petrochem Flare**: Focuses on AM/NS Steel & petrochemical cluster (`EVT-V2-0007`, 91% confidence, 563m proximity, 0.85x optical drift).
+* ⛽ **Panipat Refinery**: Focuses on IOCL Refinery unit (`EVT-V2-0027`, 91% confidence, 0.78x optical drift ratio).
+* 🌲 **Simlipal Wildfire**: Focuses on forest canopy perimeter in Eastern Ghats (`EVT-V2-0033`, Wildfire High Priority, zero industrial context).
+* ⚠️ **Single-Pass (Uncertain)**: Focuses on single-pass anomaly (`EVT-V2-0004`, 40% confidence, displaying explicit uncertainty caveats).
+

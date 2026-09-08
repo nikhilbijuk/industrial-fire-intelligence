@@ -153,6 +153,16 @@ body {
   width: 100%;
   height: 100%;
   background-color: #0b111e;
+  background-image: 
+    radial-gradient(rgba(0, 229, 255, 0.12) 1px, transparent 1px),
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 32px 32px, 64px 64px, 64px 64px;
+}
+
+/* Ensure failed/offline tiles blend into the dark radar canvas */
+.leaflet-tile {
+  filter: brightness(0.85) contrast(1.15);
 }
 
 /* Map Overlay Legend */

@@ -95,18 +95,13 @@ function initMap() {
 
   L.control.zoom({ position: 'topright' }).addTo(map);
 
-  // Esri World Satellite Imagery (public, high resolution satellite imagery, NO API KEY REQUIRED)
+  // Esri World Satellite Imagery (public satellite imagery; falls back seamlessly to dark radar grid when offline)
   try {
-    const satelliteLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-      maxZoom: 18
+    const blankDarkTile = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256"><rect width="256" height="256" fill="%230b111e"/><path d="M0 0h256v256H0z" fill="none" stroke="%23162032" stroke-width="1"/></svg>';
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+      maxZoom: 18,
+      errorTileUrl: blankDarkTile
     }).addTo(map);
-
-    satelliteLayer.on('tileerror', function() {
-      // Fallback to standard OpenStreetMap if Esri times out
-      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19
-      }).addTo(map);
-    });
   } catch (e) {
     console.warn('Tile layer offline or blocked:', e);
   }

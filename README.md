@@ -9,8 +9,9 @@
 ## 🧭 Repository Structure
 
 ```text
-industrial-fire-intelligence/
 ├── README.md                           <- Master Overview & Quickstart
+├── HOW_TO_RUN.md                       <- Offline presentation & run instructions
+├── start_dashboard.bat                 <- 1-Click launcher for Windows
 ├── docs/
 │   ├── 01_MASTER_CONTEXT.md            <- Problem definition, philosophy, and constraints
 │   ├── 02_ARCHITECTURE.md              <- System pipeline, spatio-temporal event model
@@ -19,7 +20,11 @@ industrial-fire-intelligence/
 │   ├── 05_ML_RULE.md                   <- Baseline first, anti-leakage, evaluation rules
 │   ├── 06_TEAM_STRUCTURE.md            <- 6-person CSE responsibility matrix
 │   ├── 07_IMMEDIATE_PLAN.md            <- Phase-by-phase execution order
-│   └── 08_NORTH_STAR.md                <- Advisory principles & technical guardrails
+│   ├── 08_NORTH_STAR.md                <- Advisory principles & technical guardrails
+│   ├── 10_EVENT_AGGREGATION_V2.md      <- Centroid clustering & footprint scaling math
+│   ├── 11_PHASE2_OSM_INTELLIGENCE.md   <- Geodesic facility association report
+│   ├── 12_JUDGE_DEFENSE_AND_DEMO_SCRIPT.md <- 3-minute pitch & tough judge Q&A
+│   └── 13_TECHNICAL_SPECIFICATION.md   <- Master Engineering Technical Specification
 ├── schemas/
 │   └── event_intelligence.json         <- Locked JSON Schema contract for UI & API
 ├── prototype/

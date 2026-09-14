@@ -59,8 +59,8 @@
           "weight": 0.25
         },
         {
-          "factor": "Continuous 24/7 Combustion",
-          "description": "65% of detections occurred during night overpasses, consistent with continuous industrial operations",
+          "factor": "Nocturnal Operational Persistence",
+          "description": "65% of detections occurred during nighttime overpasses, consistent with ongoing nocturnal industrial activity rather than diurnal agricultural burning",
           "weight": 0.15
         }
       ],
@@ -1124,8 +1124,8 @@
           "weight": 0.25
         },
         {
-          "factor": "Continuous 24/7 Combustion",
-          "description": "71% of detections occurred during night overpasses, consistent with continuous industrial operations",
+          "factor": "Nocturnal Operational Persistence",
+          "description": "71% of detections occurred during nighttime overpasses, consistent with ongoing nocturnal industrial activity rather than diurnal agricultural burning",
           "weight": 0.15
         }
       ],
@@ -2168,8 +2168,8 @@
           "weight": 0.25
         },
         {
-          "factor": "Continuous 24/7 Combustion",
-          "description": "87% of detections occurred during night overpasses, consistent with continuous industrial operations",
+          "factor": "Nocturnal Operational Persistence",
+          "description": "87% of detections occurred during nighttime overpasses, consistent with ongoing nocturnal industrial activity rather than diurnal agricultural burning",
           "weight": 0.15
         }
       ],
@@ -2371,8 +2371,8 @@
           "weight": 0.25
         },
         {
-          "factor": "Continuous 24/7 Combustion",
-          "description": "74% of detections occurred during night overpasses, consistent with continuous industrial operations",
+          "factor": "Nocturnal Operational Persistence",
+          "description": "74% of detections occurred during nighttime overpasses, consistent with ongoing nocturnal industrial activity rather than diurnal agricultural burning",
           "weight": 0.15
         }
       ],
@@ -2957,8 +2957,8 @@
           "weight": 0.25
         },
         {
-          "factor": "Continuous 24/7 Combustion",
-          "description": "57% of detections occurred during night overpasses, consistent with continuous industrial operations",
+          "factor": "Nocturnal Operational Persistence",
+          "description": "57% of detections occurred during nighttime overpasses, consistent with ongoing nocturnal industrial activity rather than diurnal agricultural burning",
           "weight": 0.15
         }
       ],
@@ -3468,8 +3468,8 @@
           "weight": 0.25
         },
         {
-          "factor": "Continuous 24/7 Combustion",
-          "description": "100% of detections occurred during night overpasses, consistent with continuous industrial operations",
+          "factor": "Nocturnal Operational Persistence",
+          "description": "100% of detections occurred during nighttime overpasses, consistent with ongoing nocturnal industrial activity rather than diurnal agricultural burning",
           "weight": 0.15
         }
       ],
@@ -4015,8 +4015,8 @@
           "weight": 0.25
         },
         {
-          "factor": "Continuous 24/7 Combustion",
-          "description": "50% of detections occurred during night overpasses, consistent with continuous industrial operations",
+          "factor": "Nocturnal Operational Persistence",
+          "description": "50% of detections occurred during nighttime overpasses, consistent with ongoing nocturnal industrial activity rather than diurnal agricultural burning",
           "weight": 0.15
         }
       ],

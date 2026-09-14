@@ -141,7 +141,7 @@ $$C = \text{clamp}\left(C_{\text{base}} + \sum w_{\text{support}} + \sum w_{\tex
 * **Industrial Infrastructure Association:** $+0.35$ ($d < 800\text{m}$) or $+0.25$ ($d < 1500\text{m}$)
 * **Multi-Day Persistence:** $+0.25$ ($\ge 3$ calendar days)
 * **Stationary Footprint Consistency:** $+0.25$ ($\text{Ratio}_{\text{drift}} \le 1.0$)
-* **Continuous 24/7 Combustion:** $+0.15$ (Night ratio $\ge 0.50$)
+* **Nocturnal Operational Persistence:** $+0.15$ (Night ratio $\ge 0.50$, consistent with sustained industrial operations rather than diurnal crop clearing)
 * **Industrial Facility Absence:** $-0.20$ ($d > 2000\text{m}$)
 
 ---
@@ -195,7 +195,7 @@ All pipeline outputs conform to the locked JSON schema defined in `schemas/event
       { "factor": "Industrial Infrastructure Proximity", "description": "Event centroid is 563m from real OSM facility: ArcelorMittal Nippon Steel India (steel_mill)", "weight": 0.35 },
       { "factor": "Multi-Day Temporal Persistence", "description": "Recurrent thermal detections observed across 7 separate calendar days (144.5h duration)", "weight": 0.25 },
       { "factor": "Stationary Footprint Consistency", "description": "Normalized optical drift ratio is 0.85 (<= 1.0); observed coordinate displacement is within the estimated sensor pixel footprint, consistent with a stationary source", "weight": 0.25 },
-      { "factor": "Continuous 24/7 Combustion", "description": "71% of detections occurred during night overpasses, consistent with continuous industrial operations", "weight": 0.15 }
+      { "factor": "Nocturnal Operational Persistence", "description": "71% of detections occurred during nighttime overpasses, consistent with ongoing nocturnal industrial activity rather than diurnal agricultural burning", "weight": 0.15 }
     ],
     "counter_evidence": []
   },

@@ -1,9 +1,12 @@
 /**
- * Industrial Fire Intelligence - Phase 2 & 3 Deterministic Evidence Engine
- * Enriches V2 Thermal Events with OSM Industrial Context and generates explainable
- * evidence evaluations, overpass timelines, and uncertainty caveats.
- * 100% OFFLINE, ZERO EXTERNAL NETWORK CALLS.
+ * [DEPRECATED LEGACY PROTOTYPE]
+ * DO NOT RUN THIS SCRIPT DIRECTLY.
+ * This legacy pipeline used synthetic demo facilities. The authoritative, production
+ * Phase 2 engine is `prototype/process_osm_facilities.js`, which uses real Overpass OSM
+ * extractions and true spherical geodesic metrics.
  */
+
+throw new Error('[PIPELINE SAFETY] intelligence_engine.js is deprecated. Use `node prototype/process_osm_facilities.js` to regenerate final intelligence.');
 
 const fs = require('fs');
 const path = require('path');

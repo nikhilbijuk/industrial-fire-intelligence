@@ -184,9 +184,14 @@ function selectEvent(ev) {
   try {
     // Update Top Badges & Titles
     const domain = ev.classification?.domain || 'UNKNOWN';
+    const isSinglePass = ev.event_type === 'SINGLE_PASS_ANOMALY';
+    const domainText = (isSinglePass && (domain === 'OTHER' || domain === 'UNKNOWN'))
+      ? 'INSUFFICIENT EVIDENCE'
+      : domain;
+
     const domainBadge = document.getElementById('drawer-domain');
     if (domainBadge) {
-      domainBadge.textContent = domain;
+      domainBadge.textContent = domainText;
       domainBadge.className = `badge domain ${domain.toLowerCase()}`;
     }
 
@@ -205,11 +210,13 @@ function selectEvent(ev) {
       eventIdEl.textContent = `${ev.event_id || 'EVT'} • ${(ev.region || '').toUpperCase()}`;
     }
 
-    // Update Summary Metrics
+    // Update Summary Metrics (Evidence Strength Score / 100)
     const confEl = document.getElementById('drawer-confidence');
     if (confEl) {
       const conf = ev.classification?.confidence_score;
-      confEl.textContent = typeof conf === 'number' ? `${(conf * 100).toFixed(0)}%` : 'N/A';
+      const label = ev.classification?.confidence_label || 'EVALUATED';
+      const score = typeof conf === 'number' ? Math.round(conf * 100) : null;
+      confEl.textContent = score !== null ? `${label} (${score}/100)` : 'N/A';
     }
 
     const persEl = document.getElementById('drawer-persistence');

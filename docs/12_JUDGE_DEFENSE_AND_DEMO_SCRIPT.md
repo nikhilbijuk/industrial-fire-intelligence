@@ -39,12 +39,12 @@
 ### Step 3: Click ⚠️ `[Single-Pass (Uncertain)]` — The Winning Move (1:55 – 2:30)
 *Action: Click the 4th button. The map focuses on Panipat single-pass event `EVT-V2-0004`.*
 
-> *"Here is where most hackathon projects fail: they hallucinate 90% confidence on every point. In our engine, **44% of real detections are single passes**.*  
-> *When we select this single-pass anomaly near Panipat, our engine refuses to guess:*  
-> *• Temporal persistence is marked **N/A**.*  
-> *• Confidence is capped at **40% (Low)**.*  
-> *• Uncertainty is flagged as **HIGH** with a warning: 'Single observation; cannot determine spread or operational stability without subsequent overpasses.'*  
-> *We communicate uncertainty instead of pretending satellite data is ground truth."*
+> *"Here is where most hackathon projects fail: they hallucinate high confidence on every point. In our engine, **44% of real detections are single passes**.*  
+> *When we select this single-pass anomaly near Panipat, our engine explicitly abstains from forcing an operational classification:*  
+> *• Temporal persistence is marked **N/A** (single observation).*  
+> *• Evidence Strength is capped at **LOW (40/100)**.*  
+> *• Uncertainty is flagged as **HIGH** with an explicit notice: 'Single satellite observation; insufficient temporal data to evaluate persistence or physical spread.'*  
+> *We communicate uncertainty and abstain when evidence is insufficient, instead of pretending satellite data is ground truth."*
 
 ---
 
@@ -59,9 +59,9 @@
 **Defensible Answer:**  
 > *"In remote sensing, training an ML model without authoritative, independently verified ground truth leads to severe data leakage and circular reasoning (the model simply memorizes the heuristic). We deliberately prioritized a **transparent, physics-based evidence engine** first. Once we curate an independent ground-truth incident dataset, classical tabular models (LightGBM) can be benchmarked against this transparent baseline to prove whether ML actually earns its place."*
 
-### Q2: "How did you calculate this 91% confidence score?"
+### Q2: "How did you calculate this 91/100 Evidence Strength score? Is it a probability?"
 **Defensible Answer:**  
-> *"It is a **transparent, weighted evidence score** derived from our five physical and contextual factors (proximity, active days, footprint ratio, night ratio, land-cover context), not an uncalibrated black-box probability. We explicitly communicate that this reflects the weight of available corroborating data rather than an unverified ML probability claim."*
+> *"It is an **auditable, multi-factor evidence score (out of 100)**, not an uncalibrated mathematical probability claim. It is computed from five physical and contextual factors: infrastructure proximity, active calendar days, sensor footprint ratio, nocturnal persistence, and environmental context. We deliberately label it Evidence Strength rather than statistical probability to avoid overclaiming without an empirical calibration curve."*
 
 ### Q2: "Are your classifications verified ground truth?"
 **Defensible Answer:**  

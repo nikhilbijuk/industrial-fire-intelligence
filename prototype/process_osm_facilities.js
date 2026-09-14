@@ -208,8 +208,8 @@ function runRealGeodesicIntelligence() {
 
         if (nightRatio >= 0.35) {
           supporting.push({
-            factor: 'Continuous 24/7 Combustion',
-            description: `${Math.round(nightRatio * 100)}% of detections occurred during night overpasses, consistent with continuous industrial operations`,
+            factor: 'Nocturnal Operational Persistence',
+            description: `${Math.round(nightRatio * 100)}% of detections occurred during nighttime overpasses, consistent with ongoing nocturnal industrial activity rather than diurnal agricultural burning`,
             weight: 0.15
           });
         }
@@ -337,6 +337,12 @@ function runRealGeodesicIntelligence() {
   const outFinalPath = path.join('prototype', 'data', 'processed', 'final_event_intelligence.json');
   fs.writeFileSync(outFinalPath, JSON.stringify(evaluatedEvents, null, 2), 'utf8');
   console.log(`[Phase 2 Complete] Evaluated ${evaluatedEvents.length} events against real OSM data. Saved to ${outFinalPath}`);
+
+  // Synchronize dashboard standalone bundle
+  const bundlePath = path.join('dashboard', 'data_bundle.js');
+  const bundleContent = `window.PRECOMPUTED_EVENTS = ${JSON.stringify(evaluatedEvents)};\nwindow.PRECOMPUTED_FACILITIES = ${JSON.stringify(facilities)};\n`;
+  fs.writeFileSync(bundlePath, bundleContent, 'utf8');
+  console.log(`[Data Bundle Synced] Updated ${bundlePath} (${(bundleContent.length / 1024).toFixed(1)} KB)`);
 }
 
 runRealGeodesicIntelligence();

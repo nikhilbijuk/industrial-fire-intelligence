@@ -30,7 +30,7 @@
 > *"Now, watch the same engine evaluate a contrasting event in Odisha:*  
 > *1. **Zero Industry:** The nearest industrial facility is 355 km away.*  
 > *2. **Propagating Front:** The spatial drift is 553.6m along mountainous forest canopy.*  
-> *3. **Heavy Fuel:** Active night-time passes confirm sustained fuel burning through the night.*  
+> *3. **Nocturnal Activity:** Detections observed during nighttime overpasses, consistent with active combustion in heavy forest canopy rather than quick-burning agricultural residue.*  
 > *Conclusion: **Forest Canopy Wildfire (High Priority).***  
 > *Notice how the evidence factors completely invert based on geography and spread."*
 

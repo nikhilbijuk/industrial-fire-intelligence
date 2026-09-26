@@ -240,8 +240,8 @@ function runRealGeodesicIntelligence() {
 
         if (nightRatio > 0.0) {
           supporting.push({
-            factor: 'Overnight Fire Persistence',
-            description: 'Thermal activity recorded during nighttime passes, indicating sustained heavy fuel combustion',
+            factor: 'Nocturnal Thermal Activity',
+            description: 'Thermal activity detected during nighttime overpasses, consistent with active overnight combustion in dense fuel canopy',
             weight: 0.20
           });
         }
